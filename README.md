@@ -88,7 +88,7 @@ Both scripts apply the idempotent SQL migration automatically. Defaults match Co
 
 Local verification used **Windows, Python 3.12.14 and native PostgreSQL 17.11**. The [generated verification report](examples/generated/verification-report.md) records the latest measured test count, failures, skips and implementation fingerprint; [machine-readable evidence](docs/evidence/verification.json) includes source hashes. The suite includes 350 generated bounded graphs checked against an independent recursive reference evaluator, metamorphic changes, transaction rollback, concurrent duplicate imports and end-to-end regeneration.
 
-Docker Compose is supplied but was **not run** in the implementation environment. [GitHub Actions](.github/workflows/verify.yml) provisions PostgreSQL and runs verification; a GitHub-hosted run has **not been observed**. Those are separate from the successful local PostgreSQL run.
+Docker Compose is supplied but was **not run** in the implementation environment. [GitHub Actions](.github/workflows/verify.yml) provisions PostgreSQL and runs verification; **hosted verification has passed for the published build**. That hosted result is separate from the successful local PostgreSQL run.
 
 ## Decisions and limits
 
