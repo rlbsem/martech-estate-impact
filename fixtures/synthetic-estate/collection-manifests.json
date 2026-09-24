@@ -1,0 +1,707 @@
+[
+  {
+    "id": "review:crm",
+    "subjects": [
+      "crm"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:automation",
+    "subjects": [
+      "automation"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:cdp",
+    "subjects": [
+      "cdp"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:preferences",
+    "subjects": [
+      "preferences"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:cms",
+    "subjects": [
+      "cms"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:dam",
+    "subjects": [
+      "dam"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:personalization",
+    "subjects": [
+      "personalization"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:web-analytics",
+    "subjects": [
+      "web-analytics"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:webinar",
+    "subjects": [
+      "webinar"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:registration",
+    "subjects": [
+      "registration"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:email",
+    "subjects": [
+      "email"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:social",
+    "subjects": [
+      "social"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:work-manager",
+    "subjects": [
+      "work-manager"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "partial",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship",
+      "executions"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-01T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-15T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [
+      "Seasonal launch outside sampled period"
+    ],
+    "basis": "Reviewed design scope plus synthetic steward review; execution sample is corroboration, not exhaustive discovery.",
+    "scope": "architecture and unresolved seasonal runtime evidence"
+  },
+  {
+    "id": "review:hub",
+    "subjects": [
+      "hub"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:jobs",
+    "subjects": [
+      "jobs"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:functions",
+    "subjects": [
+      "functions"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:warehouse",
+    "subjects": [
+      "warehouse"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:bi",
+    "subjects": [
+      "bi"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:agent",
+    "subjects": [
+      "agent"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:collector",
+    "subjects": [
+      "collector"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:tags",
+    "subjects": [
+      "tags"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:media",
+    "subjects": [
+      "media"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:content-review",
+    "subjects": [
+      "content-review"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:partners",
+    "subjects": [
+      "partners"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:new-webinar",
+    "subjects": [
+      "new-webinar"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  },
+  {
+    "id": "review:new-work-manager",
+    "subjects": [
+      "new-work-manager"
+    ],
+    "reviewer": "Synthetic architecture review board",
+    "reviewed_at": "2026-09-24T00:00:00Z",
+    "max_age_days": 30,
+    "status": "complete",
+    "expected": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "observed": [
+      "inventory",
+      "orchestration",
+      "stewardship"
+    ],
+    "expected_start": "2026-09-24T00:00:00Z",
+    "expected_end": "2026-09-24T00:00:00Z",
+    "observed_start": "2026-09-24T00:00:00Z",
+    "observed_end": "2026-09-24T00:00:00Z",
+    "exclusions": [],
+    "basis": "Completed review of declared architecture at the snapshot timestamp. No claim of complete execution history; runtime exports remain partial.",
+    "scope": "declared architecture"
+  }
+]

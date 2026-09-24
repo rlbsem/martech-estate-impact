@@ -1,0 +1,26 @@
+# Retire Work Manager Impact
+
+Generated from snapshot `323ba0c95a5369f202bce18fc210d0b3fe84c7977f8fa0c767a00a1ddbad750b`. Synthetic evidence.
+
+```mermaid
+%% Requirement witness view, filtered to changed or adverse outcomes. Unchanged supported requirements omitted; see assessment table. See JSON for evidence and truncation limits.
+%% Resolved dependency assertion nodes collapsed into edges; exact branches and references remain in JSON.
+flowchart TB
+  n856d7201943a1c8b["Unresolved dependency: UNKNOWN"]:::UNKNOWN
+  nee1c53e8389f8b2c["Brief and status changes: UNSUPPORTED"]:::UNSUPPORTED
+  n5132531ff70b8467["Attribute webinar outcomes: UNSUPPORTED"]:::UNSUPPORTED
+  nbfd3eb9c2ad381fc["Create shared campaign: UNSUPPORTED"]:::UNSUPPORTED
+  n7ba8aa043da7af62["Send webinar follow-up: UNSUPPORTED"]:::UNSUPPORTED
+  n9f4810be3d2c627d["Launch annual seasonal campaign: UNKNOWN"]:::UNKNOWN
+  n04dbc40eef233770["Establish webinar campaign identifiers: UNSUPPORTED"]:::UNSUPPORTED
+  n10bf9295cc995d86["Campaign Work Manager: UNSUPPORTED"]:::UNSUPPORTED
+  n5132531ff70b8467 --> n04dbc40eef233770
+  nbfd3eb9c2ad381fc --> nee1c53e8389f8b2c
+  nbfd3eb9c2ad381fc --> n10bf9295cc995d86
+  n7ba8aa043da7af62 --> n04dbc40eef233770
+  n9f4810be3d2c627d --> n856d7201943a1c8b
+  n04dbc40eef233770 --> nbfd3eb9c2ad381fc
+  classDef SUPPORTED fill:#edf7ee,stroke:#246634
+  classDef UNSUPPORTED fill:#ffe6e6,stroke:#a51d2d
+  classDef UNKNOWN fill:#fff4cc,stroke:#946800
+```

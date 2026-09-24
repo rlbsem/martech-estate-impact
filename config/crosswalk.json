@@ -1,0 +1,206 @@
+[
+  {
+    "source": "inventory",
+    "external": "crm",
+    "targets": [
+      "crm"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "automation",
+    "targets": [
+      "automation"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "cdp",
+    "targets": [
+      "cdp"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "preferences",
+    "targets": [
+      "preferences"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "cms",
+    "targets": [
+      "cms"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "dam",
+    "targets": [
+      "dam"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "personalization",
+    "targets": [
+      "personalization"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "web-analytics",
+    "targets": [
+      "web-analytics"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "webinar",
+    "targets": [
+      "webinar"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "registration",
+    "targets": [
+      "registration"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "email",
+    "targets": [
+      "email"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "social",
+    "targets": [
+      "social"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "work-manager",
+    "targets": [
+      "work-manager"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "hub",
+    "targets": [
+      "hub"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "jobs",
+    "targets": [
+      "jobs"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "functions",
+    "targets": [
+      "functions"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "warehouse",
+    "targets": [
+      "warehouse"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "bi",
+    "targets": [
+      "bi"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "agent",
+    "targets": [
+      "agent"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "collector",
+    "targets": [
+      "collector"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "tags",
+    "targets": [
+      "tags"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "media",
+    "targets": [
+      "media"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "content-review",
+    "targets": [
+      "content-review"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "partners",
+    "targets": [
+      "partners"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "new-webinar",
+    "targets": [
+      "new-webinar"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "new-work-manager",
+    "targets": [
+      "new-work-manager"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "work-hub-legacy",
+    "targets": [
+      "work-manager"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "campaign-desk",
+    "targets": [
+      "work-manager"
+    ]
+  },
+  {
+    "source": "inventory",
+    "external": "campaign-work",
+    "targets": [
+      "work-manager",
+      "content-review"
+    ]
+  }
+]

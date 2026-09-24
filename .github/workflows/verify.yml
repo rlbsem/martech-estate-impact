@@ -1,0 +1,34 @@
+name: Verify estate semantics
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:17.11
+        env:
+          POSTGRES_USER: estate
+          POSTGRES_PASSWORD: estate
+          POSTGRES_DB: estate
+        ports: ["55439:5432"]
+        options: >-
+          --health-cmd "pg_isready -U estate -d estate"
+          --health-interval 2s --health-timeout 3s --health-retries 30
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.lock
+      - run: python -m pip install --no-build-isolation --no-deps .
+      - run: python scripts/verify.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: observed-verification
+          path: |
+            docs/evidence/
+            examples/generated/

@@ -1,0 +1,287 @@
+[
+  {
+    "after": {
+      "consumer": "attribution",
+      "contract": {
+        "events": [
+          "attendance.completed"
+        ],
+        "fields": [
+          "campaign_id"
+        ],
+        "keys": [
+          "campaign_id"
+        ]
+      },
+      "optional": false,
+      "provider": "sys:new-webinar",
+      "qualified": true
+    },
+    "before": {
+      "consumer": "attribution",
+      "contract": {
+        "events": [
+          "attendance.completed"
+        ],
+        "fields": [
+          "campaign_id"
+        ],
+        "keys": [
+          "campaign_id"
+        ]
+      },
+      "optional": false,
+      "provider": "sys:webinar",
+      "qualified": true
+    },
+    "key": "dependency:attribution:2"
+  },
+  {
+    "after": {
+      "consumer": "follow-up",
+      "contract": {
+        "events": [
+          "attendance.completed"
+        ],
+        "fields": [
+          "attendance_status"
+        ],
+        "keys": [
+          "registration_id"
+        ]
+      },
+      "optional": false,
+      "provider": "sys:new-webinar",
+      "qualified": true
+    },
+    "before": {
+      "consumer": "follow-up",
+      "contract": {
+        "events": [
+          "attendance.completed"
+        ],
+        "fields": [
+          "attendance_status"
+        ],
+        "keys": [
+          "registration_id"
+        ]
+      },
+      "optional": false,
+      "provider": "sys:webinar",
+      "qualified": true
+    },
+    "key": "dependency:follow-up:1"
+  },
+  {
+    "after": {
+      "consumer": "registration",
+      "contract": {
+        "events": [
+          "registration.created"
+        ],
+        "fields": [
+          "email_hash"
+        ],
+        "keys": [
+          "registration_id"
+        ]
+      },
+      "optional": false,
+      "provider": "sys:new-webinar",
+      "qualified": true
+    },
+    "before": {
+      "consumer": "registration",
+      "contract": {
+        "events": [
+          "registration.created"
+        ],
+        "fields": [
+          "email_hash"
+        ],
+        "keys": [
+          "registration_id"
+        ]
+      },
+      "optional": false,
+      "provider": "sys:webinar",
+      "qualified": true
+    },
+    "key": "dependency:registration:1"
+  },
+  {
+    "after": {
+      "consumer": "webinar-identifiers",
+      "contract": {
+        "events": [
+          "campaign.created"
+        ],
+        "fields": [
+          "campaign_id"
+        ],
+        "keys": [
+          "campaign_id"
+        ]
+      },
+      "optional": false,
+      "provider": "sys:new-webinar",
+      "qualified": true
+    },
+    "before": {
+      "consumer": "webinar-identifiers",
+      "contract": {
+        "events": [
+          "campaign.created"
+        ],
+        "fields": [
+          "campaign_id"
+        ],
+        "keys": [
+          "campaign_id"
+        ]
+      },
+      "optional": false,
+      "provider": "sys:webinar",
+      "qualified": true
+    },
+    "key": "dependency:webinar-identifiers:1"
+  },
+  {
+    "after": {
+      "destination": "automation",
+      "mode": "data_flow",
+      "owner": "Central Technology",
+      "purpose": "Attendance follow-up",
+      "runtime": "hub",
+      "source": "new-webinar"
+    },
+    "before": {
+      "destination": "automation",
+      "mode": "data_flow",
+      "owner": "Central Technology",
+      "purpose": "Attendance follow-up",
+      "runtime": "hub",
+      "source": "webinar"
+    },
+    "key": "integration:attended-event"
+  },
+  {
+    "after": {
+      "destination": "new-webinar",
+      "mode": "data_flow",
+      "owner": "Central Technology",
+      "purpose": "Campaign identifiers",
+      "runtime": "hub",
+      "source": "automation"
+    },
+    "before": {
+      "destination": "webinar",
+      "mode": "data_flow",
+      "owner": "Central Technology",
+      "purpose": "Campaign identifiers",
+      "runtime": "hub",
+      "source": "automation"
+    },
+    "key": "integration:campaign-ids"
+  },
+  {
+    "after": {
+      "destination": "new-webinar",
+      "mode": "data_flow",
+      "owner": "Central Technology",
+      "purpose": "Registration synchronization",
+      "runtime": "hub",
+      "source": "registration"
+    },
+    "before": {
+      "destination": "webinar",
+      "mode": "data_flow",
+      "owner": "Central Technology",
+      "purpose": "Registration synchronization",
+      "runtime": "hub",
+      "source": "registration"
+    },
+    "key": "integration:registration-sync"
+  },
+  {
+    "after": {
+      "destination": "warehouse",
+      "mode": "data_flow",
+      "owner": "Central Technology",
+      "purpose": "Campaign attribution",
+      "runtime": "jobs",
+      "source": "new-webinar"
+    },
+    "before": {
+      "destination": "warehouse",
+      "mode": "data_flow",
+      "owner": "Central Technology",
+      "purpose": "Campaign attribution",
+      "runtime": "jobs",
+      "source": "webinar"
+    },
+    "key": "integration:webinar-attribution"
+  },
+  {
+    "after": {
+      "events": [
+        "registration.created",
+        "campaign.created",
+        "attendance.completed"
+      ],
+      "fields": [
+        "email_hash",
+        "campaign_id",
+        "attendance_status"
+      ],
+      "keys": [
+        "registration_id",
+        "campaign_id"
+      ]
+    },
+    "before": {
+      "events": [
+        "registration.created",
+        "campaign.created"
+      ],
+      "fields": [
+        "email_hash"
+      ],
+      "keys": [
+        "registration_id"
+      ]
+    },
+    "key": "interface:new-webinar"
+  },
+  {
+    "after": {
+      "environment": "production-model",
+      "label": "Proposed webinar replacement",
+      "lifecycle": "active",
+      "operator": "Marketing Operations"
+    },
+    "before": {
+      "environment": "production-model",
+      "label": "Proposed webinar replacement",
+      "lifecycle": "proposed",
+      "operator": "Marketing Operations"
+    },
+    "key": "system:new-webinar"
+  },
+  {
+    "after": {
+      "environment": "production-model",
+      "label": "Webinar platform",
+      "lifecycle": "retired",
+      "operator": "Marketing Operations"
+    },
+    "before": {
+      "environment": "production-model",
+      "label": "Webinar platform",
+      "lifecycle": "active",
+      "operator": "Marketing Operations"
+    },
+    "key": "system:webinar"
+  }
+]

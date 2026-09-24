@@ -1,0 +1,236 @@
+{
+  "format": "estate-proposal/v1",
+  "title": "Incomplete webinar replacement",
+  "systems": [
+    "webinar",
+    "new-webinar"
+  ],
+  "requirements": [
+    "webinar-identifiers",
+    "follow-up",
+    "attribution",
+    "registration"
+  ],
+  "actions": [
+    {
+      "op": "activate",
+      "system": "new-webinar"
+    },
+    {
+      "op": "retire",
+      "system": "webinar"
+    },
+    {
+      "op": "rewire",
+      "integration": "campaign-ids",
+      "endpoints": {
+        "destination": "new-webinar"
+      }
+    },
+    {
+      "op": "rewire",
+      "integration": "registration-sync",
+      "endpoints": {
+        "destination": "new-webinar"
+      }
+    },
+    {
+      "op": "rewire",
+      "integration": "attended-event",
+      "endpoints": {
+        "source": "new-webinar"
+      }
+    },
+    {
+      "op": "rewire",
+      "integration": "webinar-attribution",
+      "endpoints": {
+        "source": "new-webinar"
+      }
+    },
+    {
+      "op": "set",
+      "claim": {
+        "key": "dependency:webinar-identifiers:1",
+        "kind": "dependency",
+        "subject": "webinar-identifiers:1",
+        "value": {
+          "consumer": "webinar-identifiers",
+          "provider": "sys:new-webinar",
+          "qualified": true,
+          "optional": false,
+          "contract": {
+            "events": [
+              "campaign.created"
+            ],
+            "fields": [
+              "campaign_id"
+            ],
+            "keys": [
+              "campaign_id"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "op": "set",
+      "claim": {
+        "key": "dependency:follow-up:1",
+        "kind": "dependency",
+        "subject": "follow-up:1",
+        "value": {
+          "consumer": "follow-up",
+          "provider": "sys:new-webinar",
+          "qualified": true,
+          "optional": false,
+          "contract": {
+            "events": [
+              "attendance.completed"
+            ],
+            "fields": [
+              "attendance_status"
+            ],
+            "keys": [
+              "registration_id"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "op": "set",
+      "claim": {
+        "key": "dependency:attribution:2",
+        "kind": "dependency",
+        "subject": "attribution:2",
+        "value": {
+          "consumer": "attribution",
+          "provider": "sys:new-webinar",
+          "qualified": true,
+          "optional": false,
+          "contract": {
+            "events": [
+              "attendance.completed"
+            ],
+            "fields": [
+              "campaign_id"
+            ],
+            "keys": [
+              "campaign_id"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "op": "set",
+      "claim": {
+        "key": "dependency:registration:1",
+        "kind": "dependency",
+        "subject": "registration:1",
+        "value": {
+          "consumer": "registration",
+          "provider": "sys:new-webinar",
+          "qualified": true,
+          "optional": false,
+          "contract": {
+            "events": [
+              "registration.created"
+            ],
+            "fields": [
+              "email_hash"
+            ],
+            "keys": [
+              "registration_id"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "activities": [
+    {
+      "id": "establish-requirements",
+      "owner": "Marketing Operations",
+      "prerequisites": [],
+      "requires_evidence": [],
+      "completed": false
+    },
+    {
+      "id": "validate-interface",
+      "owner": "Marketing Operations",
+      "prerequisites": [
+        "establish-requirements"
+      ],
+      "requires_evidence": [],
+      "completed": false
+    },
+    {
+      "id": "introduce-dependency",
+      "owner": "Marketing Operations",
+      "prerequisites": [
+        "validate-interface"
+      ],
+      "requires_evidence": [],
+      "completed": false
+    },
+    {
+      "id": "rewire-consumers",
+      "owner": "Marketing Operations",
+      "prerequisites": [
+        "introduce-dependency"
+      ],
+      "requires_evidence": [],
+      "completed": false
+    },
+    {
+      "id": "obtain-acceptance",
+      "owner": "Marketing Operations",
+      "prerequisites": [
+        "rewire-consumers"
+      ],
+      "requires_evidence": [
+        "operational-acceptance"
+      ],
+      "completed": false
+    },
+    {
+      "id": "remove-obsolete",
+      "owner": "Central Technology",
+      "prerequisites": [
+        "obtain-acceptance"
+      ],
+      "requires_evidence": [
+        "operational-acceptance"
+      ],
+      "completed": false
+    },
+    {
+      "id": "reassess",
+      "owner": "Central Technology",
+      "prerequisites": [
+        "remove-obsolete"
+      ],
+      "requires_evidence": [
+        "operational-acceptance"
+      ],
+      "completed": false
+    },
+    {
+      "id": "handoff",
+      "owner": "Central Technology",
+      "prerequisites": [
+        "reassess"
+      ],
+      "requires_evidence": [
+        "operational-acceptance"
+      ],
+      "completed": false
+    }
+  ],
+  "acceptance_evidence": [],
+  "assumptions": [
+    "Replacement and rewiring are proposed declarations, not deployed changes."
+  ]
+}

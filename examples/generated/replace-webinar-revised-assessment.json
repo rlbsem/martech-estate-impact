@@ -1,0 +1,1701 @@
+{
+  "candidate_reachability": {
+    "new-webinar": [
+      "agent",
+      "automation",
+      "bi",
+      "cdp",
+      "crm",
+      "email",
+      "media",
+      "new-webinar",
+      "personalization",
+      "warehouse"
+    ],
+    "webinar": []
+  },
+  "changes": [
+    {
+      "index": 0,
+      "op": "activate",
+      "system": "new-webinar"
+    },
+    {
+      "index": 1,
+      "op": "retire",
+      "system": "webinar"
+    },
+    {
+      "endpoints": {
+        "destination": "new-webinar"
+      },
+      "index": 2,
+      "integration": "campaign-ids",
+      "op": "rewire"
+    },
+    {
+      "endpoints": {
+        "destination": "new-webinar"
+      },
+      "index": 3,
+      "integration": "registration-sync",
+      "op": "rewire"
+    },
+    {
+      "endpoints": {
+        "source": "new-webinar"
+      },
+      "index": 4,
+      "integration": "attended-event",
+      "op": "rewire"
+    },
+    {
+      "endpoints": {
+        "source": "new-webinar"
+      },
+      "index": 5,
+      "integration": "webinar-attribution",
+      "op": "rewire"
+    },
+    {
+      "claim": {
+        "key": "dependency:webinar-identifiers:1",
+        "kind": "dependency",
+        "subject": "webinar-identifiers:1",
+        "value": {
+          "consumer": "webinar-identifiers",
+          "contract": {
+            "events": [
+              "campaign.created"
+            ],
+            "fields": [
+              "campaign_id"
+            ],
+            "keys": [
+              "campaign_id"
+            ]
+          },
+          "optional": false,
+          "provider": "sys:new-webinar",
+          "qualified": true
+        }
+      },
+      "index": 6,
+      "op": "set"
+    },
+    {
+      "claim": {
+        "key": "dependency:follow-up:1",
+        "kind": "dependency",
+        "subject": "follow-up:1",
+        "value": {
+          "consumer": "follow-up",
+          "contract": {
+            "events": [
+              "attendance.completed"
+            ],
+            "fields": [
+              "attendance_status"
+            ],
+            "keys": [
+              "registration_id"
+            ]
+          },
+          "optional": false,
+          "provider": "sys:new-webinar",
+          "qualified": true
+        }
+      },
+      "index": 7,
+      "op": "set"
+    },
+    {
+      "claim": {
+        "key": "dependency:attribution:2",
+        "kind": "dependency",
+        "subject": "attribution:2",
+        "value": {
+          "consumer": "attribution",
+          "contract": {
+            "events": [
+              "attendance.completed"
+            ],
+            "fields": [
+              "campaign_id"
+            ],
+            "keys": [
+              "campaign_id"
+            ]
+          },
+          "optional": false,
+          "provider": "sys:new-webinar",
+          "qualified": true
+        }
+      },
+      "index": 8,
+      "op": "set"
+    },
+    {
+      "claim": {
+        "key": "dependency:registration:1",
+        "kind": "dependency",
+        "subject": "registration:1",
+        "value": {
+          "consumer": "registration",
+          "contract": {
+            "events": [
+              "registration.created"
+            ],
+            "fields": [
+              "email_hash"
+            ],
+            "keys": [
+              "registration_id"
+            ]
+          },
+          "optional": false,
+          "provider": "sys:new-webinar",
+          "qualified": true
+        }
+      },
+      "index": 9,
+      "op": "set"
+    },
+    {
+      "claim": {
+        "key": "interface:new-webinar",
+        "kind": "interface",
+        "subject": "new-webinar",
+        "value": {
+          "events": [
+            "registration.created",
+            "campaign.created",
+            "attendance.completed"
+          ],
+          "fields": [
+            "email_hash",
+            "campaign_id",
+            "attendance_status"
+          ],
+          "keys": [
+            "registration_id",
+            "campaign_id"
+          ]
+        }
+      },
+      "index": 10,
+      "op": "set"
+    }
+  ],
+  "claim_boundary": "Modeled consequence of declared architecture. Metadata compatibility is not operational verification; this result does not authorize cutover.",
+  "coverage": {
+    "new-webinar": {
+      "evidence": [
+        "review:new-webinar"
+      ],
+      "reasons": [],
+      "state": "SUPPORTED"
+    },
+    "webinar": {
+      "evidence": [
+        "review:webinar"
+      ],
+      "reasons": [],
+      "state": "SUPPORTED"
+    }
+  },
+  "disposition": "NO_IDENTIFIED_BLOCKERS_WITHIN_REVIEWED_SCOPE",
+  "failed_requirements": [],
+  "format": "estate-assessment/v1",
+  "id": "9bfb36a7396f42c1cd89fd90b07b1c64c29ba3d715aa2574ee4b0ed43f2e0dcf",
+  "implementation": "1.0.0",
+  "implementation_hash": "a7c3a2f96640ffb24cc1b817705f6b85913865dce3b39b3ed3711d5d6ce30398",
+  "node_labels": {
+    "int:attended-event": "Attendance follow-up",
+    "int:brief-status": "Brief and status changes",
+    "int:campaign-approval": "Approved campaign content",
+    "int:campaign-create": "Shared campaign creation",
+    "int:campaign-ids": "Campaign identifiers",
+    "int:campaign-reporting": "Optional campaign reporting",
+    "int:cdp-profiles": "Customer profile changes",
+    "int:content-publish": "Approved assets",
+    "int:crm-leads": "Qualified leads",
+    "int:crm-status": "Lead lifecycle feedback",
+    "int:email-dispatch": "Campaign messages",
+    "int:email-feedback": "Delivery feedback",
+    "int:hub-observability": "Integration run metadata",
+    "int:media-audiences": "Activation audiences",
+    "int:media-performance": "Campaign performance",
+    "int:page-events": "Page engagement",
+    "int:partner-content": "Partner content",
+    "int:partner-events": "Portal engagement",
+    "int:partner-leads": "Partner lead intake",
+    "int:personalization-feed": "Audience membership",
+    "int:personalized-content": "Content variants",
+    "int:preference-enforce": "Messaging eligibility",
+    "int:preference-ingest": "Permission state",
+    "int:privacy-status": "Contact eligibility",
+    "int:product-events": "Product engagement",
+    "int:product-profiles": "Customer product signals",
+    "int:registration-crm": "Registered contacts",
+    "int:registration-sync": "Registration synchronization",
+    "int:review-assets": "Assets for review",
+    "int:scheduler-jobs": "Scheduled function invocations",
+    "int:seasonal-launch": "Annual seasonal launch",
+    "int:social-content": "Social creative",
+    "int:social-reporting": "Channel performance",
+    "int:tag-configuration": "Measurement configuration",
+    "int:tag-events": "Measurement tags",
+    "int:warehouse-agent": "Governed analytical context",
+    "int:warehouse-bi": "Business reporting",
+    "int:web-warehouse": "Web reporting",
+    "int:webinar-attribution": "Campaign attribution",
+    "req:attribution": "Attribute webinar outcomes",
+    "req:campaign-creation": "Create shared campaign",
+    "req:content-approval": "Approve campaign content",
+    "req:follow-up": "Send webinar follow-up",
+    "req:lead-routing": "Route qualified leads",
+    "req:messaging": "Deliver approved messages",
+    "req:product-insight": "Analyze product engagement",
+    "req:registration": "Register webinar participant",
+    "req:reporting": "Report operational outcomes",
+    "req:seasonal": "Launch annual seasonal campaign",
+    "req:webinar-identifiers": "Establish webinar campaign identifiers",
+    "req:website": "Publish website",
+    "sys:agent": "Analytics-agent service",
+    "sys:automation": "Marketing automation",
+    "sys:bi": "Business intelligence",
+    "sys:cdp": "Customer data platform",
+    "sys:cms": "Content management",
+    "sys:collector": "Product-event collector",
+    "sys:content-review": "Campaign Work Review",
+    "sys:crm": "Sales CRM",
+    "sys:dam": "Digital asset management",
+    "sys:email": "Email delivery",
+    "sys:functions": "Serverless integration runtime",
+    "sys:hub": "Integration hub",
+    "sys:jobs": "Scheduled-job service",
+    "sys:media": "Media activation",
+    "sys:new-webinar": "Proposed webinar replacement",
+    "sys:new-work-manager": "Proposed work-management replacement",
+    "sys:partners": "Partner portal",
+    "sys:personalization": "Web personalization",
+    "sys:preferences": "Preference center",
+    "sys:registration": "Event registration",
+    "sys:social": "Social publishing",
+    "sys:tags": "Tag management",
+    "sys:warehouse": "Analytics warehouse",
+    "sys:web-analytics": "Web analytics",
+    "sys:webinar": "Webinar platform",
+    "sys:work-manager": "Campaign Work Manager"
+  },
+  "out_of_scope_changes": {},
+  "policy_hash": "ebd482c10957a780c70f723f045cbb5364a90be3949683ed9fe29d3f9b12ee55",
+  "proposal": {
+    "acceptance_evidence": [],
+    "actions": [
+      {
+        "op": "activate",
+        "system": "new-webinar"
+      },
+      {
+        "op": "retire",
+        "system": "webinar"
+      },
+      {
+        "endpoints": {
+          "destination": "new-webinar"
+        },
+        "integration": "campaign-ids",
+        "op": "rewire"
+      },
+      {
+        "endpoints": {
+          "destination": "new-webinar"
+        },
+        "integration": "registration-sync",
+        "op": "rewire"
+      },
+      {
+        "endpoints": {
+          "source": "new-webinar"
+        },
+        "integration": "attended-event",
+        "op": "rewire"
+      },
+      {
+        "endpoints": {
+          "source": "new-webinar"
+        },
+        "integration": "webinar-attribution",
+        "op": "rewire"
+      },
+      {
+        "claim": {
+          "key": "dependency:webinar-identifiers:1",
+          "kind": "dependency",
+          "subject": "webinar-identifiers:1",
+          "value": {
+            "consumer": "webinar-identifiers",
+            "contract": {
+              "events": [
+                "campaign.created"
+              ],
+              "fields": [
+                "campaign_id"
+              ],
+              "keys": [
+                "campaign_id"
+              ]
+            },
+            "optional": false,
+            "provider": "sys:new-webinar",
+            "qualified": true
+          }
+        },
+        "op": "set"
+      },
+      {
+        "claim": {
+          "key": "dependency:follow-up:1",
+          "kind": "dependency",
+          "subject": "follow-up:1",
+          "value": {
+            "consumer": "follow-up",
+            "contract": {
+              "events": [
+                "attendance.completed"
+              ],
+              "fields": [
+                "attendance_status"
+              ],
+              "keys": [
+                "registration_id"
+              ]
+            },
+            "optional": false,
+            "provider": "sys:new-webinar",
+            "qualified": true
+          }
+        },
+        "op": "set"
+      },
+      {
+        "claim": {
+          "key": "dependency:attribution:2",
+          "kind": "dependency",
+          "subject": "attribution:2",
+          "value": {
+            "consumer": "attribution",
+            "contract": {
+              "events": [
+                "attendance.completed"
+              ],
+              "fields": [
+                "campaign_id"
+              ],
+              "keys": [
+                "campaign_id"
+              ]
+            },
+            "optional": false,
+            "provider": "sys:new-webinar",
+            "qualified": true
+          }
+        },
+        "op": "set"
+      },
+      {
+        "claim": {
+          "key": "dependency:registration:1",
+          "kind": "dependency",
+          "subject": "registration:1",
+          "value": {
+            "consumer": "registration",
+            "contract": {
+              "events": [
+                "registration.created"
+              ],
+              "fields": [
+                "email_hash"
+              ],
+              "keys": [
+                "registration_id"
+              ]
+            },
+            "optional": false,
+            "provider": "sys:new-webinar",
+            "qualified": true
+          }
+        },
+        "op": "set"
+      },
+      {
+        "claim": {
+          "key": "interface:new-webinar",
+          "kind": "interface",
+          "subject": "new-webinar",
+          "value": {
+            "events": [
+              "registration.created",
+              "campaign.created",
+              "attendance.completed"
+            ],
+            "fields": [
+              "email_hash",
+              "campaign_id",
+              "attendance_status"
+            ],
+            "keys": [
+              "registration_id",
+              "campaign_id"
+            ]
+          }
+        },
+        "op": "set"
+      }
+    ],
+    "activities": [
+      {
+        "completed": false,
+        "id": "establish-requirements",
+        "owner": "Marketing Operations",
+        "prerequisites": [],
+        "requires_evidence": []
+      },
+      {
+        "completed": false,
+        "id": "validate-interface",
+        "owner": "Marketing Operations",
+        "prerequisites": [
+          "establish-requirements"
+        ],
+        "requires_evidence": []
+      },
+      {
+        "completed": false,
+        "id": "introduce-dependency",
+        "owner": "Marketing Operations",
+        "prerequisites": [
+          "validate-interface"
+        ],
+        "requires_evidence": []
+      },
+      {
+        "completed": false,
+        "id": "rewire-consumers",
+        "owner": "Marketing Operations",
+        "prerequisites": [
+          "introduce-dependency"
+        ],
+        "requires_evidence": []
+      },
+      {
+        "completed": false,
+        "id": "obtain-acceptance",
+        "owner": "Marketing Operations",
+        "prerequisites": [
+          "rewire-consumers"
+        ],
+        "requires_evidence": [
+          "operational-acceptance"
+        ]
+      },
+      {
+        "completed": false,
+        "id": "remove-obsolete",
+        "owner": "Central Technology",
+        "prerequisites": [
+          "obtain-acceptance"
+        ],
+        "requires_evidence": [
+          "operational-acceptance"
+        ]
+      },
+      {
+        "completed": false,
+        "id": "reassess",
+        "owner": "Central Technology",
+        "prerequisites": [
+          "remove-obsolete"
+        ],
+        "requires_evidence": [
+          "operational-acceptance"
+        ]
+      },
+      {
+        "completed": false,
+        "id": "handoff",
+        "owner": "Central Technology",
+        "prerequisites": [
+          "reassess"
+        ],
+        "requires_evidence": [
+          "operational-acceptance"
+        ]
+      }
+    ],
+    "assumptions": [
+      "Replacement and rewiring are proposed declarations, not deployed changes."
+    ],
+    "base_snapshot": "323ba0c95a5369f202bce18fc210d0b3fe84c7977f8fa0c767a00a1ddbad750b",
+    "format": "estate-proposal/v1",
+    "requirements": [
+      "webinar-identifiers",
+      "follow-up",
+      "attribution",
+      "registration"
+    ],
+    "systems": [
+      "webinar",
+      "new-webinar"
+    ],
+    "title": "Revised webinar target state"
+  },
+  "proposal_hash": "c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09",
+  "proposed_relationship_findings": [],
+  "requirements": {
+    "attribution": {
+      "before": "SUPPORTED",
+      "evidence": [
+        "ccd9ed7dfd1f26e46cb11c6de539a7d120e535f27ec85f040ad26ac863f2a193"
+      ],
+      "inputs": {
+        "dependency:attribution:0": {
+          "evidence": [
+            "1a6778b367f77493eadcabc3dcfd80559cdc7a83b82dc5a63fa11e031a8f114c"
+          ],
+          "optional": false,
+          "provider": "req:webinar-identifiers",
+          "reason": "typed dependency",
+          "state": "SUPPORTED"
+        },
+        "dependency:attribution:1": {
+          "evidence": [
+            "1ecdab1e915153a7405c50cefbd00199940dcb1a9c24ee98abdbb5f2baaa6a32"
+          ],
+          "optional": false,
+          "provider": "sys:warehouse",
+          "reason": "typed dependency",
+          "state": "SUPPORTED"
+        },
+        "dependency:attribution:2": {
+          "compatibility": {
+            "basis": "declared metadata only",
+            "missing": {
+              "events": [],
+              "fields": [],
+              "keys": []
+            },
+            "state": "SUPPORTED"
+          },
+          "evidence": [
+            "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:10",
+            "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:8"
+          ],
+          "optional": false,
+          "provider": "sys:new-webinar",
+          "reason": "typed dependency",
+          "state": "SUPPORTED"
+        }
+      },
+      "label": "Attribute webinar outcomes",
+      "mode": "ALL",
+      "state": "SUPPORTED",
+      "witness": {
+        "limits": {
+          "depth": 30,
+          "paths": 50
+        },
+        "paths": [
+          [
+            {
+              "evidence": [
+                "ccd9ed7dfd1f26e46cb11c6de539a7d120e535f27ec85f040ad26ac863f2a193"
+              ],
+              "node": "req:attribution",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "1a6778b367f77493eadcabc3dcfd80559cdc7a83b82dc5a63fa11e031a8f114c"
+              ],
+              "node": "dependency:attribution:0",
+              "optional": false,
+              "provider": "req:webinar-identifiers",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "a6b20bce72df26a32e3618f8e47fa89be72ab5958834c470eeb0c0aa3fbbd125"
+              ],
+              "node": "req:webinar-identifiers",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "fe1459e51326c59890390c8aee59d65e013d8336b3a321eae816d3c861679a6d"
+              ],
+              "node": "dependency:webinar-identifiers:0",
+              "optional": false,
+              "provider": "req:campaign-creation",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "52f00bed3eb9997b17c4e5f214c0b2e3cecf94626e8136604b18f7ec38d2ff9b"
+              ],
+              "node": "req:campaign-creation",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "28c1e5af740f3649f21256886da661690a1dde1f86cac2482eed60883878c947"
+              ],
+              "node": "dependency:campaign-creation:0",
+              "optional": false,
+              "provider": "sys:work-manager",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "bcbfde2e3bd08e15bbe3d77c143882021fa20c6e28aa6900c6e77328ddae1741",
+                "bf37726f45946c3462cc6a671860c218475ca66a8afd0d90bb89e5a19a83526f",
+                "e68d8ef9dec1fb82325093778e98204feef594e6dd0efc739192f7fe4cae11c6"
+              ],
+              "node": "sys:work-manager",
+              "state": "SUPPORTED"
+            }
+          ],
+          [
+            {
+              "evidence": [
+                "ccd9ed7dfd1f26e46cb11c6de539a7d120e535f27ec85f040ad26ac863f2a193"
+              ],
+              "node": "req:attribution",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "1a6778b367f77493eadcabc3dcfd80559cdc7a83b82dc5a63fa11e031a8f114c"
+              ],
+              "node": "dependency:attribution:0",
+              "optional": false,
+              "provider": "req:webinar-identifiers",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "a6b20bce72df26a32e3618f8e47fa89be72ab5958834c470eeb0c0aa3fbbd125"
+              ],
+              "node": "req:webinar-identifiers",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "fe1459e51326c59890390c8aee59d65e013d8336b3a321eae816d3c861679a6d"
+              ],
+              "node": "dependency:webinar-identifiers:0",
+              "optional": false,
+              "provider": "req:campaign-creation",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "52f00bed3eb9997b17c4e5f214c0b2e3cecf94626e8136604b18f7ec38d2ff9b"
+              ],
+              "node": "req:campaign-creation",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "567fd9201cf8fc23614642f90283daa54e468300c4a4de4366a52ba031b25050"
+              ],
+              "node": "dependency:campaign-creation:1",
+              "optional": false,
+              "provider": "int:brief-status",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "d7ad6881f42442c71734d38503fa245e92f170d2043dc59ae868e1e94c157572"
+              ],
+              "node": "int:brief-status",
+              "state": "SUPPORTED"
+            }
+          ],
+          [
+            {
+              "evidence": [
+                "ccd9ed7dfd1f26e46cb11c6de539a7d120e535f27ec85f040ad26ac863f2a193"
+              ],
+              "node": "req:attribution",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "1a6778b367f77493eadcabc3dcfd80559cdc7a83b82dc5a63fa11e031a8f114c"
+              ],
+              "node": "dependency:attribution:0",
+              "optional": false,
+              "provider": "req:webinar-identifiers",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "a6b20bce72df26a32e3618f8e47fa89be72ab5958834c470eeb0c0aa3fbbd125"
+              ],
+              "node": "req:webinar-identifiers",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "fe1459e51326c59890390c8aee59d65e013d8336b3a321eae816d3c861679a6d"
+              ],
+              "node": "dependency:webinar-identifiers:0",
+              "optional": false,
+              "provider": "req:campaign-creation",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "52f00bed3eb9997b17c4e5f214c0b2e3cecf94626e8136604b18f7ec38d2ff9b"
+              ],
+              "node": "req:campaign-creation",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "163979c9b2d70b4bd935f5ed331767a731c166a6bb91998272930e52bd2d5af8"
+              ],
+              "node": "dependency:campaign-creation:2",
+              "optional": false,
+              "provider": "sys:automation",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "b2bd4b48683fbdcad776163a4e2aa8f5c444b1eb48c74eab433ea67991288d4d"
+              ],
+              "node": "sys:automation",
+              "state": "SUPPORTED"
+            }
+          ],
+          [
+            {
+              "evidence": [
+                "ccd9ed7dfd1f26e46cb11c6de539a7d120e535f27ec85f040ad26ac863f2a193"
+              ],
+              "node": "req:attribution",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "1a6778b367f77493eadcabc3dcfd80559cdc7a83b82dc5a63fa11e031a8f114c"
+              ],
+              "node": "dependency:attribution:0",
+              "optional": false,
+              "provider": "req:webinar-identifiers",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "a6b20bce72df26a32e3618f8e47fa89be72ab5958834c470eeb0c0aa3fbbd125"
+              ],
+              "node": "req:webinar-identifiers",
+              "state": "SUPPORTED"
+            },
+            {
+              "compatibility": {
+                "basis": "declared metadata only",
+                "missing": {
+                  "events": [],
+                  "fields": [],
+                  "keys": []
+                },
+                "state": "SUPPORTED"
+              },
+              "evidence": [
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:10",
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:6"
+              ],
+              "node": "dependency:webinar-identifiers:1",
+              "optional": false,
+              "provider": "sys:new-webinar",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:0"
+              ],
+              "node": "sys:new-webinar",
+              "state": "SUPPORTED"
+            }
+          ],
+          [
+            {
+              "evidence": [
+                "ccd9ed7dfd1f26e46cb11c6de539a7d120e535f27ec85f040ad26ac863f2a193"
+              ],
+              "node": "req:attribution",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "1ecdab1e915153a7405c50cefbd00199940dcb1a9c24ee98abdbb5f2baaa6a32"
+              ],
+              "node": "dependency:attribution:1",
+              "optional": false,
+              "provider": "sys:warehouse",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "9a15f36d62336c0466398ce4e2fc3cb5969f18696ecb42d51920c37a426660f8"
+              ],
+              "node": "sys:warehouse",
+              "state": "SUPPORTED"
+            }
+          ],
+          [
+            {
+              "evidence": [
+                "ccd9ed7dfd1f26e46cb11c6de539a7d120e535f27ec85f040ad26ac863f2a193"
+              ],
+              "node": "req:attribution",
+              "state": "SUPPORTED"
+            },
+            {
+              "compatibility": {
+                "basis": "declared metadata only",
+                "missing": {
+                  "events": [],
+                  "fields": [],
+                  "keys": []
+                },
+                "state": "SUPPORTED"
+              },
+              "evidence": [
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:10",
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:8"
+              ],
+              "node": "dependency:attribution:2",
+              "optional": false,
+              "provider": "sys:new-webinar",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:0"
+              ],
+              "node": "sys:new-webinar",
+              "state": "SUPPORTED"
+            }
+          ]
+        ],
+        "truncated": false
+      }
+    },
+    "follow-up": {
+      "before": "SUPPORTED",
+      "evidence": [
+        "6b02dd85cee861fdd7a52a02eaa00c6e676c40875046b4659250f8ff81dce26d"
+      ],
+      "inputs": {
+        "dependency:follow-up:0": {
+          "evidence": [
+            "1451d58efb3597172ee3a4440577381f2014ce0b0e973219e7c947b02447805d"
+          ],
+          "optional": false,
+          "provider": "req:webinar-identifiers",
+          "reason": "typed dependency",
+          "state": "SUPPORTED"
+        },
+        "dependency:follow-up:1": {
+          "compatibility": {
+            "basis": "declared metadata only",
+            "missing": {
+              "events": [],
+              "fields": [],
+              "keys": []
+            },
+            "state": "SUPPORTED"
+          },
+          "evidence": [
+            "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:10",
+            "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:7"
+          ],
+          "optional": false,
+          "provider": "sys:new-webinar",
+          "reason": "typed dependency",
+          "state": "SUPPORTED"
+        },
+        "dependency:follow-up:2": {
+          "evidence": [
+            "1f38c149c89e532125c68abbc329f3ae021f291554bb792a85837f91d256cf2e"
+          ],
+          "optional": false,
+          "provider": "req:messaging",
+          "reason": "typed dependency",
+          "state": "SUPPORTED"
+        }
+      },
+      "label": "Send webinar follow-up",
+      "mode": "ALL",
+      "state": "SUPPORTED",
+      "witness": {
+        "limits": {
+          "depth": 30,
+          "paths": 50
+        },
+        "paths": [
+          [
+            {
+              "evidence": [
+                "6b02dd85cee861fdd7a52a02eaa00c6e676c40875046b4659250f8ff81dce26d"
+              ],
+              "node": "req:follow-up",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "1451d58efb3597172ee3a4440577381f2014ce0b0e973219e7c947b02447805d"
+              ],
+              "node": "dependency:follow-up:0",
+              "optional": false,
+              "provider": "req:webinar-identifiers",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "a6b20bce72df26a32e3618f8e47fa89be72ab5958834c470eeb0c0aa3fbbd125"
+              ],
+              "node": "req:webinar-identifiers",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "fe1459e51326c59890390c8aee59d65e013d8336b3a321eae816d3c861679a6d"
+              ],
+              "node": "dependency:webinar-identifiers:0",
+              "optional": false,
+              "provider": "req:campaign-creation",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "52f00bed3eb9997b17c4e5f214c0b2e3cecf94626e8136604b18f7ec38d2ff9b"
+              ],
+              "node": "req:campaign-creation",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "28c1e5af740f3649f21256886da661690a1dde1f86cac2482eed60883878c947"
+              ],
+              "node": "dependency:campaign-creation:0",
+              "optional": false,
+              "provider": "sys:work-manager",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "bcbfde2e3bd08e15bbe3d77c143882021fa20c6e28aa6900c6e77328ddae1741",
+                "bf37726f45946c3462cc6a671860c218475ca66a8afd0d90bb89e5a19a83526f",
+                "e68d8ef9dec1fb82325093778e98204feef594e6dd0efc739192f7fe4cae11c6"
+              ],
+              "node": "sys:work-manager",
+              "state": "SUPPORTED"
+            }
+          ],
+          [
+            {
+              "evidence": [
+                "6b02dd85cee861fdd7a52a02eaa00c6e676c40875046b4659250f8ff81dce26d"
+              ],
+              "node": "req:follow-up",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "1451d58efb3597172ee3a4440577381f2014ce0b0e973219e7c947b02447805d"
+              ],
+              "node": "dependency:follow-up:0",
+              "optional": false,
+              "provider": "req:webinar-identifiers",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "a6b20bce72df26a32e3618f8e47fa89be72ab5958834c470eeb0c0aa3fbbd125"
+              ],
+              "node": "req:webinar-identifiers",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "fe1459e51326c59890390c8aee59d65e013d8336b3a321eae816d3c861679a6d"
+              ],
+              "node": "dependency:webinar-identifiers:0",
+              "optional": false,
+              "provider": "req:campaign-creation",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "52f00bed3eb9997b17c4e5f214c0b2e3cecf94626e8136604b18f7ec38d2ff9b"
+              ],
+              "node": "req:campaign-creation",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "567fd9201cf8fc23614642f90283daa54e468300c4a4de4366a52ba031b25050"
+              ],
+              "node": "dependency:campaign-creation:1",
+              "optional": false,
+              "provider": "int:brief-status",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "d7ad6881f42442c71734d38503fa245e92f170d2043dc59ae868e1e94c157572"
+              ],
+              "node": "int:brief-status",
+              "state": "SUPPORTED"
+            }
+          ],
+          [
+            {
+              "evidence": [
+                "6b02dd85cee861fdd7a52a02eaa00c6e676c40875046b4659250f8ff81dce26d"
+              ],
+              "node": "req:follow-up",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "1451d58efb3597172ee3a4440577381f2014ce0b0e973219e7c947b02447805d"
+              ],
+              "node": "dependency:follow-up:0",
+              "optional": false,
+              "provider": "req:webinar-identifiers",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "a6b20bce72df26a32e3618f8e47fa89be72ab5958834c470eeb0c0aa3fbbd125"
+              ],
+              "node": "req:webinar-identifiers",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "fe1459e51326c59890390c8aee59d65e013d8336b3a321eae816d3c861679a6d"
+              ],
+              "node": "dependency:webinar-identifiers:0",
+              "optional": false,
+              "provider": "req:campaign-creation",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "52f00bed3eb9997b17c4e5f214c0b2e3cecf94626e8136604b18f7ec38d2ff9b"
+              ],
+              "node": "req:campaign-creation",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "163979c9b2d70b4bd935f5ed331767a731c166a6bb91998272930e52bd2d5af8"
+              ],
+              "node": "dependency:campaign-creation:2",
+              "optional": false,
+              "provider": "sys:automation",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "b2bd4b48683fbdcad776163a4e2aa8f5c444b1eb48c74eab433ea67991288d4d"
+              ],
+              "node": "sys:automation",
+              "state": "SUPPORTED"
+            }
+          ],
+          [
+            {
+              "evidence": [
+                "6b02dd85cee861fdd7a52a02eaa00c6e676c40875046b4659250f8ff81dce26d"
+              ],
+              "node": "req:follow-up",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "1451d58efb3597172ee3a4440577381f2014ce0b0e973219e7c947b02447805d"
+              ],
+              "node": "dependency:follow-up:0",
+              "optional": false,
+              "provider": "req:webinar-identifiers",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "a6b20bce72df26a32e3618f8e47fa89be72ab5958834c470eeb0c0aa3fbbd125"
+              ],
+              "node": "req:webinar-identifiers",
+              "state": "SUPPORTED"
+            },
+            {
+              "compatibility": {
+                "basis": "declared metadata only",
+                "missing": {
+                  "events": [],
+                  "fields": [],
+                  "keys": []
+                },
+                "state": "SUPPORTED"
+              },
+              "evidence": [
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:10",
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:6"
+              ],
+              "node": "dependency:webinar-identifiers:1",
+              "optional": false,
+              "provider": "sys:new-webinar",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:0"
+              ],
+              "node": "sys:new-webinar",
+              "state": "SUPPORTED"
+            }
+          ],
+          [
+            {
+              "evidence": [
+                "6b02dd85cee861fdd7a52a02eaa00c6e676c40875046b4659250f8ff81dce26d"
+              ],
+              "node": "req:follow-up",
+              "state": "SUPPORTED"
+            },
+            {
+              "compatibility": {
+                "basis": "declared metadata only",
+                "missing": {
+                  "events": [],
+                  "fields": [],
+                  "keys": []
+                },
+                "state": "SUPPORTED"
+              },
+              "evidence": [
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:10",
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:7"
+              ],
+              "node": "dependency:follow-up:1",
+              "optional": false,
+              "provider": "sys:new-webinar",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:0"
+              ],
+              "node": "sys:new-webinar",
+              "state": "SUPPORTED"
+            }
+          ],
+          [
+            {
+              "evidence": [
+                "6b02dd85cee861fdd7a52a02eaa00c6e676c40875046b4659250f8ff81dce26d"
+              ],
+              "node": "req:follow-up",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "1f38c149c89e532125c68abbc329f3ae021f291554bb792a85837f91d256cf2e"
+              ],
+              "node": "dependency:follow-up:2",
+              "optional": false,
+              "provider": "req:messaging",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "fd67e645732fd2f7d9ca14432cf624501531e66a22c60ccf744ce5b0c1843289"
+              ],
+              "node": "req:messaging",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "9cefb7d63d49903cd58593c95cf94029c29f9dce14303b8bbb5dd888ebedf8e9"
+              ],
+              "node": "dependency:messaging:0",
+              "optional": false,
+              "provider": "sys:email",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "32efb91712ccc3d2978d9261d9a016514bd8559bd7965d25e4261e8f1a23f6f1"
+              ],
+              "node": "sys:email",
+              "state": "SUPPORTED"
+            }
+          ],
+          [
+            {
+              "evidence": [
+                "6b02dd85cee861fdd7a52a02eaa00c6e676c40875046b4659250f8ff81dce26d"
+              ],
+              "node": "req:follow-up",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "1f38c149c89e532125c68abbc329f3ae021f291554bb792a85837f91d256cf2e"
+              ],
+              "node": "dependency:follow-up:2",
+              "optional": false,
+              "provider": "req:messaging",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "fd67e645732fd2f7d9ca14432cf624501531e66a22c60ccf744ce5b0c1843289"
+              ],
+              "node": "req:messaging",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "e2275762ab2eb50b735aa8c7c6041d4d73b2c11b4fd78c0bbd203048f040f960"
+              ],
+              "node": "dependency:messaging:1",
+              "optional": false,
+              "provider": "sys:automation",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "b2bd4b48683fbdcad776163a4e2aa8f5c444b1eb48c74eab433ea67991288d4d"
+              ],
+              "node": "sys:automation",
+              "state": "SUPPORTED"
+            }
+          ]
+        ],
+        "truncated": false
+      }
+    },
+    "registration": {
+      "before": "SUPPORTED",
+      "evidence": [
+        "e83e4355979bf9fd2edbe226a602b1b5cbc42400b26a010932d6e834c11432ab"
+      ],
+      "inputs": {
+        "dependency:registration:0": {
+          "evidence": [
+            "d70372d2ca5a87ebe7730646d34b05cba6faa494ac71cda6b794dc85767c58c0"
+          ],
+          "optional": false,
+          "provider": "sys:registration",
+          "reason": "typed dependency",
+          "state": "SUPPORTED"
+        },
+        "dependency:registration:1": {
+          "compatibility": {
+            "basis": "declared metadata only",
+            "missing": {
+              "events": [],
+              "fields": [],
+              "keys": []
+            },
+            "state": "SUPPORTED"
+          },
+          "evidence": [
+            "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:10",
+            "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:9"
+          ],
+          "optional": false,
+          "provider": "sys:new-webinar",
+          "reason": "typed dependency",
+          "state": "SUPPORTED"
+        }
+      },
+      "label": "Register webinar participant",
+      "mode": "ALL",
+      "state": "SUPPORTED",
+      "witness": {
+        "limits": {
+          "depth": 30,
+          "paths": 50
+        },
+        "paths": [
+          [
+            {
+              "evidence": [
+                "e83e4355979bf9fd2edbe226a602b1b5cbc42400b26a010932d6e834c11432ab"
+              ],
+              "node": "req:registration",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "d70372d2ca5a87ebe7730646d34b05cba6faa494ac71cda6b794dc85767c58c0"
+              ],
+              "node": "dependency:registration:0",
+              "optional": false,
+              "provider": "sys:registration",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "f880ce26d7bc44200d5734ae26a91414e9cfb51d6d4591e09bf69fc3827f8a74"
+              ],
+              "node": "sys:registration",
+              "state": "SUPPORTED"
+            }
+          ],
+          [
+            {
+              "evidence": [
+                "e83e4355979bf9fd2edbe226a602b1b5cbc42400b26a010932d6e834c11432ab"
+              ],
+              "node": "req:registration",
+              "state": "SUPPORTED"
+            },
+            {
+              "compatibility": {
+                "basis": "declared metadata only",
+                "missing": {
+                  "events": [],
+                  "fields": [],
+                  "keys": []
+                },
+                "state": "SUPPORTED"
+              },
+              "evidence": [
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:10",
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:9"
+              ],
+              "node": "dependency:registration:1",
+              "optional": false,
+              "provider": "sys:new-webinar",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:0"
+              ],
+              "node": "sys:new-webinar",
+              "state": "SUPPORTED"
+            }
+          ]
+        ],
+        "truncated": false
+      }
+    },
+    "webinar-identifiers": {
+      "before": "SUPPORTED",
+      "evidence": [
+        "a6b20bce72df26a32e3618f8e47fa89be72ab5958834c470eeb0c0aa3fbbd125"
+      ],
+      "inputs": {
+        "dependency:webinar-identifiers:0": {
+          "evidence": [
+            "fe1459e51326c59890390c8aee59d65e013d8336b3a321eae816d3c861679a6d"
+          ],
+          "optional": false,
+          "provider": "req:campaign-creation",
+          "reason": "typed dependency",
+          "state": "SUPPORTED"
+        },
+        "dependency:webinar-identifiers:1": {
+          "compatibility": {
+            "basis": "declared metadata only",
+            "missing": {
+              "events": [],
+              "fields": [],
+              "keys": []
+            },
+            "state": "SUPPORTED"
+          },
+          "evidence": [
+            "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:10",
+            "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:6"
+          ],
+          "optional": false,
+          "provider": "sys:new-webinar",
+          "reason": "typed dependency",
+          "state": "SUPPORTED"
+        }
+      },
+      "label": "Establish webinar campaign identifiers",
+      "mode": "ALL",
+      "state": "SUPPORTED",
+      "witness": {
+        "limits": {
+          "depth": 30,
+          "paths": 50
+        },
+        "paths": [
+          [
+            {
+              "evidence": [
+                "a6b20bce72df26a32e3618f8e47fa89be72ab5958834c470eeb0c0aa3fbbd125"
+              ],
+              "node": "req:webinar-identifiers",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "fe1459e51326c59890390c8aee59d65e013d8336b3a321eae816d3c861679a6d"
+              ],
+              "node": "dependency:webinar-identifiers:0",
+              "optional": false,
+              "provider": "req:campaign-creation",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "52f00bed3eb9997b17c4e5f214c0b2e3cecf94626e8136604b18f7ec38d2ff9b"
+              ],
+              "node": "req:campaign-creation",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "28c1e5af740f3649f21256886da661690a1dde1f86cac2482eed60883878c947"
+              ],
+              "node": "dependency:campaign-creation:0",
+              "optional": false,
+              "provider": "sys:work-manager",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "bcbfde2e3bd08e15bbe3d77c143882021fa20c6e28aa6900c6e77328ddae1741",
+                "bf37726f45946c3462cc6a671860c218475ca66a8afd0d90bb89e5a19a83526f",
+                "e68d8ef9dec1fb82325093778e98204feef594e6dd0efc739192f7fe4cae11c6"
+              ],
+              "node": "sys:work-manager",
+              "state": "SUPPORTED"
+            }
+          ],
+          [
+            {
+              "evidence": [
+                "a6b20bce72df26a32e3618f8e47fa89be72ab5958834c470eeb0c0aa3fbbd125"
+              ],
+              "node": "req:webinar-identifiers",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "fe1459e51326c59890390c8aee59d65e013d8336b3a321eae816d3c861679a6d"
+              ],
+              "node": "dependency:webinar-identifiers:0",
+              "optional": false,
+              "provider": "req:campaign-creation",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "52f00bed3eb9997b17c4e5f214c0b2e3cecf94626e8136604b18f7ec38d2ff9b"
+              ],
+              "node": "req:campaign-creation",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "567fd9201cf8fc23614642f90283daa54e468300c4a4de4366a52ba031b25050"
+              ],
+              "node": "dependency:campaign-creation:1",
+              "optional": false,
+              "provider": "int:brief-status",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "d7ad6881f42442c71734d38503fa245e92f170d2043dc59ae868e1e94c157572"
+              ],
+              "node": "int:brief-status",
+              "state": "SUPPORTED"
+            }
+          ],
+          [
+            {
+              "evidence": [
+                "a6b20bce72df26a32e3618f8e47fa89be72ab5958834c470eeb0c0aa3fbbd125"
+              ],
+              "node": "req:webinar-identifiers",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "fe1459e51326c59890390c8aee59d65e013d8336b3a321eae816d3c861679a6d"
+              ],
+              "node": "dependency:webinar-identifiers:0",
+              "optional": false,
+              "provider": "req:campaign-creation",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "52f00bed3eb9997b17c4e5f214c0b2e3cecf94626e8136604b18f7ec38d2ff9b"
+              ],
+              "node": "req:campaign-creation",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "163979c9b2d70b4bd935f5ed331767a731c166a6bb91998272930e52bd2d5af8"
+              ],
+              "node": "dependency:campaign-creation:2",
+              "optional": false,
+              "provider": "sys:automation",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "b2bd4b48683fbdcad776163a4e2aa8f5c444b1eb48c74eab433ea67991288d4d"
+              ],
+              "node": "sys:automation",
+              "state": "SUPPORTED"
+            }
+          ],
+          [
+            {
+              "evidence": [
+                "a6b20bce72df26a32e3618f8e47fa89be72ab5958834c470eeb0c0aa3fbbd125"
+              ],
+              "node": "req:webinar-identifiers",
+              "state": "SUPPORTED"
+            },
+            {
+              "compatibility": {
+                "basis": "declared metadata only",
+                "missing": {
+                  "events": [],
+                  "fields": [],
+                  "keys": []
+                },
+                "state": "SUPPORTED"
+              },
+              "evidence": [
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:10",
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:6"
+              ],
+              "node": "dependency:webinar-identifiers:1",
+              "optional": false,
+              "provider": "sys:new-webinar",
+              "reason": "typed dependency",
+              "state": "SUPPORTED"
+            },
+            {
+              "evidence": [
+                "proposal:c3cd12875aba69343db37c19bdaa28cfe3603243ea34f4c7e91860dff1011e09:0"
+              ],
+              "node": "sys:new-webinar",
+              "state": "SUPPORTED"
+            }
+          ]
+        ],
+        "truncated": false
+      }
+    }
+  },
+  "residual_references": [],
+  "sequence": {
+    "blocked": [],
+    "completed": [],
+    "cycle_members": [],
+    "invalid_completed": [],
+    "missing_acceptance": {
+      "handoff": [
+        "operational-acceptance"
+      ],
+      "obtain-acceptance": [
+        "operational-acceptance"
+      ],
+      "reassess": [
+        "operational-acceptance"
+      ],
+      "remove-obsolete": [
+        "operational-acceptance"
+      ]
+    },
+    "missing_prerequisites": {},
+    "order": [
+      "establish-requirements",
+      "validate-interface",
+      "introduce-dependency",
+      "rewire-consumers",
+      "obtain-acceptance",
+      "remove-obsolete",
+      "reassess",
+      "handoff"
+    ],
+    "ready_now": [
+      "establish-requirements"
+    ]
+  },
+  "snapshot_id": "323ba0c95a5369f202bce18fc210d0b3fe84c7977f8fa0c767a00a1ddbad750b",
+  "synthetic": true,
+  "unaffected_requirements": [
+    "attribution",
+    "follow-up",
+    "registration",
+    "webinar-identifiers"
+  ],
+  "unknown_requirements": [],
+  "unresolved_estate_facts": [
+    "dependency:seasonal:0",
+    "integration:legacy-personalization",
+    "ownership:work-manager"
+  ]
+}

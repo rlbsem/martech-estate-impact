@@ -1,0 +1,67 @@
+{
+  "version": "synthetic-estate-review-v1",
+  "types": {
+    "system": {
+      "sources": [
+        "inventory"
+      ],
+      "max_age_days": 90
+    },
+    "ownership": {
+      "sources": [
+        "inventory",
+        "stewardship"
+      ],
+      "max_age_days": 90
+    },
+    "integration": {
+      "sources": [
+        "orchestration"
+      ],
+      "max_age_days": 90
+    },
+    "interface": {
+      "sources": [
+        "orchestration"
+      ],
+      "max_age_days": 90
+    },
+    "requirement": {
+      "sources": [
+        "stewardship"
+      ],
+      "max_age_days": 90
+    },
+    "dependency": {
+      "sources": [
+        "stewardship",
+        "orchestration"
+      ],
+      "max_age_days": 90
+    },
+    "capability": {
+      "sources": [
+        "stewardship"
+      ],
+      "max_age_days": 90
+    },
+    "team": {
+      "sources": [
+        "stewardship"
+      ],
+      "max_age_days": 90
+    },
+    "authority": {
+      "sources": [
+        "stewardship"
+      ],
+      "max_age_days": 90
+    },
+    "execution": {
+      "sources": [
+        "executions"
+      ],
+      "max_age_days": 30
+    }
+  }
+}

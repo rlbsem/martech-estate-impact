@@ -1,0 +1,3 @@
+# Preserve exact evidence bytes and their SHA-256 hashes across Git checkouts.
+# Diff detection remains automatic; only end-of-line conversion is disabled.
+* -text

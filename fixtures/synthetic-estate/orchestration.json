@@ -1,0 +1,572 @@
+{
+  "format": "orchestration/v1",
+  "assertions": [
+    {
+      "key": "integration:brief-status",
+      "kind": "integration",
+      "subject": "brief-status",
+      "value": {
+        "source": "work-manager",
+        "destination": "hub",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Brief and status changes"
+      }
+    },
+    {
+      "key": "integration:campaign-create",
+      "kind": "integration",
+      "subject": "campaign-create",
+      "value": {
+        "source": "hub",
+        "destination": "automation",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Shared campaign creation"
+      }
+    },
+    {
+      "key": "integration:campaign-ids",
+      "kind": "integration",
+      "subject": "campaign-ids",
+      "value": {
+        "source": "automation",
+        "destination": "webinar",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Campaign identifiers"
+      }
+    },
+    {
+      "key": "integration:registration-sync",
+      "kind": "integration",
+      "subject": "registration-sync",
+      "value": {
+        "source": "registration",
+        "destination": "webinar",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Registration synchronization"
+      }
+    },
+    {
+      "key": "integration:attended-event",
+      "kind": "integration",
+      "subject": "attended-event",
+      "value": {
+        "source": "webinar",
+        "destination": "automation",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Attendance follow-up"
+      }
+    },
+    {
+      "key": "integration:webinar-attribution",
+      "kind": "integration",
+      "subject": "webinar-attribution",
+      "value": {
+        "source": "webinar",
+        "destination": "warehouse",
+        "runtime": "jobs",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Campaign attribution"
+      }
+    },
+    {
+      "key": "integration:email-dispatch",
+      "kind": "integration",
+      "subject": "email-dispatch",
+      "value": {
+        "source": "automation",
+        "destination": "email",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Campaign messages"
+      }
+    },
+    {
+      "key": "integration:crm-leads",
+      "kind": "integration",
+      "subject": "crm-leads",
+      "value": {
+        "source": "automation",
+        "destination": "crm",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Qualified leads"
+      }
+    },
+    {
+      "key": "integration:crm-status",
+      "kind": "integration",
+      "subject": "crm-status",
+      "value": {
+        "source": "crm",
+        "destination": "automation",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Lead lifecycle feedback"
+      }
+    },
+    {
+      "key": "integration:cdp-profiles",
+      "kind": "integration",
+      "subject": "cdp-profiles",
+      "value": {
+        "source": "crm",
+        "destination": "cdp",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Customer profile changes"
+      }
+    },
+    {
+      "key": "integration:preference-ingest",
+      "kind": "integration",
+      "subject": "preference-ingest",
+      "value": {
+        "source": "preferences",
+        "destination": "cdp",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Permission state"
+      }
+    },
+    {
+      "key": "integration:preference-enforce",
+      "kind": "integration",
+      "subject": "preference-enforce",
+      "value": {
+        "source": "cdp",
+        "destination": "automation",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Messaging eligibility"
+      }
+    },
+    {
+      "key": "integration:content-publish",
+      "kind": "integration",
+      "subject": "content-publish",
+      "value": {
+        "source": "dam",
+        "destination": "cms",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Approved assets"
+      }
+    },
+    {
+      "key": "integration:personalization-feed",
+      "kind": "integration",
+      "subject": "personalization-feed",
+      "value": {
+        "source": "cdp",
+        "destination": "personalization",
+        "runtime": "functions",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Audience membership"
+      }
+    },
+    {
+      "key": "integration:personalized-content",
+      "kind": "integration",
+      "subject": "personalized-content",
+      "value": {
+        "source": "cms",
+        "destination": "personalization",
+        "runtime": "functions",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Content variants"
+      }
+    },
+    {
+      "key": "integration:page-events",
+      "kind": "integration",
+      "subject": "page-events",
+      "value": {
+        "source": "cms",
+        "destination": "web-analytics",
+        "runtime": "functions",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Page engagement"
+      }
+    },
+    {
+      "key": "integration:tag-events",
+      "kind": "integration",
+      "subject": "tag-events",
+      "value": {
+        "source": "tags",
+        "destination": "web-analytics",
+        "runtime": "functions",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Measurement tags"
+      }
+    },
+    {
+      "key": "integration:web-warehouse",
+      "kind": "integration",
+      "subject": "web-warehouse",
+      "value": {
+        "source": "web-analytics",
+        "destination": "warehouse",
+        "runtime": "jobs",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Web reporting"
+      }
+    },
+    {
+      "key": "integration:registration-crm",
+      "kind": "integration",
+      "subject": "registration-crm",
+      "value": {
+        "source": "registration",
+        "destination": "crm",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Registered contacts"
+      }
+    },
+    {
+      "key": "integration:social-content",
+      "kind": "integration",
+      "subject": "social-content",
+      "value": {
+        "source": "dam",
+        "destination": "social",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Social creative"
+      }
+    },
+    {
+      "key": "integration:social-reporting",
+      "kind": "integration",
+      "subject": "social-reporting",
+      "value": {
+        "source": "social",
+        "destination": "warehouse",
+        "runtime": "jobs",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Channel performance"
+      }
+    },
+    {
+      "key": "integration:campaign-approval",
+      "kind": "integration",
+      "subject": "campaign-approval",
+      "value": {
+        "source": "content-review",
+        "destination": "work-manager",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Approved campaign content"
+      }
+    },
+    {
+      "key": "integration:review-assets",
+      "kind": "integration",
+      "subject": "review-assets",
+      "value": {
+        "source": "dam",
+        "destination": "content-review",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Assets for review"
+      }
+    },
+    {
+      "key": "integration:scheduler-jobs",
+      "kind": "integration",
+      "subject": "scheduler-jobs",
+      "value": {
+        "source": "jobs",
+        "destination": "functions",
+        "runtime": "jobs",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Scheduled function invocations"
+      }
+    },
+    {
+      "key": "integration:hub-observability",
+      "kind": "integration",
+      "subject": "hub-observability",
+      "value": {
+        "source": "hub",
+        "destination": "warehouse",
+        "runtime": "jobs",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Integration run metadata"
+      }
+    },
+    {
+      "key": "integration:warehouse-bi",
+      "kind": "integration",
+      "subject": "warehouse-bi",
+      "value": {
+        "source": "warehouse",
+        "destination": "bi",
+        "runtime": "jobs",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Business reporting"
+      }
+    },
+    {
+      "key": "integration:warehouse-agent",
+      "kind": "integration",
+      "subject": "warehouse-agent",
+      "value": {
+        "source": "warehouse",
+        "destination": "agent",
+        "runtime": "functions",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Governed analytical context"
+      }
+    },
+    {
+      "key": "integration:product-events",
+      "kind": "integration",
+      "subject": "product-events",
+      "value": {
+        "source": "collector",
+        "destination": "warehouse",
+        "runtime": "functions",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Product engagement"
+      }
+    },
+    {
+      "key": "integration:product-profiles",
+      "kind": "integration",
+      "subject": "product-profiles",
+      "value": {
+        "source": "collector",
+        "destination": "cdp",
+        "runtime": "functions",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Customer product signals"
+      }
+    },
+    {
+      "key": "integration:media-audiences",
+      "kind": "integration",
+      "subject": "media-audiences",
+      "value": {
+        "source": "cdp",
+        "destination": "media",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Activation audiences"
+      }
+    },
+    {
+      "key": "integration:media-performance",
+      "kind": "integration",
+      "subject": "media-performance",
+      "value": {
+        "source": "media",
+        "destination": "warehouse",
+        "runtime": "jobs",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Campaign performance"
+      }
+    },
+    {
+      "key": "integration:partner-leads",
+      "kind": "integration",
+      "subject": "partner-leads",
+      "value": {
+        "source": "partners",
+        "destination": "crm",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Partner lead intake"
+      }
+    },
+    {
+      "key": "integration:partner-content",
+      "kind": "integration",
+      "subject": "partner-content",
+      "value": {
+        "source": "cms",
+        "destination": "partners",
+        "runtime": "functions",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Partner content"
+      }
+    },
+    {
+      "key": "integration:partner-events",
+      "kind": "integration",
+      "subject": "partner-events",
+      "value": {
+        "source": "partners",
+        "destination": "collector",
+        "runtime": "functions",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Portal engagement"
+      }
+    },
+    {
+      "key": "integration:tag-configuration",
+      "kind": "integration",
+      "subject": "tag-configuration",
+      "value": {
+        "source": "cms",
+        "destination": "tags",
+        "runtime": "functions",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Measurement configuration"
+      }
+    },
+    {
+      "key": "integration:campaign-reporting",
+      "kind": "integration",
+      "subject": "campaign-reporting",
+      "value": {
+        "source": "work-manager",
+        "destination": "warehouse",
+        "runtime": "jobs",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Optional campaign reporting"
+      }
+    },
+    {
+      "key": "integration:email-feedback",
+      "kind": "integration",
+      "subject": "email-feedback",
+      "value": {
+        "source": "email",
+        "destination": "automation",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Delivery feedback"
+      }
+    },
+    {
+      "key": "integration:privacy-status",
+      "kind": "integration",
+      "subject": "privacy-status",
+      "value": {
+        "source": "preferences",
+        "destination": "crm",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Contact eligibility"
+      }
+    },
+    {
+      "key": "integration:seasonal-launch",
+      "kind": "integration",
+      "subject": "seasonal-launch",
+      "value": {
+        "source": "work-manager",
+        "destination": "social",
+        "runtime": "hub",
+        "owner": "Central Technology",
+        "mode": "data_flow",
+        "purpose": "Annual seasonal launch"
+      }
+    },
+    {
+      "key": "interface:webinar",
+      "kind": "interface",
+      "subject": "webinar",
+      "value": {
+        "events": [
+          "registration.created",
+          "campaign.created",
+          "attendance.completed"
+        ],
+        "fields": [
+          "email_hash",
+          "campaign_id",
+          "attendance_status"
+        ],
+        "keys": [
+          "registration_id",
+          "campaign_id"
+        ]
+      }
+    },
+    {
+      "key": "interface:new-webinar",
+      "kind": "interface",
+      "subject": "new-webinar",
+      "value": {
+        "events": [
+          "registration.created",
+          "campaign.created"
+        ],
+        "fields": [
+          "email_hash"
+        ],
+        "keys": [
+          "registration_id"
+        ]
+      }
+    },
+    {
+      "key": "dependency:seasonal:0",
+      "kind": "dependency",
+      "subject": "seasonal:0",
+      "value": {
+        "consumer": "seasonal",
+        "provider": "sys:work-manager",
+        "qualified": false,
+        "optional": false
+      }
+    },
+    {
+      "key": "dependency:product-insight:1",
+      "kind": "dependency",
+      "subject": "product-insight:1",
+      "value": {
+        "consumer": "product-insight",
+        "provider": "sys:warehouse",
+        "qualified": false,
+        "optional": false
+      }
+    }
+  ]
+}

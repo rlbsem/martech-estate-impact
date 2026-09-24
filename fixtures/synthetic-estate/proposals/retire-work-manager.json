@@ -1,0 +1,53 @@
+{
+  "format": "estate-proposal/v1",
+  "title": "Retire the legacy work-management platform",
+  "systems": [
+    "work-manager"
+  ],
+  "requirements": [
+    "campaign-creation",
+    "webinar-identifiers",
+    "follow-up",
+    "attribution",
+    "registration",
+    "messaging",
+    "website",
+    "content-approval",
+    "lead-routing",
+    "product-insight",
+    "seasonal",
+    "reporting"
+  ],
+  "actions": [
+    {
+      "op": "retire",
+      "system": "work-manager"
+    }
+  ],
+  "activities": [
+    {
+      "id": "remove-legacy",
+      "owner": "Central Technology",
+      "prerequisites": [
+        "approve-cutover"
+      ],
+      "requires_evidence": [
+        "operational-acceptance"
+      ],
+      "completed": false
+    },
+    {
+      "id": "approve-cutover",
+      "owner": "Marketing Operations",
+      "prerequisites": [
+        "remove-legacy"
+      ],
+      "requires_evidence": [],
+      "completed": false
+    }
+  ],
+  "acceptance_evidence": [],
+  "assumptions": [
+    "Retirement is simulated immediately; no workload was changed."
+  ]
+}

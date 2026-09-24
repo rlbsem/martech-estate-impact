@@ -1,0 +1,18 @@
+{
+  "format": "orchestration/v1",
+  "assertions": [
+    {
+      "key": "integration:legacy-personalization",
+      "kind": "integration",
+      "subject": "legacy-personalization",
+      "value": {
+        "source": "automation",
+        "destination": "personalization",
+        "runtime": "hub",
+        "owner": "Web",
+        "mode": "data_flow",
+        "purpose": "Outdated personalization route"
+      }
+    }
+  ]
+}

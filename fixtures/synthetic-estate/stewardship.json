@@ -1,0 +1,707 @@
+{
+  "format": "stewardship/v1",
+  "assertions": [
+    {
+      "key": "team:Analytics",
+      "kind": "team",
+      "subject": "Analytics",
+      "value": {
+        "label": "Analytics"
+      }
+    },
+    {
+      "key": "team:Central Technology",
+      "kind": "team",
+      "subject": "Central Technology",
+      "value": {
+        "label": "Central Technology"
+      }
+    },
+    {
+      "key": "team:Integrated Campaigns",
+      "kind": "team",
+      "subject": "Integrated Campaigns",
+      "value": {
+        "label": "Integrated Campaigns"
+      }
+    },
+    {
+      "key": "team:Marketing Operations",
+      "kind": "team",
+      "subject": "Marketing Operations",
+      "value": {
+        "label": "Marketing Operations"
+      }
+    },
+    {
+      "key": "team:Product Marketing",
+      "kind": "team",
+      "subject": "Product Marketing",
+      "value": {
+        "label": "Product Marketing"
+      }
+    },
+    {
+      "key": "team:Revenue Operations",
+      "kind": "team",
+      "subject": "Revenue Operations",
+      "value": {
+        "label": "Revenue Operations"
+      }
+    },
+    {
+      "key": "team:Web",
+      "kind": "team",
+      "subject": "Web",
+      "value": {
+        "label": "Web"
+      }
+    },
+    {
+      "key": "capability:campaigns",
+      "kind": "capability",
+      "subject": "campaigns",
+      "value": {
+        "label": "Shared campaign creation",
+        "owner": "Integrated Campaigns",
+        "criticality": "business-important"
+      }
+    },
+    {
+      "key": "capability:webinars",
+      "kind": "capability",
+      "subject": "webinars",
+      "value": {
+        "label": "Webinar registration and follow-up",
+        "owner": "Integrated Campaigns",
+        "criticality": "business-important"
+      }
+    },
+    {
+      "key": "capability:attribution",
+      "kind": "capability",
+      "subject": "attribution",
+      "value": {
+        "label": "Campaign attribution",
+        "owner": "Analytics",
+        "criticality": "business-important"
+      }
+    },
+    {
+      "key": "capability:messaging",
+      "kind": "capability",
+      "subject": "messaging",
+      "value": {
+        "label": "Customer messaging",
+        "owner": "Marketing Operations",
+        "criticality": "business-important"
+      }
+    },
+    {
+      "key": "capability:web",
+      "kind": "capability",
+      "subject": "web",
+      "value": {
+        "label": "Web experience",
+        "owner": "Web",
+        "criticality": "business-important"
+      }
+    },
+    {
+      "key": "capability:content",
+      "kind": "capability",
+      "subject": "content",
+      "value": {
+        "label": "Content approval",
+        "owner": "Product Marketing",
+        "criticality": "business-important"
+      }
+    },
+    {
+      "key": "capability:leads",
+      "kind": "capability",
+      "subject": "leads",
+      "value": {
+        "label": "Lead routing",
+        "owner": "Revenue Operations",
+        "criticality": "business-important"
+      }
+    },
+    {
+      "key": "capability:product",
+      "kind": "capability",
+      "subject": "product",
+      "value": {
+        "label": "Product engagement analytics",
+        "owner": "Analytics",
+        "criticality": "business-important"
+      }
+    },
+    {
+      "key": "capability:seasonal",
+      "kind": "capability",
+      "subject": "seasonal",
+      "value": {
+        "label": "Seasonal campaigns",
+        "owner": "Integrated Campaigns",
+        "criticality": "business-important"
+      }
+    },
+    {
+      "key": "capability:reporting",
+      "kind": "capability",
+      "subject": "reporting",
+      "value": {
+        "label": "Operational reporting",
+        "owner": "Analytics",
+        "criticality": "business-important"
+      }
+    },
+    {
+      "key": "ownership:work-manager",
+      "kind": "ownership",
+      "subject": "work-manager",
+      "value": {
+        "team": "Integrated Campaigns"
+      }
+    },
+    {
+      "key": "authority:crm-contact",
+      "kind": "authority",
+      "subject": "crm-contact",
+      "value": {
+        "domain": "contact",
+        "field_group": [
+          "sales_stage"
+        ],
+        "role": "primary",
+        "scope": "sales-lifecycle"
+      }
+    },
+    {
+      "key": "authority:cdp-contact",
+      "kind": "authority",
+      "subject": "cdp-contact",
+      "value": {
+        "domain": "contact",
+        "field_group": [
+          "sales_stage"
+        ],
+        "role": "replica",
+        "scope": "activation"
+      }
+    },
+    {
+      "key": "dependency:campaign-creation:0",
+      "kind": "dependency",
+      "subject": "campaign-creation:0",
+      "value": {
+        "consumer": "campaign-creation",
+        "provider": "sys:work-manager",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "dependency:campaign-creation:1",
+      "kind": "dependency",
+      "subject": "campaign-creation:1",
+      "value": {
+        "consumer": "campaign-creation",
+        "provider": "int:brief-status",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "dependency:campaign-creation:2",
+      "kind": "dependency",
+      "subject": "campaign-creation:2",
+      "value": {
+        "consumer": "campaign-creation",
+        "provider": "sys:automation",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "requirement:campaign-creation",
+      "kind": "requirement",
+      "subject": "campaign-creation",
+      "value": {
+        "label": "Create shared campaign",
+        "capability": "campaigns",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:campaign-creation:0",
+          "dependency:campaign-creation:1",
+          "dependency:campaign-creation:2"
+        ]
+      }
+    },
+    {
+      "key": "dependency:webinar-identifiers:0",
+      "kind": "dependency",
+      "subject": "webinar-identifiers:0",
+      "value": {
+        "consumer": "webinar-identifiers",
+        "provider": "req:campaign-creation",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "dependency:webinar-identifiers:1",
+      "kind": "dependency",
+      "subject": "webinar-identifiers:1",
+      "value": {
+        "consumer": "webinar-identifiers",
+        "provider": "sys:webinar",
+        "qualified": true,
+        "optional": false,
+        "contract": {
+          "events": [
+            "campaign.created"
+          ],
+          "fields": [
+            "campaign_id"
+          ],
+          "keys": [
+            "campaign_id"
+          ]
+        }
+      }
+    },
+    {
+      "key": "requirement:webinar-identifiers",
+      "kind": "requirement",
+      "subject": "webinar-identifiers",
+      "value": {
+        "label": "Establish webinar campaign identifiers",
+        "capability": "webinars",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:webinar-identifiers:0",
+          "dependency:webinar-identifiers:1"
+        ]
+      }
+    },
+    {
+      "key": "dependency:follow-up:0",
+      "kind": "dependency",
+      "subject": "follow-up:0",
+      "value": {
+        "consumer": "follow-up",
+        "provider": "req:webinar-identifiers",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "dependency:follow-up:1",
+      "kind": "dependency",
+      "subject": "follow-up:1",
+      "value": {
+        "consumer": "follow-up",
+        "provider": "sys:webinar",
+        "qualified": true,
+        "optional": false,
+        "contract": {
+          "events": [
+            "attendance.completed"
+          ],
+          "fields": [
+            "attendance_status"
+          ],
+          "keys": [
+            "registration_id"
+          ]
+        }
+      }
+    },
+    {
+      "key": "dependency:follow-up:2",
+      "kind": "dependency",
+      "subject": "follow-up:2",
+      "value": {
+        "consumer": "follow-up",
+        "provider": "req:messaging",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "requirement:follow-up",
+      "kind": "requirement",
+      "subject": "follow-up",
+      "value": {
+        "label": "Send webinar follow-up",
+        "capability": "webinars",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:follow-up:0",
+          "dependency:follow-up:1",
+          "dependency:follow-up:2"
+        ]
+      }
+    },
+    {
+      "key": "dependency:attribution:0",
+      "kind": "dependency",
+      "subject": "attribution:0",
+      "value": {
+        "consumer": "attribution",
+        "provider": "req:webinar-identifiers",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "dependency:attribution:1",
+      "kind": "dependency",
+      "subject": "attribution:1",
+      "value": {
+        "consumer": "attribution",
+        "provider": "sys:warehouse",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "dependency:attribution:2",
+      "kind": "dependency",
+      "subject": "attribution:2",
+      "value": {
+        "consumer": "attribution",
+        "provider": "sys:webinar",
+        "qualified": true,
+        "optional": false,
+        "contract": {
+          "events": [
+            "attendance.completed"
+          ],
+          "fields": [
+            "campaign_id"
+          ],
+          "keys": [
+            "campaign_id"
+          ]
+        }
+      }
+    },
+    {
+      "key": "requirement:attribution",
+      "kind": "requirement",
+      "subject": "attribution",
+      "value": {
+        "label": "Attribute webinar outcomes",
+        "capability": "attribution",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:attribution:0",
+          "dependency:attribution:1",
+          "dependency:attribution:2"
+        ]
+      }
+    },
+    {
+      "key": "dependency:registration:0",
+      "kind": "dependency",
+      "subject": "registration:0",
+      "value": {
+        "consumer": "registration",
+        "provider": "sys:registration",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "dependency:registration:1",
+      "kind": "dependency",
+      "subject": "registration:1",
+      "value": {
+        "consumer": "registration",
+        "provider": "sys:webinar",
+        "qualified": true,
+        "optional": false,
+        "contract": {
+          "events": [
+            "registration.created"
+          ],
+          "fields": [
+            "email_hash"
+          ],
+          "keys": [
+            "registration_id"
+          ]
+        }
+      }
+    },
+    {
+      "key": "requirement:registration",
+      "kind": "requirement",
+      "subject": "registration",
+      "value": {
+        "label": "Register webinar participant",
+        "capability": "webinars",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:registration:0",
+          "dependency:registration:1"
+        ]
+      }
+    },
+    {
+      "key": "dependency:messaging:0",
+      "kind": "dependency",
+      "subject": "messaging:0",
+      "value": {
+        "consumer": "messaging",
+        "provider": "sys:email",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "dependency:messaging:1",
+      "kind": "dependency",
+      "subject": "messaging:1",
+      "value": {
+        "consumer": "messaging",
+        "provider": "sys:automation",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "requirement:messaging",
+      "kind": "requirement",
+      "subject": "messaging",
+      "value": {
+        "label": "Deliver approved messages",
+        "capability": "messaging",
+        "mode": "ANY",
+        "inputs": [
+          "dependency:messaging:0",
+          "dependency:messaging:1"
+        ]
+      }
+    },
+    {
+      "key": "dependency:website:0",
+      "kind": "dependency",
+      "subject": "website:0",
+      "value": {
+        "consumer": "website",
+        "provider": "sys:cms",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "dependency:website:1",
+      "kind": "dependency",
+      "subject": "website:1",
+      "value": {
+        "consumer": "website",
+        "provider": "sys:dam",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "requirement:website",
+      "kind": "requirement",
+      "subject": "website",
+      "value": {
+        "label": "Publish website",
+        "capability": "web",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:website:0",
+          "dependency:website:1"
+        ]
+      }
+    },
+    {
+      "key": "dependency:content-approval:0",
+      "kind": "dependency",
+      "subject": "content-approval:0",
+      "value": {
+        "consumer": "content-approval",
+        "provider": "sys:content-review",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "requirement:content-approval",
+      "kind": "requirement",
+      "subject": "content-approval",
+      "value": {
+        "label": "Approve campaign content",
+        "capability": "content",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:content-approval:0"
+        ]
+      }
+    },
+    {
+      "key": "dependency:lead-routing:0",
+      "kind": "dependency",
+      "subject": "lead-routing:0",
+      "value": {
+        "consumer": "lead-routing",
+        "provider": "sys:crm",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "dependency:lead-routing:1",
+      "kind": "dependency",
+      "subject": "lead-routing:1",
+      "value": {
+        "consumer": "lead-routing",
+        "provider": "sys:automation",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "requirement:lead-routing",
+      "kind": "requirement",
+      "subject": "lead-routing",
+      "value": {
+        "label": "Route qualified leads",
+        "capability": "leads",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:lead-routing:0",
+          "dependency:lead-routing:1"
+        ]
+      }
+    },
+    {
+      "key": "dependency:product-insight:0",
+      "kind": "dependency",
+      "subject": "product-insight:0",
+      "value": {
+        "consumer": "product-insight",
+        "provider": "sys:collector",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "dependency:product-insight:1",
+      "kind": "dependency",
+      "subject": "product-insight:1",
+      "value": {
+        "consumer": "product-insight",
+        "provider": "sys:warehouse",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "requirement:product-insight",
+      "kind": "requirement",
+      "subject": "product-insight",
+      "value": {
+        "label": "Analyze product engagement",
+        "capability": "product",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:product-insight:0",
+          "dependency:product-insight:1"
+        ]
+      }
+    },
+    {
+      "key": "dependency:seasonal:0",
+      "kind": "dependency",
+      "subject": "seasonal:0",
+      "value": {
+        "consumer": "seasonal",
+        "provider": "sys:work-manager",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "dependency:seasonal:1",
+      "kind": "dependency",
+      "subject": "seasonal:1",
+      "value": {
+        "consumer": "seasonal",
+        "provider": "sys:social",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "requirement:seasonal",
+      "kind": "requirement",
+      "subject": "seasonal",
+      "value": {
+        "label": "Launch annual seasonal campaign",
+        "capability": "seasonal",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:seasonal:0",
+          "dependency:seasonal:1"
+        ]
+      }
+    },
+    {
+      "key": "dependency:reporting:0",
+      "kind": "dependency",
+      "subject": "reporting:0",
+      "value": {
+        "consumer": "reporting",
+        "provider": "sys:bi",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "dependency:reporting:1",
+      "kind": "dependency",
+      "subject": "reporting:1",
+      "value": {
+        "consumer": "reporting",
+        "provider": "sys:warehouse",
+        "qualified": true,
+        "optional": false
+      }
+    },
+    {
+      "key": "dependency:reporting:2",
+      "kind": "dependency",
+      "subject": "reporting:2",
+      "value": {
+        "consumer": "reporting",
+        "provider": "sys:work-manager",
+        "qualified": true,
+        "optional": true
+      }
+    },
+    {
+      "key": "requirement:reporting",
+      "kind": "requirement",
+      "subject": "reporting",
+      "value": {
+        "label": "Report operational outcomes",
+        "capability": "reporting",
+        "mode": "ALL",
+        "inputs": [
+          "dependency:reporting:0",
+          "dependency:reporting:1",
+          "dependency:reporting:2"
+        ]
+      }
+    }
+  ]
+}

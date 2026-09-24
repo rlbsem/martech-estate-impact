@@ -1,0 +1,11 @@
+[
+  {
+    "key": "dependency:product-insight:1",
+    "accept_source": "stewardship",
+    "reviewer": "Analytics architecture steward",
+    "reason": "Reviewed product analytics requirement and approved warehouse dependency; orchestration annotation was incorrect.",
+    "evidence": [
+      "synthetic-review/product-analytics-2026-09"
+    ]
+  }
+]

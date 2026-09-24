@@ -1,0 +1,34 @@
+{
+  "renderer": "Mermaid 10.9.3",
+  "browser": "Microsoft Edge headless via Playwright",
+  "records": [
+    {
+      "name": "estate-overview",
+      "width": 3600.890625,
+      "height": 1041.5,
+      "nodes": 26,
+      "status": "rendered"
+    },
+    {
+      "name": "campaign-workflow",
+      "width": 1481.96875,
+      "height": 299.75,
+      "nodes": 7,
+      "status": "rendered"
+    },
+    {
+      "name": "retire-work-manager-impact",
+      "width": 1089.421875,
+      "height": 302,
+      "nodes": 8,
+      "status": "rendered"
+    },
+    {
+      "name": "webinar-target-state",
+      "width": 1578.390625,
+      "height": 302.75,
+      "nodes": 8,
+      "status": "rendered"
+    }
+  ]
+}

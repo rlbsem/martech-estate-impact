@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 70
+  },
+  "installed_wheel_verified": true,
+  "source_hashes_match_verified_run": true,
+  "relative_markdown_links_valid": true,
+  "compose_configuration_validated": true,
+  "compose_container_run_observed": false,
+  "github_ci_observed": false,
+  "wheel_sha256": "c5254ec986fdf17dd56e5d0ceb92f1972d38ab2ba6af253e7527c3d59225ba36"
+}

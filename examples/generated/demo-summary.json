@@ -1,0 +1,130 @@
+{
+  "counts": {
+    "capabilities": {
+      "attribution": {
+        "criticality": "business-important",
+        "label": "Campaign attribution",
+        "owner": "Analytics"
+      },
+      "campaigns": {
+        "criticality": "business-important",
+        "label": "Shared campaign creation",
+        "owner": "Integrated Campaigns"
+      },
+      "content": {
+        "criticality": "business-important",
+        "label": "Content approval",
+        "owner": "Product Marketing"
+      },
+      "leads": {
+        "criticality": "business-important",
+        "label": "Lead routing",
+        "owner": "Revenue Operations"
+      },
+      "messaging": {
+        "criticality": "business-important",
+        "label": "Customer messaging",
+        "owner": "Marketing Operations"
+      },
+      "product": {
+        "criticality": "business-important",
+        "label": "Product engagement analytics",
+        "owner": "Analytics"
+      },
+      "reporting": {
+        "criticality": "business-important",
+        "label": "Operational reporting",
+        "owner": "Analytics"
+      },
+      "seasonal": {
+        "criticality": "business-important",
+        "label": "Seasonal campaigns",
+        "owner": "Integrated Campaigns"
+      },
+      "web": {
+        "criticality": "business-important",
+        "label": "Web experience",
+        "owner": "Web"
+      },
+      "webinars": {
+        "criticality": "business-important",
+        "label": "Webinar registration and follow-up",
+        "owner": "Integrated Campaigns"
+      }
+    },
+    "integrations": 40,
+    "proposed_systems": 2,
+    "resolution_example": {
+      "after": "SUPPORTED",
+      "before": "UNKNOWN",
+      "key": "dependency:product-insight:1",
+      "record": {
+        "accept": [
+          "c8402950e95755e117f9691d9016bc5cfec5463c07f56d318f1528f571aa3ae9"
+        ],
+        "evidence": [
+          "synthetic-review/product-analytics-2026-09"
+        ],
+        "key": "dependency:product-insight:1",
+        "reason": "Reviewed product analytics requirement and approved warehouse dependency; orchestration annotation was incorrect.",
+        "reviewer": "Analytics architecture steward"
+      }
+    },
+    "seasonal_execution": {
+      "coverage": {
+        "evidence": [
+          "review:work-manager"
+        ],
+        "reasons": [
+          "review:work-manager: exclusions or missing reviewer",
+          "review:work-manager: expected export missing",
+          "review:work-manager: partial collection",
+          "review:work-manager: partial observation period"
+        ],
+        "state": "UNKNOWN"
+      },
+      "observed_count": 0,
+      "usage": "UNKNOWN"
+    },
+    "systems": 24,
+    "unresolved": [
+      "dependency:seasonal:0",
+      "ownership:work-manager",
+      "integration:legacy-personalization"
+    ]
+  },
+  "results": {
+    "replace-webinar-incomplete": {
+      "assessment_id": "e01b66699702b58b43c3436f1f6cd1097831ac9b07d1678fef92be83e050c015",
+      "disposition": "ESTABLISHED_BLOCKERS",
+      "failed": [
+        "attribution",
+        "follow-up",
+        "webinar-identifiers"
+      ],
+      "unknown": []
+    },
+    "replace-webinar-revised": {
+      "assessment_id": "9bfb36a7396f42c1cd89fd90b07b1c64c29ba3d715aa2574ee4b0ed43f2e0dcf",
+      "disposition": "NO_IDENTIFIED_BLOCKERS_WITHIN_REVIEWED_SCOPE",
+      "failed": [],
+      "unknown": []
+    },
+    "retire-work-manager": {
+      "assessment_id": "09cbef7ce86af0f8f44be4205d246c29db91e68379131ddee7030a983a33c374",
+      "disposition": "ESTABLISHED_BLOCKERS",
+      "failed": [
+        "attribution",
+        "campaign-creation",
+        "follow-up",
+        "webinar-identifiers"
+      ],
+      "unknown": [
+        "seasonal"
+      ]
+    }
+  },
+  "snapshot_id": "323ba0c95a5369f202bce18fc210d0b3fe84c7977f8fa0c767a00a1ddbad750b",
+  "snapshot_unchanged": true,
+  "unresolved_snapshot_id": "46701af6f38b2e3e0ca6cf049124cca28d5116b5d890bfbcac23a65db48bc5c1"
+}

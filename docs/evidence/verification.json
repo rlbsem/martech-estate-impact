@@ -1,0 +1,133 @@
+{
+  "commands": [
+    {
+      "command": "-m pip check",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "No broken requirements found.\n"
+    },
+    {
+      "command": "-m ruff check src tests scripts",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "All checks passed!\n"
+    },
+    {
+      "command": "-m ruff format --check src tests scripts",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "37 files already formatted\n"
+    },
+    {
+      "command": "-m pytest -q --basetemp=C:\\Users\\rlbse\\Documents\\Codex\\2026-09-11\\jo\\outputs\\martech-estate-impact\\work\\0e614d7d311f4d75ae35702fd39659b3\\pytest -o cache_dir=C:\\Users\\rlbse\\Documents\\Codex\\2026-09-11\\jo\\outputs\\martech-estate-impact\\work\\0e614d7d311f4d75ae35702fd39659b3\\pytest-cache --junitxml=C:\\Users\\rlbse\\Documents\\Codex\\2026-09-11\\jo\\outputs\\martech-estate-impact\\docs\\evidence\\pytest.xml",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "......................................................................   [100%]\n- generated xml file: C:\\Users\\rlbse\\Documents\\Codex\\2026-09-11\\jo\\outputs\\martech-estate-impact\\docs\\evidence\\pytest.xml -\n70 passed in 2.14s\n"
+    }
+  ],
+  "database_connection": "actual PostgreSQL; supplied connection (credentials omitted)",
+  "demo": {
+    "replace-webinar-incomplete": {
+      "assessment_id": "e01b66699702b58b43c3436f1f6cd1097831ac9b07d1678fef92be83e050c015",
+      "disposition": "ESTABLISHED_BLOCKERS",
+      "failed": [
+        "attribution",
+        "follow-up",
+        "webinar-identifiers"
+      ],
+      "unknown": []
+    },
+    "replace-webinar-revised": {
+      "assessment_id": "9bfb36a7396f42c1cd89fd90b07b1c64c29ba3d715aa2574ee4b0ed43f2e0dcf",
+      "disposition": "NO_IDENTIFIED_BLOCKERS_WITHIN_REVIEWED_SCOPE",
+      "failed": [],
+      "unknown": []
+    },
+    "retire-work-manager": {
+      "assessment_id": "09cbef7ce86af0f8f44be4205d246c29db91e68379131ddee7030a983a33c374",
+      "disposition": "ESTABLISHED_BLOCKERS",
+      "failed": [
+        "attribution",
+        "campaign-creation",
+        "follow-up",
+        "webinar-identifiers"
+      ],
+      "unknown": [
+        "seasonal"
+      ]
+    }
+  },
+  "deterministic_demo": true,
+  "github_ci": "configured; not observed by this local run",
+  "implementation_hash": "a7c3a2f96640ffb24cc1b817705f6b85913865dce3b39b3ed3711d5d6ce30398",
+  "installed_cli": true,
+  "installed_source_parity": true,
+  "platform": "Windows",
+  "postgresql": "17.11",
+  "python": "3.12.14",
+  "snapshot_unchanged": true,
+  "source_manifest": {
+    ".github/workflows/verify.yml": "531425ba2b33ad17f0058f14b36efb67bf25b6bffd6f65d6575bd12ebd076e3e",
+    "config/crosswalk.json": "52b7a91b3b7c5e7a6b26595d09bf2573e3898447424996a29579f3cf490454a6",
+    "config/evidence-policy.json": "f430f2cf2a03398e543a8c8a027a2f49cdd2123bac4d74c624fdc762f507e515",
+    "config/sources.json": "43035c5ac441c7f8571f7efa993abb4ccca6bbcdcaaebcf863be5e562c580ba6",
+    "docker-compose.yml": "9f5968242533ab70354aca40edfec9df129ee8f088a4cb8cf5b551879cdb61b2",
+    "fixtures/synthetic-estate/collection-manifests.json": "1aa3bac026824fdb1f02c1f2c6e0cfea37a3d6e495fcaf2ea0ee7f9da0e9ee7a",
+    "fixtures/synthetic-estate/executions.csv": "6eea717f3b72837d6ec7a4b96197896b9731860c16f6dba807b52fd7cab76e14",
+    "fixtures/synthetic-estate/inventory.csv": "116bf296aff1a7686066d66d94e55a92b66cb885d838a25a824f1dcbdc28322c",
+    "fixtures/synthetic-estate/orchestration-legacy.json": "3f356f5a7ea4e194645be529e1a46e0f266c8370de90651d11646c271feb2c38",
+    "fixtures/synthetic-estate/orchestration.json": "be0484c9ae9b436bcf6311a6a561b13334d9ae50f4e828fc76ccf1f35f604049",
+    "fixtures/synthetic-estate/proposals/replace-webinar-incomplete.json": "6fdd5f6807d95b7809db6f9444da11a8542566a01e5b1aae7f4a425ae3b5569f",
+    "fixtures/synthetic-estate/proposals/replace-webinar-revised.json": "3450c210b3827c9e3de1b1afb833bde33883dce05ae605fe09fc50e58c99684d",
+    "fixtures/synthetic-estate/proposals/retire-work-manager.json": "f1a5a06517a491cdd4479df4e675b998a8f4e24a76b9df04d808ff63d770e6a4",
+    "fixtures/synthetic-estate/resolutions.json": "bf23cc01c2e8cc47d06af2b3643336e84562693a485ba2b78c728148fd5e1f2d",
+    "fixtures/synthetic-estate/stewardship.json": "ab4dfd34bd3b5ce26fa34de67446b208d1ca142c508ac946814045503ffdcf45",
+    "migrations/001_estate_model.sql": "1462120d6f663d5fa97f3055446ae485fe8f2ef6bc80a71e7d745bdc45d542cf",
+    "pyproject.toml": "0a206cb8a41c1108d4d3bc253e9f1988194457ecc0606013408fe2b685731858",
+    "requirements.lock": "31eaa1d349c983c4df04da852b4868d4c674fc4c2c4bf800db91a24c89c955e0",
+    "scripts/demo.py": "12b21aea5a8e91c4d58198db2804e01174a590ca1ceb54abbecf93a492c8a6b6",
+    "scripts/verify.py": "5cd28cc734e5be1d18103ebed933c9e70531675829282b5cf3e6ace311e0c995",
+    "src/estate_impact/__init__.py": "9a97a629a989806e3f0e89f91e892a89726d284d3ba503695bede73badc8c0fa",
+    "src/estate_impact/assertions.py": "abcb1d8f5556ebcbbf6151213dc3504d39f19606d09c5e005daaa43af1f1a3aa",
+    "src/estate_impact/cli.py": "0c6742b6d3673731a3358d0dce25739a5a5a36d6c61f375e4d1be6a0a9b0f212",
+    "src/estate_impact/compatibility.py": "84d298d4950cb16943dd015f036eab62fc6e3e2cc20b68f80ba07750d59426e2",
+    "src/estate_impact/contracts.py": "f3c1b593b3e8a1fa1758a3b34c243f80fa7903cf31b1cb30060108612709826d",
+    "src/estate_impact/coverage.py": "9aa79c0188d22d33a19afbcd89bdad3f06b4f804b7a3cfdfc5d0cbdf1e8bf6fd",
+    "src/estate_impact/db.py": "723aa02508088fea501714adb14dd52e6effdeb5942a16bc0a3235340a74ddc4",
+    "src/estate_impact/demo.py": "3959cac8b4e5700f92bb10823218f3ac4932fd958a058ae39fb05b7768208a9b",
+    "src/estate_impact/explanations.py": "013fbe259a42ff6202101a4b0977eadbff8bf91820995bdada8ed8c0efc9e906",
+    "src/estate_impact/identity.py": "a95e933a564b47b8f7a89bd51dcd60ba1e01af18b979395e9733e7c76208a4f0",
+    "src/estate_impact/impact.py": "f5b171551fdefdcd072e517e2c86368eb6dac7a75bdec07e95a6adf5501b119d",
+    "src/estate_impact/importers/__init__.py": "780d3da05e788badc5b17a2c82f08b657e003d11e004157687a9024f09480657",
+    "src/estate_impact/importers/executions_csv.py": "ba18bc7c32fa451595ce2c16576369216b124d6fa0ee7e992dc10a7dc252b2d0",
+    "src/estate_impact/importers/inventory_csv.py": "875ca6851b6f8e1995951dc4b89df9f2d9139e869bda4338a5339e8205824e81",
+    "src/estate_impact/importers/orchestration_json.py": "c5b5f7a15bf9bdeade7e06bd103a4539284e64a0c0b15b6b7f223b18fd8fa665",
+    "src/estate_impact/importers/stewardship_json.py": "8f300e992112bba38ef14eb33c824212b29bb1779220860dc0eb6f2c25012c81",
+    "src/estate_impact/reporting/__init__.py": "2bcef459dee232e27c1b3ac5b2c800ef80c8906dec6c1adfa566adb58e096f06",
+    "src/estate_impact/reporting/markdown.py": "157009828fa9e4bc65c5cde8b7370013770b1a4bf82b41c0511090f6439cc4da",
+    "src/estate_impact/reporting/mermaid.py": "b596cc2dd05141fb2e6bfe5e782386d05f2f6798a53f99f4a7e1031f68da6fd8",
+    "src/estate_impact/requirements.py": "e19cc89d64e75cebadc7d5c8e13093ea0c005c9236e90e40cfe0e27c8f0c941e",
+    "src/estate_impact/sequencing.py": "e65cc55d176a50bbf8f15ddc32c896817f2bb4cb4a68832febc115815bcff1a4",
+    "src/estate_impact/snapshots.py": "1d27415f11e34af7e7ac5ac6b70d75c8a7b69440fc2b68bae0787cc93ab1a807",
+    "src/estate_impact/topology.py": "ba8017810babe8a301c64cc1f843f83476cb8b2b21d71a6ffe6cd778119b1dbf",
+    "tests/conftest.py": "15ff808ac35d3b7da8a806bb904cb1260b1f968ab33b9fbbb638b131882b57c7",
+    "tests/oracle/reference_evaluator.py": "de4b69729c503b405226c6496792900a0e1c6506985efca6c9d033cc5423bbb1",
+    "tests/test_coverage.py": "4890955c5d5cad71704e36f0dfb17b67aea9544e0211e7c94323ef09ef633846",
+    "tests/test_end_to_end.py": "abf2a803d082e59725b89c3c33a64c62be47fd7b97a0fceab39decb29a0d666c",
+    "tests/test_identity_and_conflicts.py": "b34c8404a35fc4471e7109c0c8d9ed9d51ec0b956617520cff33321cad1b5ef6",
+    "tests/test_impact.py": "ef7806c6c12402fbc2f0c079aabbf19ba4a4e35de58d0db1bf01954ebb2d1402",
+    "tests/test_imports.py": "9b536c7068267e37fd10eb2e2aa7b6cf5f3f41244e2a26cce99933c98e12b266",
+    "tests/test_reports.py": "d0d3343a6ea98c7d417db07a387a12952395339eec7d625190f1d1f72ecdd50e",
+    "tests/test_requirements.py": "ff353bc5f135d2235edcab47e9415658b6f27390e641ce144d7c2b1ae217ff4e",
+    "tests/test_review_regressions.py": "669a31a236d6ff81eec807b114f6aa9e84f6968f6af6c5eb883686d34bf60dc5",
+    "tests/test_sequencing.py": "8c9a7b2840a2c619b3e0163c340d8ee8d53b89a320e31c9ee68ddc9e8a70c983",
+    "tests/test_snapshots.py": "f2d573b32ce85988ead5085e5b2e4edd25778bbf51b7ce32e428c990fa2bc583"
+  },
+  "status": "passed",
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 70
+  }
+}

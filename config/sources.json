@@ -1,0 +1,62 @@
+[
+  {
+    "source": "inventory",
+    "artifact": "inventory.csv",
+    "parser": "inventory/csv-v1",
+    "collected_at": "2026-09-24T00:00:00Z",
+    "scope": {
+      "enterprise": "synthetic-estate",
+      "population": "declared fixture records",
+      "synthetic": true
+    },
+    "status": "complete"
+  },
+  {
+    "source": "orchestration",
+    "artifact": "orchestration.json",
+    "parser": "orchestration/json-v1",
+    "collected_at": "2026-09-24T00:00:00Z",
+    "scope": {
+      "enterprise": "synthetic-estate",
+      "population": "declared fixture records",
+      "synthetic": true
+    },
+    "status": "complete"
+  },
+  {
+    "source": "orchestration",
+    "artifact": "orchestration-legacy.json",
+    "parser": "orchestration/json-v1",
+    "collected_at": "2025-01-01T00:00:00Z",
+    "scope": {
+      "enterprise": "synthetic-estate",
+      "population": "declared fixture records",
+      "synthetic": true
+    },
+    "status": "complete"
+  },
+  {
+    "source": "executions",
+    "artifact": "executions.csv",
+    "parser": "executions/csv-v1",
+    "collected_at": "2026-09-24T00:00:00Z",
+    "scope": {
+      "enterprise": "synthetic-estate",
+      "population": "declared fixture records",
+      "synthetic": true
+    },
+    "status": "partial"
+  },
+  {
+    "source": "stewardship",
+    "artifact": "stewardship.json",
+    "parser": "stewardship/json-v1",
+    "collected_at": "2026-09-24T00:00:00Z",
+    "scope": {
+      "enterprise": "synthetic-estate",
+      "population": "declared fixture records",
+      "synthetic": true
+    },
+    "status": "complete"
+  }
+]

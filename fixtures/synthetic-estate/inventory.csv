@@ -1,0 +1,29 @@
+external_id,label,lifecycle,owner,operator,environment
+crm,Sales CRM,active,Revenue Operations,Central Technology,production-model
+automation,Marketing automation,active,Marketing Operations,Marketing Operations,production-model
+cdp,Customer data platform,active,Marketing Operations,Central Technology,production-model
+preferences,Preference center,active,Marketing Operations,Central Technology,production-model
+cms,Content management,active,Web,Web,production-model
+dam,Digital asset management,active,Product Marketing,Web,production-model
+personalization,Web personalization,active,Web,Web,production-model
+web-analytics,Web analytics,active,Analytics,Analytics,production-model
+webinar,Webinar platform,active,Integrated Campaigns,Marketing Operations,production-model
+registration,Event registration,active,Integrated Campaigns,Marketing Operations,production-model
+email,Email delivery,active,Marketing Operations,Central Technology,production-model
+social,Social publishing,active,Integrated Campaigns,Marketing Operations,production-model
+work-manager,Campaign Work Manager,active,Marketing Operations,Central Technology,production-model
+hub,Integration hub,active,Central Technology,Central Technology,production-model
+jobs,Scheduled-job service,active,Central Technology,Central Technology,production-model
+functions,Serverless integration runtime,active,Central Technology,Central Technology,production-model
+warehouse,Analytics warehouse,active,Analytics,Central Technology,production-model
+bi,Business intelligence,active,Analytics,Analytics,production-model
+agent,Analytics-agent service,active,Analytics,Central Technology,production-model
+collector,Product-event collector,active,Analytics,Central Technology,production-model
+tags,Tag management,active,Web,Web,production-model
+media,Media activation,active,Integrated Campaigns,Marketing Operations,production-model
+content-review,Campaign Work Review,active,Product Marketing,Product Marketing,production-model
+partners,Partner portal,active,Revenue Operations,Central Technology,production-model
+new-webinar,Proposed webinar replacement,proposed,Integrated Campaigns,Marketing Operations,production-model
+new-work-manager,Proposed work-management replacement,proposed,Integrated Campaigns,Central Technology,production-model
+work-hub-legacy,Campaign Work Manager,active,Marketing Operations,Central Technology,production-model
+campaign-desk,Campaign Work Manager,active,Marketing Operations,Central Technology,production-model
