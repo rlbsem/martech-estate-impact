@@ -6,7 +6,7 @@ A tool inventory can identify overlapping products. It cannot, by itself, establ
 
 The demonstration models a fictional enterprise Marketing estate with **24 current systems, 2 proposed replacements, 40 integration claims and 10 business capabilities**. A seemingly replaceable work-management platform supplies the brief and status feed used to create shared campaigns. Retiring it breaks the declared chain from campaign creation to webinar identifiers, follow-up and attribution. Registration remains supported. An annual seasonal dependency remains **Unknown** because its evidence conflicts and its observation window is incomplete.
 
-**All systems, topology, source evidence, reviews, scenarios and results in this repository are synthetic and do not represent any real company or client architecture.**
+The estate, source evidence and results are synthetic.
 
 ```mermaid
 %% Requirement witness view, filtered to changed or adverse outcomes. Unchanged supported requirements omitted; see assessment table. See JSON for evidence and truncation limits.
