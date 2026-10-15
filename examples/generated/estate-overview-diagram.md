@@ -3,6 +3,7 @@
 Generated from snapshot `323ba0c95a5369f202bce18fc210d0b3fe84c7977f8fa0c767a00a1ddbad750b`. Synthetic evidence.
 
 ```mermaid
+%%{init: {"theme":"base","themeVariables":{"background":"#10101D","primaryColor":"#2A2A3D","primaryTextColor":"#F0F0FF","primaryBorderColor":"#7C7CAF","lineColor":"#B8B8FF","textColor":"#F0F0FF","secondaryColor":"#181825","tertiaryColor":"#2E2E45","fontFamily":"IBM Plex Sans, Arial, sans-serif","fontSize":"15px","edgeLabelBackground":"#10101D"}}}%%
 %% Estate overview
 %% Data-flow view only. Filtered: False. Edges shown 40/40. Truncated: False.
 flowchart LR
@@ -98,8 +99,8 @@ flowchart LR
   nae1fd358c7612a02 -->|"warehouse-bi"| nd9065d6da185ec28
   nc735b228353daa08 -->|"web-warehouse"| nae1fd358c7612a02
   nda0ef5dcf6c62181 -->|"webinar-attribution"| nae1fd358c7612a02
-  classDef established fill:#edf7ee,stroke:#246634
-  classDef unknown fill:#fff4cc,stroke:#946800
-  classDef proposed fill:#e4edff,stroke:#265dad,stroke-dasharray:5 5
-  classDef removed fill:#ffe6e6,stroke:#a51d2d
+  classDef established fill:#2A2A3D,stroke:#7C7CAF,color:#F0F0FF,stroke-width:1.4px
+  classDef unknown fill:#2E2E45,stroke:#E3BC7F,color:#F0F0FF,stroke-width:2px
+  classDef proposed fill:#2E2E45,stroke:#B8B8FF,color:#F0F0FF,stroke-width:2px,stroke-dasharray:5 5
+  classDef removed fill:#2E2E45,stroke:#D98EA3,color:#F0F0FF,stroke-width:2px
 ```

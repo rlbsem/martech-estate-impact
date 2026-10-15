@@ -58,3 +58,18 @@ def test_impact_view_collapses_only_resolved_dependency_branches(snapshot, propo
     )
     assert "assertion nodes collapsed" in diagram
     assert mermaid.node("req:registration") not in diagram
+
+
+def test_groundbreakers_visual_theme_preserves_meaning(snapshot, proposal):
+    topology = mermaid.topology(snapshot["facts"], "Estate")
+    impact = mermaid.impact(assess(snapshot, proposal()))
+    for diagram in (topology, impact):
+        assert diagram.startswith(mermaid.BRAND_THEME + "\n")
+        assert "#B8B8FF" in diagram
+        assert "color:#F0F0FF" in diagram
+        assert "#ffe6e6" not in diagram
+        assert "#fff4cc" not in diagram
+    for state, accent in (("SUPPORTED", "#81C5B0"), ("UNSUPPORTED", "#D98EA3"), ("UNKNOWN", "#E3BC7F")):
+        assert f"classDef {state} " in impact
+        assert f"stroke:{accent}" in impact
+    assert "UNSUPPORTED" in impact and "UNKNOWN" in impact
