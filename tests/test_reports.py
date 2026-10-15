@@ -69,7 +69,11 @@ def test_groundbreakers_visual_theme_preserves_meaning(snapshot, proposal):
         assert "color:#F0F0FF" in diagram
         assert "#ffe6e6" not in diagram
         assert "#fff4cc" not in diagram
-    for state, accent in (("SUPPORTED", "#81C5B0"), ("UNSUPPORTED", "#D98EA3"), ("UNKNOWN", "#E3BC7F")):
+    for state, accent in (
+        ("SUPPORTED", "#81C5B0"),
+        ("UNSUPPORTED", "#D98EA3"),
+        ("UNKNOWN", "#E3BC7F"),
+    ):
         assert f"classDef {state} " in impact
         assert f"stroke:{accent}" in impact
     assert "UNSUPPORTED" in impact and "UNKNOWN" in impact
