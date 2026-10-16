@@ -14,7 +14,7 @@ In the synthetic example, a platform appears redundant until the dependency anal
 
 | Proposed change | What the evaluation finds | Business consequence |
 |---|---|---|
-| Retire the legacy campaign work-management system | Four required capabilities become **Unsupported**; a seasonal campaign remains **Unknown** | Do not approve retirement on inventory overlap alone; shared campaigns, follow-up and attribution would lose required inputs |
+| Retire the legacy campaign work-management system | Four business requirements become **Unsupported**; a seasonal campaign remains **Unknown** | Do not approve retirement on inventory overlap alone; shared campaigns, follow-up and attribution would lose required inputs |
 | Introduce an incomplete webinar replacement | Three required capabilities remain **Unsupported** | A replacement can cover registration while still failing other campaign requirements |
 | Revise the webinar replacement | No identified blockers **within reviewed scope** | The architecture is more defensible, but operational acceptance and incomplete evidence still matter |
 
