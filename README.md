@@ -8,6 +8,18 @@ The demonstration models a fictional enterprise Marketing estate with **24 curre
 
 The estate, source evidence and results are synthetic.
 
+## Architecture decision at a glance
+
+In the synthetic example, a platform appears redundant until the dependency analysis reveals what actually relies on it:
+
+| Proposed change | What the evaluation finds | Business consequence |
+|---|---|---|
+| Retire the legacy campaign work-management system | Four required capabilities become **Unsupported**; a seasonal campaign remains **Unknown** | Do not approve retirement on inventory overlap alone; shared campaigns, follow-up and attribution would lose required inputs |
+| Introduce an incomplete webinar replacement | Three required capabilities remain **Unsupported** | A replacement can cover registration while still failing other campaign requirements |
+| Revise the webinar replacement | No identified blockers **within reviewed scope** | The architecture is more defensible, but operational acceptance and incomplete evidence still matter |
+
+**Why it matters:** Technology consolidation can create hidden operational failures even when two products appear to overlap. This system produces evidence-linked impact decisions rather than guessing which platforms can safely be removed. The underlying estate and results are fictional; no realized cost savings or production retirement is claimed.
+
 ```mermaid
 %% Requirement witness view, filtered to changed or adverse outcomes. Unchanged supported requirements omitted; see assessment table. See JSON for evidence and truncation limits.
 %% Resolved dependency assertion nodes collapsed into edges; exact branches and references remain in JSON.
@@ -33,13 +45,7 @@ flowchart TB
 
 *Actual generated retirement witness view, reproduced by the PostgreSQL demo. Arrows point from a requirement to its prerequisite. Unsupported and Unknown are distinct; unchanged supported requirements, including registration, are intentionally omitted. [Full assessment, evidence and prerequisites](examples/generated/retire-work-manager-assessment.md).*
 
-## See the result before installing anything
-
-| Proposal | Derived result | Important boundary |
-|---|---|---|
-| Retire legacy work management | Four requirements unsupported; seasonal requirement Unknown | Registration and optional operational reporting remain supported |
-| Incomplete webinar replacement | Three requirements unsupported | Missing attendance event, campaign field and correlation key; registration remains supported |
-| Revised webinar replacement | No identified blockers within reviewed scope | Declared metadata gaps closed; operational acceptance gates remain open |
+## Inspect the result without installing anything
 
 Start with the generated [estate overview](examples/generated/estate-overview.md), [campaign map](examples/generated/campaign-workflow-diagram.md), [retirement assessment](examples/generated/retire-work-manager-assessment.md) and [retirement witness diagram](examples/generated/retire-work-manager-impact-diagram.md). Then compare the [incomplete replacement](examples/generated/replace-webinar-incomplete-assessment.md) with the [revised assessment](examples/generated/replace-webinar-revised-assessment.md), [target architecture](examples/generated/webinar-target-state-diagram.md) and [exact declared diff](examples/generated/target-state-diff.md).
 
