@@ -8,6 +8,8 @@ The demonstration models a fictional enterprise Marketing estate with **24 curre
 
 The estate, source evidence and results are synthetic.
 
+In multi-system architecture reviews, I have mapped application dependencies and defined migration and consolidation requirements across customer, operational and finance workflows. This synthetic implementation makes those decisions inspectable: a proposed retirement must satisfy business requirements, and conflicting or incomplete evidence remains unresolved.
+
 ## Architecture decision at a glance
 
 In the synthetic example, a platform appears redundant until the dependency analysis reveals what actually relies on it:
