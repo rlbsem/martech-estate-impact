@@ -1,6 +1,6 @@
 # MarTech Estate Impact
 
-**Before retiring a Marketing platform, what depends on it—and what evidence would justify the decision?**
+**Before retiring a Marketing platform, what depends on it, and what evidence would justify the decision?**
 
 A tool inventory can identify overlapping products. It cannot, by itself, establish whether a campaign workflow can survive a platform change. This repository reconciles architecture evidence, preserves disagreements, and evaluates proposed changes against explicit business requirements.
 
