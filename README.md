@@ -93,7 +93,7 @@ Optional inputs do not determine mandatory group status. Empty groups do not pro
 
 The assessment also checks dangling references to retired systems and detects changed requirement outcomes outside the selected scope. A supported alternative alone does not excuse an integration still pointing to a retired endpoint. Witness branches retain evidence references; they are bounded explanations, not minimal cut sets or probabilities.
 
-## This is not a CMDB
+## Decision-support scope
 
 CMDBs and inventories can supply valuable evidence. This project's purpose is an analytical decision: reconcile heterogeneous claims, preserve conflicts and provenance, qualify coverage, evaluate explicit business requirements in an isolated counterfactual, and explain the outcome through witness paths, alternatives, residual references and change prerequisites. It does not replace an enterprise inventory, discovery service or operating system of record.
 
