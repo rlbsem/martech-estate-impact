@@ -8,7 +8,7 @@ The demonstration models a fictional enterprise Marketing estate with **24 curre
 
 The estate, source evidence and results are synthetic.
 
-In multi-system architecture reviews, I have mapped application dependencies and defined migration and consolidation requirements across customer, operational and finance workflows. This synthetic implementation makes those decisions inspectable: a proposed retirement must satisfy business requirements, and conflicting or incomplete evidence remains unresolved.
+**Business impact:** Help private equity sponsors and enterprise leaders rationalize acquired technology estates without disrupting essential customer, revenue and operational workflows. My professional architecture work includes dependency mapping and consolidation requirements across CRM, operations and finance. This public synthetic implementation identifies which platform changes preserve required capabilities, which would break business processes and where more evidence is needed.
 
 ## Architecture decision at a glance
 
@@ -20,7 +20,7 @@ In the synthetic example, a platform appears redundant until the dependency anal
 | Introduce an incomplete webinar replacement | Three required capabilities remain **Unsupported** | A replacement can cover registration while still failing other campaign requirements |
 | Revise the webinar replacement | No identified blockers **within reviewed scope** | The architecture is more defensible, but operational acceptance and incomplete evidence still matter |
 
-**Why it matters:** Technology consolidation can create hidden operational failures even when two products appear to overlap. This system produces evidence-linked impact decisions rather than guessing which platforms can safely be removed. The underlying estate and results are fictional; no realized cost savings or production retirement is claimed.
+**Decision value:** Evidence-backed impact analysis blocks unsafe platform retirement, identifies replacement gaps and protects shared campaigns, follow-up and attribution from hidden dependencies. The public example and its measured assessment results use a fictional technology estate.
 
 ```mermaid
 %% Requirement witness view, filtered to changed or adverse outcomes. Unchanged supported requirements omitted; see assessment table. See JSON for evidence and truncation limits.
