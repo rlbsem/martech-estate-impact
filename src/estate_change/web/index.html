@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Enterprise Change Assurance | Northstar</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to investigation</a>
+    <aside>
+      <a class="brand" href="/"
+        >N<span>NORTHSTAR<br /><small>TECHNOLOGY ASSURANCE</small></span></a
+      >
+      <p class="rail-label">WORKSPACE</p>
+      <nav aria-label="Console">
+        <button data-tab="estate" aria-pressed="true">
+          01 &nbsp; Estate impact</button
+        ><button data-tab="changes" aria-pressed="false">
+          02 &nbsp; Change reviews</button
+        ><button data-tab="evidence" aria-pressed="false">
+          03 &nbsp; Evidence ledger
+        </button>
+      </nav>
+      <div class="rail-bottom">
+        <span class="dot"></span> PostgreSQL-backed<br /><small
+          >Read-only review console<br />Synthetic portfolio environment</small
+        >
+      </div>
+    </aside>
+    <main id="main">
+      <header>
+        <span class="eyebrow">NORTHSTAR GROUP / ARCHITECTURE OPERATIONS</span
+        ><span class="pill">READ-ONLY · LOCAL</span>
+      </header>
+      <section class="intro">
+        <div>
+          <p class="eyebrow">ENTERPRISE TECHNOLOGY ESTATE</p>
+          <h1>Change with evidence.</h1>
+          <p class="lead">
+            See what a platform retirement would interrupt, where the evidence
+            is incomplete, and what must be resolved before review.
+          </p>
+        </div>
+        <div class="stamp">04<span>COMPANY SCOPES</span></div>
+      </section>
+      <p class="notice">
+        All companies, source records and modeled consequences are synthetic. A
+        supported requirement is a declared-architecture result, not operational
+        acceptance or permission to retire technology.
+      </p>
+      <p id="status" role="status">Loading persisted estate…</p>
+      <section id="estate" class="tab" aria-label="Estate impact">
+        <div class="metrics" id="metrics"></div>
+        <div class="toolbar">
+          <div>
+            <h2>Retirement impact explorer</h2>
+            <p>Select a platform to inspect its persisted counterfactual.</p>
+          </div>
+          <label>Platform<select id="system"></select></label>
+        </div>
+        <div id="impact-summary" class="summary"></div>
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">TYPED DEPENDENCY GRAPH</p>
+              <h2>Business requirement lineage</h2>
+            </div>
+            <label>Requirement<select id="requirement"></select></label>
+          </div>
+          <p class="hint">
+            Select a node for its source claims. Lines represent declared
+            requirement inputs, not network connectivity.
+          </p>
+          <div class="graph-scroll">
+            <div
+              id="graph"
+              class="graph-canvas"
+              role="group"
+              aria-label="Interactive requirement dependency graph"
+            ></div>
+          </div>
+          <div id="node-detail" class="node-detail" role="status">
+            Select a graph node to inspect its provenance.
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Before / after assessment</h2>
+            <span class="pill">THREE-STATE SEMANTICS</span>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Business requirement</th>
+                  <th>Before</th>
+                  <th>After</th>
+                  <th>Explanation</th>
+                </tr>
+              </thead>
+              <tbody id="requirements"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section id="changes" class="tab" aria-label="Change reviews" hidden>
+        <div class="toolbar">
+          <div>
+            <h2>Governed change desk</h2>
+            <p>
+              Immutable revisions. Scoped review authority. Evidence-bound
+              decisions.
+            </p>
+          </div>
+          <label>Proposal revision<select id="proposal"></select></label>
+        </div>
+        <div id="review"></div>
+      </section>
+      <section id="evidence" class="tab" aria-label="Evidence ledger" hidden>
+        <div class="toolbar">
+          <div>
+            <h2>Evidence, with its limits.</h2>
+            <p>
+              Collection scope, revision and authority stay attached to every
+              claim.
+            </p>
+          </div>
+          <button id="download" class="primary">
+            Download published record
+          </button>
+        </div>
+        <div id="sources"></div>
+        <div class="panel">
+          <h2>Unresolved claims</h2>
+          <div id="conflicts"></div>
+        </div>
+      </section>
+      <footer>
+        <span
+          >Built by
+          <a href="https://github.com/rlbsem" rel="noreferrer"
+            >Richard Butts</a
+          ></span
+        ><span
+          >No external changes · No vendor connection · No LLM inference</span
+        >
+      </footer>
+    </main>
+  </body>
+</html>

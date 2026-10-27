@@ -10,6 +10,21 @@ The estate, source evidence and results are synthetic.
 
 **Business impact:** Help private equity sponsors and enterprise leaders rationalize acquired technology estates without disrupting essential customer, revenue and operational workflows. My professional architecture work includes dependency mapping and consolidation requirements across CRM, operations and finance. This public synthetic implementation identifies which platform changes preserve required capabilities, which would break business processes and where more evidence is needed.
 
+## Enterprise Change Assurance Console
+
+The additive console extends this engine into a governed, multi-company change review: **four company scopes, six change classes, immutable proposal revisions and authenticated PostgreSQL review decisions**. Select a platform, trace its business requirements, compare replacement revisions and inspect the evidence that keeps a proposed change blocked.
+
+![Actual local change-assurance console](docs/evidence/change-assurance/run-01/browser/estate-desktop.png)
+
+The new synthetic Northstar group is separate from the original 24-system Marketing fixture below. Its Atlas, Boreal and Cinder CRM identities remain distinct; the parent integration fabric is explicitly shared. Repairing a replacement interface can restore modeled support while unresolved ownership and seasonal coverage still prevent acceptance.
+
+- [Launch the real read-only console](docs/change-assurance-operations.md)
+- [Architecture, controls and scenario](docs/change-assurance.md)
+- [Executed tests, independent comparisons and screenshots](docs/evidence/change-assurance/README.md)
+- [Validation scope and limitations](docs/change-assurance-validation.md)
+
+The console reads persisted PostgreSQL assessments using a separate SELECT-only login. Browser visitors cannot approve changes or modify the estate. Review acceptance establishes readiness within the declared synthetic architecture; it does not authorize external retirement or production cutover. Original source, tests, fixtures and historical evidence are preserved.
+
 ## Architecture decision at a glance
 
 In the synthetic example, a platform appears redundant until the dependency analysis reveals what actually relies on it:

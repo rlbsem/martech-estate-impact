@@ -1,0 +1,694 @@
+{
+  "excluded_self": "docs/evidence/change-assurance/package-manifest.json",
+  "files": {
+    ".dockerignore": {
+      "bytes": 103,
+      "sha256": "91e824e8e09623c60d909e93f08a6f31dd88ca19c14602177923aed214fb5118"
+    },
+    ".env.example": {
+      "bytes": 230,
+      "sha256": "e07181b453a8cc00f3483b78d211925c9074178d6069a6db5978302118a53ad1"
+    },
+    ".gitattributes": {
+      "bytes": 164,
+      "sha256": "9104957c74309eb4355246903f42037c22d241b70677fb184260d2e4b7288f92"
+    },
+    ".github/workflows/verify.yml": {
+      "bytes": 3253,
+      "sha256": "3f6f7c815c1c67fe52627b5ddca276bbcd680bd07019a7c93dc8098375c95f17"
+    },
+    ".gitignore": {
+      "bytes": 90,
+      "sha256": "40ebe1b3b8f05f218b083fb8c2ad4883dedf40714ecb175aec4e69785b2ae15d"
+    },
+    "Dockerfile.change": {
+      "bytes": 563,
+      "sha256": "459644887ef99a92df6baf9bf9c703381397ab0cd8d56f05d480dd2003d48a0d"
+    },
+    "LICENSE": {
+      "bytes": 1070,
+      "sha256": "bfa35d897efdd7b0c543024c4d8a4d39feb8d9132f5432c1644f7f74443b4c13"
+    },
+    "README.md": {
+      "bytes": 16067,
+      "sha256": "6c6a52ad3c993b4400a13d73e8c3d8482b56094d9b5c35fcf34dc5b63fcefa23"
+    },
+    "change_tests/conftest.py": {
+      "bytes": 2296,
+      "sha256": "54427f255c81e9154332382088b8b18634629f206fa72f854201004948692ceb"
+    },
+    "change_tests/test_change.py": {
+      "bytes": 11200,
+      "sha256": "b60cbff2d2fd97dc428507694212e3ffb1e9ee80732ceee6403dd89a8fc55df8"
+    },
+    "change_tests/test_independence.py": {
+      "bytes": 4648,
+      "sha256": "7d0fdbbee6fb334af7b03c3f228456f017d2421360f6762ca2eb973f6d850094"
+    },
+    "change_tests/vendor/AXE-LICENSE": {
+      "bytes": 15921,
+      "sha256": "af175b9d96ee93c21a036152e1b905b0b95304d4ae8c2c921c7609100ba8df7e"
+    },
+    "change_tests/vendor/axe.min.js": {
+      "bytes": 553446,
+      "sha256": "880970c081707360e64f34cea25ff91892f5bc95675b0776925b9709dd8a68bb"
+    },
+    "change_tests/vendor/provenance.json": {
+      "bytes": 285,
+      "sha256": "6a333252660c05f04c4e17254966af37bd705182158ca6b18affe9ff0f0a2191"
+    },
+    "compose.change.yml": {
+      "bytes": 1412,
+      "sha256": "224fd8f35371b98f175c3c7423cd9e495128635c75466b37394c2626eeb1ac05"
+    },
+    "config/crosswalk.json": {
+      "bytes": 3060,
+      "sha256": "7db6dc3f250fbc462c16c1c0f037fdded4b6367421fbb0dc029b40b0c45341e6"
+    },
+    "config/evidence-policy.json": {
+      "bytes": 1118,
+      "sha256": "829ca9902369fb5a8f61a0f09d8720f311401fb643fc0a44ea4ec234a00ec9cf"
+    },
+    "config/sources.json": {
+      "bytes": 1578,
+      "sha256": "82b3f7257618471f6d86be54f23028baa7d5101a85dbdfffa42eed1cbe01144c"
+    },
+    "docker-compose.yml": {
+      "bytes": 403,
+      "sha256": "9f5968242533ab70354aca40edfec9df129ee8f088a4cb8cf5b551879cdb61b2"
+    },
+    "docs/architecture.md": {
+      "bytes": 4382,
+      "sha256": "d2bbeb2ce47fbac5513d7a2080ea20bb125d0d369c0b145da112d891b921d94a"
+    },
+    "docs/change-assurance-operations.md": {
+      "bytes": 4893,
+      "sha256": "d35294f35d43d1b1b95fafad1b9dfdf8ffa6f1c9db3abab5424780c1be8aed41"
+    },
+    "docs/change-assurance-validation.md": {
+      "bytes": 3541,
+      "sha256": "936023058cdb66fb1b1383eac4aecb528d99c39540f53ef433dd4cfb76293416"
+    },
+    "docs/change-assurance.md": {
+      "bytes": 5494,
+      "sha256": "27b679cec098457efc3610fa12c67f1d0d4c60180c966e2c05ec1bb056aa5343"
+    },
+    "docs/decisions/relational-storage.md": {
+      "bytes": 1287,
+      "sha256": "caa66f37b15665ae344aa7026c86368186f9ce943c4805c1c79ca1f6b0a8a650"
+    },
+    "docs/decisions/uncertainty-and-claim-boundaries.md": {
+      "bytes": 1737,
+      "sha256": "2a543245b695be32600f4f231a2d3f25589b625f3426987615f18232c1fb0a2a"
+    },
+    "docs/demonstration-walkthrough.md": {
+      "bytes": 4934,
+      "sha256": "d7b4afa7c5324472c04a171efcb29792fb09aeffcc8d846d3999f729832fcf81"
+    },
+    "docs/discovery-method.md": {
+      "bytes": 2919,
+      "sha256": "41d0a37640f2c5fc2f57f3da085593f85a109e603314a2e2763a03b1f1ab3022"
+    },
+    "docs/evidence/change-assurance/README.md": {
+      "bytes": 4296,
+      "sha256": "a54fde3a070bc2930b00693c7ca04b41833cdc9539426c6fad8ab8aa6665a6d5"
+    },
+    "docs/evidence/change-assurance/preserved-original.json": {
+      "bytes": 10702,
+      "sha256": "f26ecf93c66d4fdad47a778a446a1310538b6d4abbb8895241b0b452ee84fd5a"
+    },
+    "docs/evidence/change-assurance/run-01/browser/browser.json": {
+      "bytes": 82347,
+      "sha256": "e450ae2db0cef8d6807c8781e6da045bda43ef0563008507f4d08f45ef572783"
+    },
+    "docs/evidence/change-assurance/run-01/browser/changes-desktop.png": {
+      "bytes": 88208,
+      "sha256": "00ca3063be96450ddcb40c4ff7c9d9d75ec83e623b4ae5d82ff1bf276c7868bd"
+    },
+    "docs/evidence/change-assurance/run-01/browser/changes-mobile.png": {
+      "bytes": 44548,
+      "sha256": "e1aba07cffaa88529fe0d950383e45115b691d3cc829fc987a5fa8878666a658"
+    },
+    "docs/evidence/change-assurance/run-01/browser/estate-desktop.png": {
+      "bytes": 87472,
+      "sha256": "f43cfd7e0e3976db91233c9222e220a77aff197319b8f4fdf8338a1d92cc1354"
+    },
+    "docs/evidence/change-assurance/run-01/browser/estate-mobile.png": {
+      "bytes": 36709,
+      "sha256": "dbdb876ad91976f6d1081e1a9a864bf353d6e3eacb59cb0617cb65052e9ba557"
+    },
+    "docs/evidence/change-assurance/run-01/browser/evidence-desktop.png": {
+      "bytes": 70200,
+      "sha256": "807bc7fca6871c9c88ce64cfe0d3c38ae446ac8af0100429894fc6a490db2cfc"
+    },
+    "docs/evidence/change-assurance/run-01/browser/evidence-mobile.png": {
+      "bytes": 37278,
+      "sha256": "c4cfed5f45e6f2b4d4a3fa13983bc31a392a132f10c38c2f9ce3783de7993014"
+    },
+    "docs/evidence/change-assurance/run-01/estate-record.json": {
+      "bytes": 457753,
+      "sha256": "b26368df28d514ac1a6c9c6f6a5117c43a2d849ea9e037ffefcc60e03746ab2d"
+    },
+    "docs/evidence/change-assurance/run-01/oracle-comparison.json": {
+      "bytes": 10362,
+      "sha256": "dffbf8ac7cb8bc4718a9c36ec2b4427b59c772b6acdc61495662554cee076c2a"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/campaign-workflow-diagram.md": {
+      "bytes": 1689,
+      "sha256": "ab7e9bf015d570f57a8999dc8bb353b1655f8ae49c89c9ea1b7bfe7aa60fa4d2"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/campaign-workflow.mmd": {
+      "bytes": 1534,
+      "sha256": "58af425370686b37a84202ea8fcb8a24c4935290b956883383728b8f24b1d251"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/demo-summary.json": {
+      "bytes": 4064,
+      "sha256": "fe27f0e614f31c558c1449847e1c72d2b79e214a5f03749cd457c23b04767fd0"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/estate-overview-diagram.md": {
+      "bytes": 5127,
+      "sha256": "1dab5f180ada0395d36d65555a0b3b113e5f0a7cd1d6d27b72c20ad842eb4ca5"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/estate-overview.json": {
+      "bytes": 2708,
+      "sha256": "305c5eaddf51855ed2d4ad68f0db16a1c68ba77c119f8bd5d50dce541e1ec306"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/estate-overview.md": {
+      "bytes": 2440,
+      "sha256": "4c40307014c59c9aa72745daa520ee707bb47c686e5d00dd0fa09e1bc9482626"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/estate-overview.mmd": {
+      "bytes": 4974,
+      "sha256": "4b3defd723de5276c45db87933825618153aab36fbab01440098261b02199977"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/evidence-index.json": {
+      "bytes": 166015,
+      "sha256": "ef0db7c8391ad472280355312c318a2f5d6cefd7e2230ea05a8aa7f6a89d37f7"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/replace-webinar-incomplete-assessment.json": {
+      "bytes": 32955,
+      "sha256": "9f141d9ecb5eb38fe3e9f6cb2704d50e92ccb1456a4513c406a08a0011340346"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/replace-webinar-incomplete-assessment.md": {
+      "bytes": 6661,
+      "sha256": "01315787495722df1026e7e724f0548b3ebef19b8442c1387524827fbf782f8b"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/replace-webinar-revised-assessment.json": {
+      "bytes": 55058,
+      "sha256": "4cb5f4eb2f49c5b35bad20931bf6d48c1ed582f62363aea6ad94a0ffb5af20b4"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/replace-webinar-revised-assessment.md": {
+      "bytes": 13992,
+      "sha256": "ef114bf158b1c798e325f2f2b8139aba3b54145b35c241ef63fba65639c7a30a"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/retire-work-manager-assessment.json": {
+      "bytes": 51191,
+      "sha256": "54d4fe701b3cbf40b11bfa47dfc3175600e42c8bef56c55ab6bc2ec87beb6652"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/retire-work-manager-assessment.md": {
+      "bytes": 13238,
+      "sha256": "958f3fd3aae88b0016785d9cd33056c326a8b368f9e5b718d374b9ed5c73fe65"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/retire-work-manager-impact-diagram.md": {
+      "bytes": 1479,
+      "sha256": "5edbdef9c80d87801d9070589bfa62ee4fc9459b573718b9a816ec372a3f5066"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/retire-work-manager-impact.mmd": {
+      "bytes": 1315,
+      "sha256": "eb9ee5cef5c053b27aee43e55062f75b652f821d12fc9cc0fefe17fa6f1ecfe5"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/snapshot.json": {
+      "bytes": 328031,
+      "sha256": "d4c5554f62959e57e655f53b37246d2dac2d95380efb2087c0833a154a18953a"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/target-state-diff.json": {
+      "bytes": 6514,
+      "sha256": "b654c5ce861702ca2839593d94e67911e5895343e2fb81febe0a4ca8a9729002"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/target-state-diff.md": {
+      "bytes": 6709,
+      "sha256": "32706fc0330df3400b2a327922c086ad77ac8eab049c0c8e1e0861b6c184fa53"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/webinar-replacement-assessment.md": {
+      "bytes": 6661,
+      "sha256": "01315787495722df1026e7e724f0548b3ebef19b8442c1387524827fbf782f8b"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/webinar-target-state-diagram.md": {
+      "bytes": 1796,
+      "sha256": "c7f46af6a4da1f3b9d64f723fcf4a6f39122a2b9145266840bf37cf4f903069a"
+    },
+    "docs/evidence/change-assurance/run-01/original-demo/webinar-target-state.mmd": {
+      "bytes": 1638,
+      "sha256": "6360d69ca09b5daec82dd61aa587e97d851e324cdfb8120e543f898fe469601b"
+    },
+    "docs/evidence/change-assurance/run-01/verification.json": {
+      "bytes": 19279,
+      "sha256": "af1d4792917ee2f977d9a1b5e5bbc8faca79d0d5c941457872ba13b0d7f480de"
+    },
+    "docs/evidence/change-assurance/run-01/wheel.json": {
+      "bytes": 3568,
+      "sha256": "ea9a8e54a4f15f2dbb2d7afd9b50fa8c71d74158795e8cf5619eb321094def0f"
+    },
+    "docs/evidence/diagram-rendering.json": {
+      "bytes": 696,
+      "sha256": "97be709e72f7265a72b54d7ed6201c275df36d8a3e128902570aeca55ae8df26"
+    },
+    "docs/evidence/implementation-report.md": {
+      "bytes": 5793,
+      "sha256": "3afb7c24eb625b64049fb92ff9f6ad3eca57f26a0f2bfcfd6fb8e4e17fd194d9"
+    },
+    "docs/evidence/package-checks.json": {
+      "bytes": 437,
+      "sha256": "be211df07203c749a5c79f6cdd757b80e349eac72dbdb4d0f82cc1754112043d"
+    },
+    "docs/evidence/package-manifest.json": {
+      "bytes": 10759,
+      "sha256": "24536df44298cfbd9818790d040122df237bd795e8c033e500220c417e816314"
+    },
+    "docs/evidence/pytest.xml": {
+      "bytes": 8316,
+      "sha256": "0503077c82bdde7c53cd817ee370e6aa130dc99b90f660bb1810d49ba9580f25"
+    },
+    "docs/evidence/repository-tree.txt": {
+      "bytes": 3669,
+      "sha256": "ef5cf9e3de4858aef9ae5c49edf7a3abfc8fc4b4f4ac2cc8c0adb4a64c9c9532"
+    },
+    "docs/evidence/verification.json": {
+      "bytes": 8674,
+      "sha256": "a29355e11b3f6a3cf50e795bc6c71ecee8eacff33f95bf07a65bd182f711e31c"
+    },
+    "docs/model-semantics.md": {
+      "bytes": 6303,
+      "sha256": "bdc142bd017978fa264134b3bfdc62ff2d444f934fdc895ae7df9f6609e5137d"
+    },
+    "docs/operations.md": {
+      "bytes": 5740,
+      "sha256": "f32295588d6ea41cba7ee6143efd2a65ce0e8f7f14e19a6bafdc4a5f0bd133d1"
+    },
+    "docs/validation.md": {
+      "bytes": 5101,
+      "sha256": "021f17db896c664f6ee7c67948bf51d760a034eef9719c2a524e31dd50450766"
+    },
+    "examples/generated/campaign-workflow-diagram.md": {
+      "bytes": 1652,
+      "sha256": "035aa18068d52d5f8bafb8d3ebc25f2b4264b447cdeebcc50634a938d86def2c"
+    },
+    "examples/generated/campaign-workflow.mmd": {
+      "bytes": 1503,
+      "sha256": "6f161f2738ca7e6d2c33cbb1b17b2a51344258ab5862554bec9f89f66c706e6a"
+    },
+    "examples/generated/demo-summary.json": {
+      "bytes": 3934,
+      "sha256": "6f3aae3a1b490bb1a0f532146f8f90b556cb0312ff9347b96e62995eb8b4debb"
+    },
+    "examples/generated/estate-overview-diagram.md": {
+      "bytes": 5022,
+      "sha256": "8ddad08281c763b9e85e00208df42e64712c30fdd42969fba69a6cb394fdd53c"
+    },
+    "examples/generated/estate-overview.json": {
+      "bytes": 2614,
+      "sha256": "be86bffab8c25790342163ae2fdec68425be132dfd354d428807cd0330ab4a1c"
+    },
+    "examples/generated/estate-overview.md": {
+      "bytes": 2398,
+      "sha256": "712df9a04baeb6a05cc9ba87034e1dec1d7be772d3d6a686ef69c979553ab507"
+    },
+    "examples/generated/estate-overview.mmd": {
+      "bytes": 4875,
+      "sha256": "ecf34db6bfd9bd57c867824a7cf15501d27221f2d0ef203c0f124555b0b7b296"
+    },
+    "examples/generated/evidence-index.json": {
+      "bytes": 161221,
+      "sha256": "1660fd3d6b0bdf80ad45209b46fdde40836bc62df4919880483e300476e1638f"
+    },
+    "examples/generated/replace-webinar-incomplete-assessment.json": {
+      "bytes": 31873,
+      "sha256": "ba8851242fbcdc0ceb6d58181ff18f1140ca2cebb58efff4e0060708ad4a6e71"
+    },
+    "examples/generated/replace-webinar-incomplete-assessment.md": {
+      "bytes": 6578,
+      "sha256": "e675e439b384a0a20c220a1253ea9d77365e08baf2680573c708690b36bfcc07"
+    },
+    "examples/generated/replace-webinar-revised-assessment.json": {
+      "bytes": 53357,
+      "sha256": "ffd25fa0371f143a4df51c421d116764dd5710a884e61d2f56a2fe20d0e797ca"
+    },
+    "examples/generated/replace-webinar-revised-assessment.md": {
+      "bytes": 13890,
+      "sha256": "dcb7fe7f5ac4b0529141bd22d8343a85f96f16d8e3e312edf4d928fd7a26f007"
+    },
+    "examples/generated/retire-work-manager-assessment.json": {
+      "bytes": 49617,
+      "sha256": "aa2220bdc6fa990cf5479cc3cb962a6f26a5af1617f396afa4ccab45c1fffc3e"
+    },
+    "examples/generated/retire-work-manager-assessment.md": {
+      "bytes": 13093,
+      "sha256": "8b96312c9faee09ca78d4f3d943fd9d227036c7122235e9d882a3ae2a029bfb1"
+    },
+    "examples/generated/retire-work-manager-impact-diagram.md": {
+      "bytes": 1453,
+      "sha256": "db142b2a825cb4a9f0ea7459e0b492059abf088834f401a3f1110a9d24a0d407"
+    },
+    "examples/generated/retire-work-manager-impact.mmd": {
+      "bytes": 1295,
+      "sha256": "706a6c51c997b15ec68733f0d2caf66323e224a4d0f72e19c628be598559adee"
+    },
+    "examples/generated/snapshot.json": {
+      "bytes": 317507,
+      "sha256": "fad9a7953d4c0a48a7107d5ecdc1116e74505dcbf962dc027a85eccaf137eda3"
+    },
+    "examples/generated/target-state-diff.json": {
+      "bytes": 6227,
+      "sha256": "b3da4633fa554a5f009a95e9bdb14a03374b701b3bad00c7d19ac76c1017b095"
+    },
+    "examples/generated/target-state-diff.md": {
+      "bytes": 6694,
+      "sha256": "c865bfb500cf0a4a4eeaa383b3a220ec74ffa7a8324f65ed1918eddba228b145"
+    },
+    "examples/generated/verification-report.md": {
+      "bytes": 827,
+      "sha256": "8c508fbb446d6d41bc0a6662d1be82f206b7e2435f53c324feec32bcbd353d32"
+    },
+    "examples/generated/webinar-replacement-assessment.md": {
+      "bytes": 6578,
+      "sha256": "e675e439b384a0a20c220a1253ea9d77365e08baf2680573c708690b36bfcc07"
+    },
+    "examples/generated/webinar-target-state-diagram.md": {
+      "bytes": 1757,
+      "sha256": "16ffefd2515e563708b3eb81c47daf833759deee5c897c6bb435bd54006906d9"
+    },
+    "examples/generated/webinar-target-state.mmd": {
+      "bytes": 1605,
+      "sha256": "c7b2424062b7fa56e46579236c0c4852185ed5727deb9732b7ee9a7e0d615467"
+    },
+    "fixtures/change-assurance/catalog.json": {
+      "bytes": 7320,
+      "sha256": "0b68e01f3252c1cd477a457b4f61795c0151373526041b4059fb6f46c2c8bf27"
+    },
+    "fixtures/change-assurance/cmdb.csv": {
+      "bytes": 435,
+      "sha256": "fa1ed979f1bdd96171026fb3fc6eb8088cbaebc63cf9452663454bd39e812f32"
+    },
+    "fixtures/change-assurance/execution.json": {
+      "bytes": 283,
+      "sha256": "f437508cd682a200d00e81192d6096597eb685521d6ad12885c17543a0aaad59"
+    },
+    "fixtures/change-assurance/owner.json": {
+      "bytes": 8948,
+      "sha256": "9132f5d52cb68307dfa24300363ce4888667dd1390719aa421269fe87fe5283a"
+    },
+    "fixtures/change-assurance/registry.json": {
+      "bytes": 1553,
+      "sha256": "176db1df672d18794c39687a17aad495514dad707b490968e91b5aa4cb53b05e"
+    },
+    "fixtures/change-assurance/scenario.json": {
+      "bytes": 162,
+      "sha256": "358cd03a60a5b98a146346eff5c944ff63851ee8a5e21e1cfae4476123a1871f"
+    },
+    "fixtures/synthetic-estate/collection-manifests.json": {
+      "bytes": 20815,
+      "sha256": "660ff959faa09e4e9322e9b5bd2aa14fac29d3cf4a4590e1113bc12ada5b53a2"
+    },
+    "fixtures/synthetic-estate/executions.csv": {
+      "bytes": 2433,
+      "sha256": "404a545e0c9f5147c30833b4b18c4244e755be3c2cf4df8a118741e63f50a1b0"
+    },
+    "fixtures/synthetic-estate/inventory.csv": {
+      "bytes": 2498,
+      "sha256": "161c3d2950e26dc2b677d5ab4553b42a33cec92efbdc23bd1afedcf0756f3b81"
+    },
+    "fixtures/synthetic-estate/orchestration-legacy.json": {
+      "bytes": 423,
+      "sha256": "26f2484da70dcd625be21501bfa2ed4630700d2d8e51cf3dcf741f98658e0c3b"
+    },
+    "fixtures/synthetic-estate/orchestration.json": {
+      "bytes": 14945,
+      "sha256": "87898973e9489985490013da03b64b9f42ce5558ad32f5481614d3aa6b9a56af"
+    },
+    "fixtures/synthetic-estate/proposals/replace-webinar-incomplete.json": {
+      "bytes": 5153,
+      "sha256": "31f0913ca5a7407ffee9d35ac51132319886309edb8be3dc1fea0f5ae914bd85"
+    },
+    "fixtures/synthetic-estate/proposals/replace-webinar-revised.json": {
+      "bytes": 5687,
+      "sha256": "825632bf7ff5de0f0cfeb9f6991decf787b6233064bbbc901e5afbbe2daf5c35"
+    },
+    "fixtures/synthetic-estate/proposals/retire-work-manager.json": {
+      "bytes": 1057,
+      "sha256": "44e4dc915df34570c2c5167dc468faaae03aa73cef737f0c331004fe9140df44"
+    },
+    "fixtures/synthetic-estate/resolutions.json": {
+      "bytes": 347,
+      "sha256": "b0295e9731a70b6da9f49a6ebecb626b76c28507b83b7c5d47609c1729b8a236"
+    },
+    "fixtures/synthetic-estate/stewardship.json": {
+      "bytes": 16962,
+      "sha256": "80e997a0fbe478a20a402ae32c915d28501096acb3c1368218f1e0067b1c34c1"
+    },
+    "migrations/001_estate_model.sql": {
+      "bytes": 5160,
+      "sha256": "1462120d6f663d5fa97f3055446ae485fe8f2ef6bc80a71e7d745bdc45d542cf"
+    },
+    "pyproject.toml": {
+      "bytes": 719,
+      "sha256": "29a61749a76555906f96b98e4b66dc53c029b7084a5ce4201a715768d0521e5d"
+    },
+    "requirements-change.lock": {
+      "bytes": 118,
+      "sha256": "6885d74a716e1a610b188a49933690a8d95ac62826fc17d797b307ab2587780f"
+    },
+    "requirements.lock": {
+      "bytes": 218,
+      "sha256": "31eaa1d349c983c4df04da852b4868d4c674fc4c2c4bf800db91a24c89c955e0"
+    },
+    "scripts/browser_change.py": {
+      "bytes": 10285,
+      "sha256": "81b71e444fa3da54f8724ee8b59f6d3d0f8006166a7e53c81f10c03dada49f7a"
+    },
+    "scripts/change_oracle.py": {
+      "bytes": 3333,
+      "sha256": "915f72b8329f2d4b5d9380dcfc3bdef5dc35ebb5383905d55afef77321a2f404"
+    },
+    "scripts/change_repository.py": {
+      "bytes": 4996,
+      "sha256": "bca66bc6bea2e674e1f7bf7046ee1cf7c79f9f48167d6a7a45d1ba458a643f0c"
+    },
+    "scripts/check_change.py": {
+      "bytes": 1427,
+      "sha256": "c7864cf3fa0ea267b02e7ca18699982e5d983a6bf76c4b40ea1d445e15c7372a"
+    },
+    "scripts/check_change_compose.py": {
+      "bytes": 2834,
+      "sha256": "88543469618e42e471670fe5dbe63a7060350c53bf44edf127386e6afe8ac19d"
+    },
+    "scripts/compose_change.py": {
+      "bytes": 1358,
+      "sha256": "e6778ba27be669f8015301ed4bb5afea41467ea5a5900584b64dc57ea7fccafd"
+    },
+    "scripts/demo.py": {
+      "bytes": 175,
+      "sha256": "12b21aea5a8e91c4d58198db2804e01174a590ca1ceb54abbecf93a492c8a6b6"
+    },
+    "scripts/local_change.py": {
+      "bytes": 2402,
+      "sha256": "3cd8ed26869c5fc58d5f55534bb7ba905b2c0a5d8eca7dd06139c65c1a296f23"
+    },
+    "scripts/make_change_fixture.py": {
+      "bytes": 7363,
+      "sha256": "b074796faf068b8bd2303f22739094826b9f87a89ca7ffe5dcede9b77acaa7ed"
+    },
+    "scripts/prepare_change.py": {
+      "bytes": 963,
+      "sha256": "c5853aba8768e41be2ef497b70a3c96aa4843cc54a69514dbff36501ca6e87cd"
+    },
+    "scripts/verify.py": {
+      "bytes": 6272,
+      "sha256": "5cd28cc734e5be1d18103ebed933c9e70531675829282b5cf3e6ace311e0c995"
+    },
+    "scripts/verify_change.py": {
+      "bytes": 9351,
+      "sha256": "f3056d14df50fa9a87262ffb2775f563d9cf59daa11d3c0e99901e16332bd019"
+    },
+    "src/estate_change/__init__.py": {
+      "bytes": 86,
+      "sha256": "5a16cdb4ccb9c5432d3acc4767d316ca0e19215c7de8eb41c61550161bbe35ac"
+    },
+    "src/estate_change/demo.py": {
+      "bytes": 5275,
+      "sha256": "834f391c640367cac5c449f82b5628ceb9f02e1bbb971295238c40cbc283497c"
+    },
+    "src/estate_change/evidence.py": {
+      "bytes": 5168,
+      "sha256": "f569cce325f67bb440aec4e22c4395eaf4dd38ac9f6a2ab6f69c07f979ade03b"
+    },
+    "src/estate_change/runtime.py": {
+      "bytes": 5917,
+      "sha256": "5ea2d619212528f332ed6455d00004c6be715c30f10420afe024d76a83cb2bb3"
+    },
+    "src/estate_change/schema.sql": {
+      "bytes": 3026,
+      "sha256": "8873015f59fdc50a658ddca1cd3e7e36ea6adbb5c92bd2537dd6a3a2b5f1c566"
+    },
+    "src/estate_change/server.py": {
+      "bytes": 3486,
+      "sha256": "98a5c6347218c3ea372f048784f474c104b06a50d451807ff43ecbeacb6adae5"
+    },
+    "src/estate_change/service.py": {
+      "bytes": 12789,
+      "sha256": "1466c2f0af0da50a9f11da9e8864a57e6534826a281c8395d5f8a73a4f3ba675"
+    },
+    "src/estate_change/web/app.js": {
+      "bytes": 10563,
+      "sha256": "6fae075f10da34c707207a0162553a5ddaa2cc39fc70475af137c7675baabe7c"
+    },
+    "src/estate_change/web/index.html": {
+      "bytes": 5343,
+      "sha256": "1006745173604b231045f96e8790591c1db802a9fee1dc9c2ea93453264c7e5f"
+    },
+    "src/estate_change/web/style.css": {
+      "bytes": 9288,
+      "sha256": "9b90e18ba8e4a762311d65729b1ebd2685a1ab9754879f50a4b0a03881e57125"
+    },
+    "src/estate_impact/__init__.py": {
+      "bytes": 99,
+      "sha256": "9a97a629a989806e3f0e89f91e892a89726d284d3ba503695bede73badc8c0fa"
+    },
+    "src/estate_impact/assertions.py": {
+      "bytes": 2797,
+      "sha256": "abcb1d8f5556ebcbbf6151213dc3504d39f19606d09c5e005daaa43af1f1a3aa"
+    },
+    "src/estate_impact/cli.py": {
+      "bytes": 1391,
+      "sha256": "0c6742b6d3673731a3358d0dce25739a5a5a36d6c61f375e4d1be6a0a9b0f212"
+    },
+    "src/estate_impact/compatibility.py": {
+      "bytes": 548,
+      "sha256": "84d298d4950cb16943dd015f036eab62fc6e3e2cc20b68f80ba07750d59426e2"
+    },
+    "src/estate_impact/contracts.py": {
+      "bytes": 3745,
+      "sha256": "f3c1b593b3e8a1fa1758a3b34c243f80fa7903cf31b1cb30060108612709826d"
+    },
+    "src/estate_impact/coverage.py": {
+      "bytes": 1854,
+      "sha256": "9aa79c0188d22d33a19afbcd89bdad3f06b4f804b7a3cfdfc5d0cbdf1e8bf6fd"
+    },
+    "src/estate_impact/db.py": {
+      "bytes": 3961,
+      "sha256": "723aa02508088fea501714adb14dd52e6effdeb5942a16bc0a3235340a74ddc4"
+    },
+    "src/estate_impact/demo.py": {
+      "bytes": 9297,
+      "sha256": "3959cac8b4e5700f92bb10823218f3ac4932fd958a058ae39fb05b7768208a9b"
+    },
+    "src/estate_impact/explanations.py": {
+      "bytes": 2453,
+      "sha256": "013fbe259a42ff6202101a4b0977eadbff8bf91820995bdada8ed8c0efc9e906"
+    },
+    "src/estate_impact/identity.py": {
+      "bytes": 692,
+      "sha256": "a95e933a564b47b8f7a89bd51dcd60ba1e01af18b979395e9733e7c76208a4f0"
+    },
+    "src/estate_impact/impact.py": {
+      "bytes": 10923,
+      "sha256": "f5b171551fdefdcd072e517e2c86368eb6dac7a75bdec07e95a6adf5501b119d"
+    },
+    "src/estate_impact/importers/__init__.py": {
+      "bytes": 2228,
+      "sha256": "780d3da05e788badc5b17a2c82f08b657e003d11e004157687a9024f09480657"
+    },
+    "src/estate_impact/importers/executions_csv.py": {
+      "bytes": 587,
+      "sha256": "ba18bc7c32fa451595ce2c16576369216b124d6fa0ee7e992dc10a7dc252b2d0"
+    },
+    "src/estate_impact/importers/inventory_csv.py": {
+      "bytes": 909,
+      "sha256": "875ca6851b6f8e1995951dc4b89df9f2d9139e869bda4338a5339e8205824e81"
+    },
+    "src/estate_impact/importers/orchestration_json.py": {
+      "bytes": 375,
+      "sha256": "c5b5f7a15bf9bdeade7e06bd103a4539284e64a0c0b15b6b7f223b18fd8fa665"
+    },
+    "src/estate_impact/importers/stewardship_json.py": {
+      "bytes": 371,
+      "sha256": "8f300e992112bba38ef14eb33c824212b29bb1779220860dc0eb6f2c25012c81"
+    },
+    "src/estate_impact/reporting/__init__.py": {
+      "bytes": 63,
+      "sha256": "2bcef459dee232e27c1b3ac5b2c800ef80c8906dec6c1adfa566adb58e096f06"
+    },
+    "src/estate_impact/reporting/markdown.py": {
+      "bytes": 4225,
+      "sha256": "157009828fa9e4bc65c5cde8b7370013770b1a4bf82b41c0511090f6439cc4da"
+    },
+    "src/estate_impact/reporting/mermaid.py": {
+      "bytes": 3837,
+      "sha256": "b596cc2dd05141fb2e6bfe5e782386d05f2f6798a53f99f4a7e1031f68da6fd8"
+    },
+    "src/estate_impact/requirements.py": {
+      "bytes": 4614,
+      "sha256": "e19cc89d64e75cebadc7d5c8e13093ea0c005c9236e90e40cfe0e27c8f0c941e"
+    },
+    "src/estate_impact/sequencing.py": {
+      "bytes": 2333,
+      "sha256": "e65cc55d176a50bbf8f15ddc32c896817f2bb4cb4a68832febc115815bcff1a4"
+    },
+    "src/estate_impact/snapshots.py": {
+      "bytes": 1811,
+      "sha256": "1d27415f11e34af7e7ac5ac6b70d75c8a7b69440fc2b68bae0787cc93ab1a807"
+    },
+    "src/estate_impact/topology.py": {
+      "bytes": 1253,
+      "sha256": "ba8017810babe8a301c64cc1f843f83476cb8b2b21d71a6ffe6cd778119b1dbf"
+    },
+    "tests/conftest.py": {
+      "bytes": 2580,
+      "sha256": "15ff808ac35d3b7da8a806bb904cb1260b1f968ab33b9fbbb638b131882b57c7"
+    },
+    "tests/oracle/reference_evaluator.py": {
+      "bytes": 1192,
+      "sha256": "de4b69729c503b405226c6496792900a0e1c6506985efca6c9d033cc5423bbb1"
+    },
+    "tests/test_coverage.py": {
+      "bytes": 1588,
+      "sha256": "4890955c5d5cad71704e36f0dfb17b67aea9544e0211e7c94323ef09ef633846"
+    },
+    "tests/test_end_to_end.py": {
+      "bytes": 935,
+      "sha256": "abf2a803d082e59725b89c3c33a64c62be47fd7b97a0fceab39decb29a0d666c"
+    },
+    "tests/test_identity_and_conflicts.py": {
+      "bytes": 3081,
+      "sha256": "b34c8404a35fc4471e7109c0c8d9ed9d51ec0b956617520cff33321cad1b5ef6"
+    },
+    "tests/test_impact.py": {
+      "bytes": 6331,
+      "sha256": "ef7806c6c12402fbc2f0c079aabbf19ba4a4e35de58d0db1bf01954ebb2d1402"
+    },
+    "tests/test_imports.py": {
+      "bytes": 2481,
+      "sha256": "9b536c7068267e37fd10eb2e2aa7b6cf5f3f41244e2a26cce99933c98e12b266"
+    },
+    "tests/test_reports.py": {
+      "bytes": 2571,
+      "sha256": "d0d3343a6ea98c7d417db07a387a12952395339eec7d625190f1d1f72ecdd50e"
+    },
+    "tests/test_requirements.py": {
+      "bytes": 3263,
+      "sha256": "ff353bc5f135d2235edcab47e9415658b6f27390e641ce144d7c2b1ae217ff4e"
+    },
+    "tests/test_review_regressions.py": {
+      "bytes": 3511,
+      "sha256": "669a31a236d6ff81eec807b114f6aa9e84f6968f6af6c5eb883686d34bf60dc5"
+    },
+    "tests/test_sequencing.py": {
+      "bytes": 1475,
+      "sha256": "8c9a7b2840a2c619b3e0163c340d8ee8d53b89a320e31c9ee68ddc9e8a70c983"
+    },
+    "tests/test_snapshots.py": {
+      "bytes": 3836,
+      "sha256": "f2d573b32ce85988ead5085e5b2e4edd25778bbf51b7ce32e428c990fa2bc583"
+    }
+  },
+  "format": "change-package/v1"
+}

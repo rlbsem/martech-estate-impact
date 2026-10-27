@@ -1,34 +1,68 @@
-name: Verify estate semantics
+name: Verify estate and governed change assurance
 on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
+concurrency:
+  group: estate-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  verify:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    services:
-      postgres:
-        image: postgres:17.11
-        env:
-          POSTGRES_USER: estate
-          POSTGRES_PASSWORD: estate
-          POSTGRES_DB: estate
-        ports: ["55439:5432"]
-        options: >-
-          --health-cmd "pg_isready -U estate -d estate"
-          --health-interval 2s --health-timeout 3s --health-retries 30
+  native:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.12'
-      - run: python -m pip install -r requirements.lock
-      - run: python -m pip install --no-build-isolation --no-deps .
-      - run: python scripts/verify.py
+      - name: Locate installed native PostgreSQL (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          PG_BIN="$(find /usr/lib/postgresql -path '*/bin/initdb' | sort -V | tail -1 | xargs dirname)"
+          test -x "$PG_BIN/initdb"
+          echo "PG_BIN=$PG_BIN" >> "$GITHUB_ENV"
+      - name: Locate installed native PostgreSQL (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $pg = Get-ChildItem 'C:/Program Files/PostgreSQL/*/bin/initdb.exe' | Sort-Object FullName -Descending | Select-Object -First 1
+          if (-not $pg) { throw 'Native PostgreSQL is not installed on this runner' }
+          "PG_BIN=$($pg.Directory.FullName)" | Out-File -FilePath $env:GITHUB_ENV -Append -Encoding utf8
+      - run: python -m pip install -r requirements.lock -r requirements-change.lock
+      - run: python -m pip install --no-build-isolation --no-deps -e .
+      - if: runner.os == 'Linux'
+        run: python -m playwright install --with-deps chromium
+      - if: runner.os == 'Windows'
+        run: python -m playwright install chromium
+      - run: python scripts/check_change.py
+      - run: python scripts/verify_change.py --workspace work/ci-private --output work/ci-evidence --check-package
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        if: always()
         with:
-          name: observed-verification
-          path: |
-            docs/evidence/
-            examples/generated/
+          name: change-assurance-${{ matrix.os }}
+          path: work/ci-evidence/
+  compose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.lock -r requirements-change.lock
+      - run: python -m pip install --no-build-isolation --no-deps -e .
+      - run: python -m playwright install --with-deps chromium
+      - run: python scripts/prepare_change.py
+      - run: docker compose -p change-assurance-qa -f compose.change.yml up --build -d --wait
+      - run: python scripts/check_change_compose.py --output work/compose-evidence/runtime.json
+      - run: python scripts/browser_change.py --url http://127.0.0.1:8594/ --output work/compose-evidence/browser
+      - if: always()
+        run: docker compose -p change-assurance-qa -f compose.change.yml down --volumes --remove-orphans
+      - if: always()
+        run: python scripts/check_change_compose.py --clean --output work/compose-evidence/teardown.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: change-assurance-compose
+          path: work/compose-evidence/
