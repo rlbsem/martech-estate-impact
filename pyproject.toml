@@ -11,9 +11,13 @@ dependencies = ["psycopg[binary]==3.2.9"]
 
 [project.scripts]
 estate-impact = "estate_impact.cli:main"
+estate-change-console = "estate_change.server:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+estate_change = ["schema.sql", "web/*.html", "web/*.css", "web/*.js"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

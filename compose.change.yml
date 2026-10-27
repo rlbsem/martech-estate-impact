@@ -1,0 +1,53 @@
+services:
+  postgres:
+    image: postgres:17.11
+    env_file: work/compose/database.env
+    networks: [backend]
+    volumes: [change_pg:/var/lib/postgresql/data]
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U estate -d estate]
+      interval: 2s
+      timeout: 3s
+      retries: 40
+  seed:
+    build:
+      context: .
+      dockerfile: Dockerfile.change
+    command: [python, scripts/compose_change.py]
+    networks: [backend]
+    volumes:
+      - ./work/compose/admin.json:/private/admin.json:ro
+      - reader_config:/shared
+    depends_on:
+      postgres:
+        condition: service_healthy
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: ['/tmp:size=128m,mode=1777']
+  console:
+    build:
+      context: .
+      dockerfile: Dockerfile.change
+    ports: ['127.0.0.1:8594:8594']
+    networks: [backend, browser]
+    volumes: [reader_config:/shared:ro]
+    depends_on:
+      seed:
+        condition: service_completed_successfully
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: ['/tmp:size=128m,mode=1777']
+    healthcheck:
+      test: [CMD, python, -c, "from urllib.request import urlopen; assert urlopen('http://127.0.0.1:8594/api/estate').status==200"]
+      interval: 3s
+      timeout: 5s
+      retries: 30
+networks:
+  backend:
+    internal: true
+  browser: {}
+volumes:
+  change_pg: {}
+  reader_config: {}
