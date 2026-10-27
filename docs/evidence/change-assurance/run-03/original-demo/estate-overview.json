@@ -1,0 +1,94 @@
+{
+  "capabilities": {
+    "attribution": {
+      "criticality": "business-important",
+      "label": "Campaign attribution",
+      "owner": "Analytics"
+    },
+    "campaigns": {
+      "criticality": "business-important",
+      "label": "Shared campaign creation",
+      "owner": "Integrated Campaigns"
+    },
+    "content": {
+      "criticality": "business-important",
+      "label": "Content approval",
+      "owner": "Product Marketing"
+    },
+    "leads": {
+      "criticality": "business-important",
+      "label": "Lead routing",
+      "owner": "Revenue Operations"
+    },
+    "messaging": {
+      "criticality": "business-important",
+      "label": "Customer messaging",
+      "owner": "Marketing Operations"
+    },
+    "product": {
+      "criticality": "business-important",
+      "label": "Product engagement analytics",
+      "owner": "Analytics"
+    },
+    "reporting": {
+      "criticality": "business-important",
+      "label": "Operational reporting",
+      "owner": "Analytics"
+    },
+    "seasonal": {
+      "criticality": "business-important",
+      "label": "Seasonal campaigns",
+      "owner": "Integrated Campaigns"
+    },
+    "web": {
+      "criticality": "business-important",
+      "label": "Web experience",
+      "owner": "Web"
+    },
+    "webinars": {
+      "criticality": "business-important",
+      "label": "Webinar registration and follow-up",
+      "owner": "Integrated Campaigns"
+    }
+  },
+  "integrations": 40,
+  "proposed_systems": 2,
+  "resolution_example": {
+    "after": "SUPPORTED",
+    "before": "UNKNOWN",
+    "key": "dependency:product-insight:1",
+    "record": {
+      "accept": [
+        "c8402950e95755e117f9691d9016bc5cfec5463c07f56d318f1528f571aa3ae9"
+      ],
+      "evidence": [
+        "synthetic-review/product-analytics-2026-09"
+      ],
+      "key": "dependency:product-insight:1",
+      "reason": "Reviewed product analytics requirement and approved warehouse dependency; orchestration annotation was incorrect.",
+      "reviewer": "Analytics architecture steward"
+    }
+  },
+  "seasonal_execution": {
+    "coverage": {
+      "evidence": [
+        "review:work-manager"
+      ],
+      "reasons": [
+        "review:work-manager: exclusions or missing reviewer",
+        "review:work-manager: expected export missing",
+        "review:work-manager: partial collection",
+        "review:work-manager: partial observation period"
+      ],
+      "state": "UNKNOWN"
+    },
+    "observed_count": 0,
+    "usage": "UNKNOWN"
+  },
+  "systems": 24,
+  "unresolved": [
+    "dependency:seasonal:0",
+    "ownership:work-manager",
+    "integration:legacy-personalization"
+  ]
+}
