@@ -6,7 +6,7 @@ from change_repository import ROOT, inventory, links, preserve, scan, sha, sourc
 
 
 def main():
-    out = ROOT / "docs/evidence/change-assurance/run-01"
+    out = ROOT / "docs/evidence/change-assurance/run-02"
     verification = json.loads((out / "verification.json").read_bytes())
     assert verification["status"] == "passed"
     assert verification["source_sha256"] == source_hashes(), "recorded execution source mismatch"

@@ -15,6 +15,7 @@ from zipfile import ZipFile
 
 import psycopg
 
+from estate_impact import db
 from estate_impact.demo import run as original_demo
 from estate_impact.impact import scenario
 from estate_impact.requirements import evaluate
@@ -59,6 +60,10 @@ def main():
         command(args, work / (name + ".log"))
     suites = {}
     with Runtime(work / "native") as runtime:
+        owned_cluster = runtime.owned
+        with db.connect() as c:
+            assert c.execute("SHOW listen_addresses").fetchone()[0] == "127.0.0.1"
+            assert c.execute("SHOW unix_socket_directories").fetchone()[0] == ""
         for folder in ["tests", "change_tests"]:
             xml = work / (folder + ".xml")
             command(
@@ -219,7 +224,8 @@ def main():
         local_links=None,
         public_files_scanned=public_files,
         console_restricted_select_only=True,
-        actual_owned_postgresql_stopped=True,
+        database_ownership="runner-owned" if owned_cluster else "supplied dedicated local database",
+        actual_owned_postgresql_stopped=owned_cluster,
         boundary="Local native PostgreSQL, synthetic evidence, actual Chromium. This record makes no Docker, hosted CI or production deployment claim.",
     )
     save(out / "verification.json", record)

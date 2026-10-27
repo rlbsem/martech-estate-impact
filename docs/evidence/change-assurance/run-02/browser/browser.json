@@ -1,0 +1,2296 @@
+{
+  "accessibility": [
+    {
+      "followups": [],
+      "incomplete": [],
+      "passes": 25,
+      "state": "1440:estate",
+      "violations": []
+    },
+    {
+      "followups": [],
+      "incomplete": [],
+      "passes": 24,
+      "state": "1440:changes",
+      "violations": []
+    },
+    {
+      "followups": [],
+      "incomplete": [],
+      "passes": 20,
+      "state": "1440:evidence",
+      "violations": []
+    },
+    {
+      "followups": [
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(5) > .table-scroll > table > thead > tr > th:nth-child(3)"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(5) > .table-scroll > table > thead > tr > th:nth-child(4)"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "#requirements > tr:nth-child(1) > td:nth-child(4) > details:nth-child(1) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "#requirements > tr:nth-child(1) > td:nth-child(4) > details:nth-child(2) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "#requirements > tr:nth-child(2) > td:nth-child(4) > details:nth-child(1) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "#requirements > tr:nth-child(2) > td:nth-child(4) > details:nth-child(2) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "#requirements > tr:nth-child(3) > td:nth-child(4) > details:nth-child(1) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "#requirements > tr:nth-child(3) > td:nth-child(4) > details:nth-child(2) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "#requirements > tr:nth-child(4) > td:nth-child(4) > details:nth-child(1) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "#requirements > tr:nth-child(4) > td:nth-child(4) > details:nth-child(2) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "#requirements > tr:nth-child(5) > td:nth-child(4) > details:nth-child(1) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "#requirements > tr:nth-child(5) > td:nth-child(4) > details:nth-child(2) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "#requirements > tr:nth-child(6) > td:nth-child(4) > details:nth-child(1) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "#requirements > tr:nth-child(6) > td:nth-child(4) > details:nth-child(2) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "tr:nth-child(7) > td:nth-child(4) > details:nth-child(1) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "tr:nth-child(7) > td:nth-child(4) > details:nth-child(2) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "tr:nth-child(8) > td:nth-child(4) > details:nth-child(1) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            "tr:nth-child(8) > td:nth-child(4) > details:nth-child(2) > summary"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "8.3pt (11px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<th>After</th>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(5) > .table-scroll > table > thead > tr > th:nth-child(3)"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "8.3pt (11px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<th>Explanation</th>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(5) > .table-scroll > table > thead > tr > th:nth-child(4)"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Witness chain</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "#requirements > tr:nth-child(1) > td:nth-child(4) > details:nth-child(1) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Typed inputs &amp; source claims</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "#requirements > tr:nth-child(1) > td:nth-child(4) > details:nth-child(2) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Witness chain</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "#requirements > tr:nth-child(2) > td:nth-child(4) > details:nth-child(1) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Typed inputs &amp; source claims</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "#requirements > tr:nth-child(2) > td:nth-child(4) > details:nth-child(2) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Witness chain</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "#requirements > tr:nth-child(3) > td:nth-child(4) > details:nth-child(1) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Typed inputs &amp; source claims</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "#requirements > tr:nth-child(3) > td:nth-child(4) > details:nth-child(2) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Witness chain</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "#requirements > tr:nth-child(4) > td:nth-child(4) > details:nth-child(1) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Typed inputs &amp; source claims</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "#requirements > tr:nth-child(4) > td:nth-child(4) > details:nth-child(2) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Witness chain</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "#requirements > tr:nth-child(5) > td:nth-child(4) > details:nth-child(1) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Typed inputs &amp; source claims</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "#requirements > tr:nth-child(5) > td:nth-child(4) > details:nth-child(2) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Witness chain</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "#requirements > tr:nth-child(6) > td:nth-child(4) > details:nth-child(1) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Typed inputs &amp; source claims</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "#requirements > tr:nth-child(6) > td:nth-child(4) > details:nth-child(2) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Witness chain</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "tr:nth-child(7) > td:nth-child(4) > details:nth-child(1) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Typed inputs &amp; source claims</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "tr:nth-child(7) > td:nth-child(4) > details:nth-child(2) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Witness chain</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "tr:nth-child(8) > td:nth-child(4) > details:nth-child(1) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        ".panel:nth-child(5)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Typed inputs &amp; source claims</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                "tr:nth-child(8) > td:nth-child(4) > details:nth-child(2) > summary"
+              ]
+            }
+          ],
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "passes": 26,
+      "state": "390:estate",
+      "violations": []
+    },
+    {
+      "followups": [
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(3) > .table-scroll > table > thead > tr > th:nth-child(3)"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(3) > .table-scroll > table > thead > tr > th:nth-child(4)"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(1) > td:nth-child(4) > details:nth-child(1) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(1) > td:nth-child(4) > details:nth-child(2) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(2) > td:nth-child(4) > details:nth-child(1) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(2) > td:nth-child(4) > details:nth-child(2) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(3) > td:nth-child(4) > details:nth-child(1) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(3) > td:nth-child(4) > details:nth-child(2) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(4) > td:nth-child(4) > details:nth-child(1) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(4) > td:nth-child(4) > details:nth-child(2) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(5) > td:nth-child(4) > details:nth-child(1) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(5) > td:nth-child(4) > details:nth-child(2) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(6) > td:nth-child(4) > details:nth-child(1) > summary"
+          ]
+        },
+        {
+          "result": {
+            "incomplete": [],
+            "passes": 1,
+            "violations": []
+          },
+          "rule": "color-contrast",
+          "target": [
+            ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(6) > td:nth-child(4) > details:nth-child(2) > summary"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "8.3pt (11px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        "#review > .panel:nth-child(3)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<th>After</th>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(3) > .table-scroll > table > thead > tr > th:nth-child(3)"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "8.3pt (11px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        "#review > .panel:nth-child(3)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<th>Proof</th>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(3) > .table-scroll > table > thead > tr > th:nth-child(4)"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        "#review > .panel:nth-child(3)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Witness chain</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(1) > td:nth-child(4) > details:nth-child(1) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        "#review > .panel:nth-child(3)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Typed inputs &amp; source claims</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(1) > td:nth-child(4) > details:nth-child(2) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        "#review > .panel:nth-child(3)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Witness chain</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(2) > td:nth-child(4) > details:nth-child(1) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        "#review > .panel:nth-child(3)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Typed inputs &amp; source claims</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(2) > td:nth-child(4) > details:nth-child(2) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        "#review > .panel:nth-child(3)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Witness chain</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(3) > td:nth-child(4) > details:nth-child(1) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        "#review > .panel:nth-child(3)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Typed inputs &amp; source claims</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(3) > td:nth-child(4) > details:nth-child(2) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        "#review > .panel:nth-child(3)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Witness chain</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(4) > td:nth-child(4) > details:nth-child(1) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        "#review > .panel:nth-child(3)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Typed inputs &amp; source claims</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(4) > td:nth-child(4) > details:nth-child(2) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        "#review > .panel:nth-child(3)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Witness chain</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(5) > td:nth-child(4) > details:nth-child(1) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        "#review > .panel:nth-child(3)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Typed inputs &amp; source claims</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(5) > td:nth-child(4) > details:nth-child(2) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        "#review > .panel:nth-child(3)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Witness chain</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(6) > td:nth-child(4) > details:nth-child(1) > summary"
+              ]
+            },
+            {
+              "all": [],
+              "any": [
+                {
+                  "data": {
+                    "bgColor": null,
+                    "contrastRatio": 0,
+                    "expectedContrastRatio": "4.5:1",
+                    "fgColor": null,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "elmPartiallyObscured",
+                    "shadowColor": null
+                  },
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined because it's partially obscured by another element",
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"panel\">",
+                      "target": [
+                        "#review > .panel:nth-child(3)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element",
+              "html": "<summary>Typed inputs &amp; source claims</summary>",
+              "impact": "serious",
+              "none": [],
+              "target": [
+                ".panel:nth-child(3) > .table-scroll > table > tbody > tr:nth-child(6) > td:nth-child(4) > details:nth-child(2) > summary"
+              ]
+            }
+          ],
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "passes": 25,
+      "state": "390:changes",
+      "violations": []
+    },
+    {
+      "followups": [],
+      "incomplete": [],
+      "passes": 20,
+      "state": "390:evidence",
+      "violations": []
+    },
+    {
+      "followups": [],
+      "incomplete": [],
+      "passes": 26,
+      "state": "desktop:expanded witness and graph",
+      "violations": []
+    },
+    {
+      "followups": [],
+      "incomplete": [],
+      "passes": 18,
+      "state": "mobile:unavailable evidence",
+      "violations": []
+    }
+  ],
+  "boundary": "Real browser over local read-only PostgreSQL-backed synthetic console; no external deployment",
+  "browser": "Actual Playwright Chromium",
+  "captured_at": "2026-10-27T16:16:31.315236+00:00",
+  "checks": [
+    {
+      "check": "live persisted synthetic snapshot",
+      "passed": true
+    },
+    {
+      "check": "1440:estate:keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "1440:estate:no page overflow",
+      "passed": true
+    },
+    {
+      "check": "1440:estate:readable section",
+      "passed": true
+    },
+    {
+      "check": "accessibility:1440:estate",
+      "passed": true
+    },
+    {
+      "check": "1440:changes:keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "1440:changes:no page overflow",
+      "passed": true
+    },
+    {
+      "check": "1440:changes:readable section",
+      "passed": true
+    },
+    {
+      "check": "accessibility:1440:changes",
+      "passed": true
+    },
+    {
+      "check": "1440:evidence:keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "1440:evidence:no page overflow",
+      "passed": true
+    },
+    {
+      "check": "1440:evidence:readable section",
+      "passed": true
+    },
+    {
+      "check": "accessibility:1440:evidence",
+      "passed": true
+    },
+    {
+      "check": "1024:estate:keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "1024:estate:no page overflow",
+      "passed": true
+    },
+    {
+      "check": "1024:estate:readable section",
+      "passed": true
+    },
+    {
+      "check": "1024:changes:keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "1024:changes:no page overflow",
+      "passed": true
+    },
+    {
+      "check": "1024:changes:readable section",
+      "passed": true
+    },
+    {
+      "check": "1024:evidence:keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "1024:evidence:no page overflow",
+      "passed": true
+    },
+    {
+      "check": "1024:evidence:readable section",
+      "passed": true
+    },
+    {
+      "check": "768:estate:keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "768:estate:no page overflow",
+      "passed": true
+    },
+    {
+      "check": "768:estate:readable section",
+      "passed": true
+    },
+    {
+      "check": "768:changes:keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "768:changes:no page overflow",
+      "passed": true
+    },
+    {
+      "check": "768:changes:readable section",
+      "passed": true
+    },
+    {
+      "check": "768:evidence:keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "768:evidence:no page overflow",
+      "passed": true
+    },
+    {
+      "check": "768:evidence:readable section",
+      "passed": true
+    },
+    {
+      "check": "390:estate:keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "390:estate:no page overflow",
+      "passed": true
+    },
+    {
+      "check": "390:estate:readable section",
+      "passed": true
+    },
+    {
+      "check": "accessibility:390:estate",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "390:changes:keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "390:changes:no page overflow",
+      "passed": true
+    },
+    {
+      "check": "390:changes:readable section",
+      "passed": true
+    },
+    {
+      "check": "accessibility:390:changes",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "unique accessibility target",
+      "passed": true
+    },
+    {
+      "check": "resolved incomplete:color-contrast",
+      "passed": true
+    },
+    {
+      "check": "390:evidence:keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "390:evidence:no page overflow",
+      "passed": true
+    },
+    {
+      "check": "390:evidence:readable section",
+      "passed": true
+    },
+    {
+      "check": "accessibility:390:evidence",
+      "passed": true
+    },
+    {
+      "check": "320:estate:keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "320:estate:no page overflow",
+      "passed": true
+    },
+    {
+      "check": "320:estate:readable section",
+      "passed": true
+    },
+    {
+      "check": "320:changes:keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "320:changes:no page overflow",
+      "passed": true
+    },
+    {
+      "check": "320:changes:readable section",
+      "passed": true
+    },
+    {
+      "check": "320:evidence:keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "320:evidence:no page overflow",
+      "passed": true
+    },
+    {
+      "check": "320:evidence:readable section",
+      "passed": true
+    },
+    {
+      "check": "persisted retirement:explore:atlas/crm",
+      "passed": true
+    },
+    {
+      "check": "persisted retirement:explore:atlas/workbench",
+      "passed": true
+    },
+    {
+      "check": "persisted retirement:explore:boreal/crm",
+      "passed": true
+    },
+    {
+      "check": "persisted retirement:explore:cinder/crm",
+      "passed": true
+    },
+    {
+      "check": "persisted retirement:explore:cinder/spare",
+      "passed": true
+    },
+    {
+      "check": "persisted retirement:explore:parent/hub",
+      "passed": true
+    },
+    {
+      "check": "keyboard graph source inspection",
+      "passed": true
+    },
+    {
+      "check": "target unavailable node remains explicit",
+      "passed": true
+    },
+    {
+      "check": "witness visible",
+      "passed": true
+    },
+    {
+      "check": "accessibility:desktop:expanded witness and graph",
+      "passed": true
+    },
+    {
+      "check": "revision & state:consolidation1",
+      "passed": true
+    },
+    {
+      "check": "revision & state:integration1",
+      "passed": true
+    },
+    {
+      "check": "revision & state:outage1",
+      "passed": true
+    },
+    {
+      "check": "revision & state:reassignment1",
+      "passed": true
+    },
+    {
+      "check": "revision & state:replacement1",
+      "passed": true
+    },
+    {
+      "check": "revision & state:replacement2",
+      "passed": true
+    },
+    {
+      "check": "revision & state:retirement1",
+      "passed": true
+    },
+    {
+      "check": "download equals exact API content",
+      "passed": true
+    },
+    {
+      "check": "no database URL exported",
+      "passed": true
+    },
+    {
+      "check": "unavailable data makes no readiness claim",
+      "passed": true
+    },
+    {
+      "check": "accessibility:mobile:unavailable evidence",
+      "passed": true
+    },
+    {
+      "check": "write endpoint rejected:api/decide",
+      "passed": true
+    },
+    {
+      "check": "write endpoint rejected:api/estate",
+      "passed": true
+    },
+    {
+      "check": "path traversal rejected",
+      "passed": true
+    },
+    {
+      "check": "strict self CSP",
+      "passed": true
+    },
+    {
+      "check": "no application browser writes",
+      "passed": true
+    },
+    {
+      "check": "no third-party browser requests",
+      "passed": true
+    },
+    {
+      "check": "no JavaScript errors",
+      "passed": true
+    }
+  ],
+  "screenshots": {
+    "changes-desktop.png": {
+      "sha256": "00ca3063be96450ddcb40c4ff7c9d9d75ec83e623b4ae5d82ff1bf276c7868bd",
+      "tab": "changes",
+      "viewport": {
+        "height": 1250,
+        "width": 1440
+      }
+    },
+    "changes-mobile.png": {
+      "sha256": "78794ec5f03f728d1c92e5b33fe571740696683c3a6863a4b179fdea4d2e6cf5",
+      "tab": "changes",
+      "viewport": {
+        "height": 1000,
+        "width": 390
+      }
+    },
+    "estate-desktop.png": {
+      "sha256": "f43cfd7e0e3976db91233c9222e220a77aff197319b8f4fdf8338a1d92cc1354",
+      "tab": "estate",
+      "viewport": {
+        "height": 1250,
+        "width": 1440
+      }
+    },
+    "estate-mobile.png": {
+      "sha256": "dbdb876ad91976f6d1081e1a9a864bf353d6e3eacb59cb0617cb65052e9ba557",
+      "tab": "estate",
+      "viewport": {
+        "height": 1000,
+        "width": 390
+      }
+    },
+    "evidence-desktop.png": {
+      "sha256": "807bc7fca6871c9c88ce64cfe0d3c38ae446ac8af0100429894fc6a490db2cfc",
+      "tab": "evidence",
+      "viewport": {
+        "height": 1250,
+        "width": 1440
+      }
+    },
+    "evidence-mobile.png": {
+      "sha256": "c4cfed5f45e6f2b4d4a3fa13983bc31a392a132f10c38c2f9ce3783de7993014",
+      "tab": "evidence",
+      "viewport": {
+        "height": 1000,
+        "width": 390
+      }
+    }
+  },
+  "snapshot_id": "8530baa44e599e9bd58984c2303bb5e7a5a3c7f248110d66cffa0b70b2455084",
+  "source_sha256": {
+    ".dockerignore": "91e824e8e09623c60d909e93f08a6f31dd88ca19c14602177923aed214fb5118",
+    ".github/workflows/verify.yml": "3f6f7c815c1c67fe52627b5ddca276bbcd680bd07019a7c93dc8098375c95f17",
+    "Dockerfile.change": "459644887ef99a92df6baf9bf9c703381397ab0cd8d56f05d480dd2003d48a0d",
+    "change_tests/conftest.py": "54427f255c81e9154332382088b8b18634629f206fa72f854201004948692ceb",
+    "change_tests/test_change.py": "b60cbff2d2fd97dc428507694212e3ffb1e9ee80732ceee6403dd89a8fc55df8",
+    "change_tests/test_independence.py": "7d0fdbbee6fb334af7b03c3f228456f017d2421360f6762ca2eb973f6d850094",
+    "change_tests/vendor/axe.min.js": "880970c081707360e64f34cea25ff91892f5bc95675b0776925b9709dd8a68bb",
+    "change_tests/vendor/provenance.json": "6a333252660c05f04c4e17254966af37bd705182158ca6b18affe9ff0f0a2191",
+    "compose.change.yml": "224fd8f35371b98f175c3c7423cd9e495128635c75466b37394c2626eeb1ac05",
+    "config/crosswalk.json": "7db6dc3f250fbc462c16c1c0f037fdded4b6367421fbb0dc029b40b0c45341e6",
+    "config/evidence-policy.json": "829ca9902369fb5a8f61a0f09d8720f311401fb643fc0a44ea4ec234a00ec9cf",
+    "config/sources.json": "82b3f7257618471f6d86be54f23028baa7d5101a85dbdfffa42eed1cbe01144c",
+    "docker-compose.yml": "9f5968242533ab70354aca40edfec9df129ee8f088a4cb8cf5b551879cdb61b2",
+    "fixtures/change-assurance/catalog.json": "0b68e01f3252c1cd477a457b4f61795c0151373526041b4059fb6f46c2c8bf27",
+    "fixtures/change-assurance/execution.json": "f437508cd682a200d00e81192d6096597eb685521d6ad12885c17543a0aaad59",
+    "fixtures/change-assurance/owner.json": "9132f5d52cb68307dfa24300363ce4888667dd1390719aa421269fe87fe5283a",
+    "fixtures/change-assurance/registry.json": "176db1df672d18794c39687a17aad495514dad707b490968e91b5aa4cb53b05e",
+    "fixtures/change-assurance/scenario.json": "358cd03a60a5b98a146346eff5c944ff63851ee8a5e21e1cfae4476123a1871f",
+    "fixtures/synthetic-estate/collection-manifests.json": "660ff959faa09e4e9322e9b5bd2aa14fac29d3cf4a4590e1113bc12ada5b53a2",
+    "fixtures/synthetic-estate/orchestration-legacy.json": "26f2484da70dcd625be21501bfa2ed4630700d2d8e51cf3dcf741f98658e0c3b",
+    "fixtures/synthetic-estate/orchestration.json": "87898973e9489985490013da03b64b9f42ce5558ad32f5481614d3aa6b9a56af",
+    "fixtures/synthetic-estate/proposals/replace-webinar-incomplete.json": "31f0913ca5a7407ffee9d35ac51132319886309edb8be3dc1fea0f5ae914bd85",
+    "fixtures/synthetic-estate/proposals/replace-webinar-revised.json": "825632bf7ff5de0f0cfeb9f6991decf787b6233064bbbc901e5afbbe2daf5c35",
+    "fixtures/synthetic-estate/proposals/retire-work-manager.json": "44e4dc915df34570c2c5167dc468faaae03aa73cef737f0c331004fe9140df44",
+    "fixtures/synthetic-estate/resolutions.json": "b0295e9731a70b6da9f49a6ebecb626b76c28507b83b7c5d47609c1729b8a236",
+    "fixtures/synthetic-estate/stewardship.json": "80e997a0fbe478a20a402ae32c915d28501096acb3c1368218f1e0067b1c34c1",
+    "migrations/001_estate_model.sql": "1462120d6f663d5fa97f3055446ae485fe8f2ef6bc80a71e7d745bdc45d542cf",
+    "pyproject.toml": "29a61749a76555906f96b98e4b66dc53c029b7084a5ce4201a715768d0521e5d",
+    "requirements-change.lock": "6885d74a716e1a610b188a49933690a8d95ac62826fc17d797b307ab2587780f",
+    "requirements.lock": "31eaa1d349c983c4df04da852b4868d4c674fc4c2c4bf800db91a24c89c955e0",
+    "scripts/browser_change.py": "81b71e444fa3da54f8724ee8b59f6d3d0f8006166a7e53c81f10c03dada49f7a",
+    "scripts/change_oracle.py": "915f72b8329f2d4b5d9380dcfc3bdef5dc35ebb5383905d55afef77321a2f404",
+    "scripts/change_repository.py": "bca66bc6bea2e674e1f7bf7046ee1cf7c79f9f48167d6a7a45d1ba458a643f0c",
+    "scripts/check_change.py": "9aabc3440cc50af892ce76000d15b2edcbf40c7ea1a832a837349883feba60ed",
+    "scripts/check_change_compose.py": "88543469618e42e471670fe5dbe63a7060350c53bf44edf127386e6afe8ac19d",
+    "scripts/compose_change.py": "e6778ba27be669f8015301ed4bb5afea41467ea5a5900584b64dc57ea7fccafd",
+    "scripts/demo.py": "12b21aea5a8e91c4d58198db2804e01174a590ca1ceb54abbecf93a492c8a6b6",
+    "scripts/local_change.py": "3cd8ed26869c5fc58d5f55534bb7ba905b2c0a5d8eca7dd06139c65c1a296f23",
+    "scripts/make_change_fixture.py": "b074796faf068b8bd2303f22739094826b9f87a89ca7ffe5dcede9b77acaa7ed",
+    "scripts/prepare_change.py": "c5853aba8768e41be2ef497b70a3c96aa4843cc54a69514dbff36501ca6e87cd",
+    "scripts/verify.py": "5cd28cc734e5be1d18103ebed933c9e70531675829282b5cf3e6ace311e0c995",
+    "scripts/verify_change.py": "836d4ab7d00ea63905800e586836a3e6bf6eafad6df86652d374055e75fe3780",
+    "src/estate_change/__init__.py": "5a16cdb4ccb9c5432d3acc4767d316ca0e19215c7de8eb41c61550161bbe35ac",
+    "src/estate_change/demo.py": "834f391c640367cac5c449f82b5628ceb9f02e1bbb971295238c40cbc283497c",
+    "src/estate_change/evidence.py": "f569cce325f67bb440aec4e22c4395eaf4dd38ac9f6a2ab6f69c07f979ade03b",
+    "src/estate_change/runtime.py": "b22f5aed6cf3846fac02c67afddcb2fd06737c22b5b083ffe7d19e02cd4a3beb",
+    "src/estate_change/schema.sql": "8873015f59fdc50a658ddca1cd3e7e36ea6adbb5c92bd2537dd6a3a2b5f1c566",
+    "src/estate_change/server.py": "98a5c6347218c3ea372f048784f474c104b06a50d451807ff43ecbeacb6adae5",
+    "src/estate_change/service.py": "1466c2f0af0da50a9f11da9e8864a57e6534826a281c8395d5f8a73a4f3ba675",
+    "src/estate_change/web/app.js": "6fae075f10da34c707207a0162553a5ddaa2cc39fc70475af137c7675baabe7c",
+    "src/estate_change/web/index.html": "1006745173604b231045f96e8790591c1db802a9fee1dc9c2ea93453264c7e5f",
+    "src/estate_change/web/style.css": "9b90e18ba8e4a762311d65729b1ebd2685a1ab9754879f50a4b0a03881e57125",
+    "src/estate_impact/__init__.py": "9a97a629a989806e3f0e89f91e892a89726d284d3ba503695bede73badc8c0fa",
+    "src/estate_impact/assertions.py": "abcb1d8f5556ebcbbf6151213dc3504d39f19606d09c5e005daaa43af1f1a3aa",
+    "src/estate_impact/cli.py": "0c6742b6d3673731a3358d0dce25739a5a5a36d6c61f375e4d1be6a0a9b0f212",
+    "src/estate_impact/compatibility.py": "84d298d4950cb16943dd015f036eab62fc6e3e2cc20b68f80ba07750d59426e2",
+    "src/estate_impact/contracts.py": "f3c1b593b3e8a1fa1758a3b34c243f80fa7903cf31b1cb30060108612709826d",
+    "src/estate_impact/coverage.py": "9aa79c0188d22d33a19afbcd89bdad3f06b4f804b7a3cfdfc5d0cbdf1e8bf6fd",
+    "src/estate_impact/db.py": "723aa02508088fea501714adb14dd52e6effdeb5942a16bc0a3235340a74ddc4",
+    "src/estate_impact/demo.py": "3959cac8b4e5700f92bb10823218f3ac4932fd958a058ae39fb05b7768208a9b",
+    "src/estate_impact/explanations.py": "013fbe259a42ff6202101a4b0977eadbff8bf91820995bdada8ed8c0efc9e906",
+    "src/estate_impact/identity.py": "a95e933a564b47b8f7a89bd51dcd60ba1e01af18b979395e9733e7c76208a4f0",
+    "src/estate_impact/impact.py": "f5b171551fdefdcd072e517e2c86368eb6dac7a75bdec07e95a6adf5501b119d",
+    "src/estate_impact/importers/__init__.py": "780d3da05e788badc5b17a2c82f08b657e003d11e004157687a9024f09480657",
+    "src/estate_impact/importers/executions_csv.py": "ba18bc7c32fa451595ce2c16576369216b124d6fa0ee7e992dc10a7dc252b2d0",
+    "src/estate_impact/importers/inventory_csv.py": "875ca6851b6f8e1995951dc4b89df9f2d9139e869bda4338a5339e8205824e81",
+    "src/estate_impact/importers/orchestration_json.py": "c5b5f7a15bf9bdeade7e06bd103a4539284e64a0c0b15b6b7f223b18fd8fa665",
+    "src/estate_impact/importers/stewardship_json.py": "8f300e992112bba38ef14eb33c824212b29bb1779220860dc0eb6f2c25012c81",
+    "src/estate_impact/reporting/__init__.py": "2bcef459dee232e27c1b3ac5b2c800ef80c8906dec6c1adfa566adb58e096f06",
+    "src/estate_impact/reporting/markdown.py": "157009828fa9e4bc65c5cde8b7370013770b1a4bf82b41c0511090f6439cc4da",
+    "src/estate_impact/reporting/mermaid.py": "b596cc2dd05141fb2e6bfe5e782386d05f2f6798a53f99f4a7e1031f68da6fd8",
+    "src/estate_impact/requirements.py": "e19cc89d64e75cebadc7d5c8e13093ea0c005c9236e90e40cfe0e27c8f0c941e",
+    "src/estate_impact/sequencing.py": "e65cc55d176a50bbf8f15ddc32c896817f2bb4cb4a68832febc115815bcff1a4",
+    "src/estate_impact/snapshots.py": "1d27415f11e34af7e7ac5ac6b70d75c8a7b69440fc2b68bae0787cc93ab1a807",
+    "src/estate_impact/topology.py": "ba8017810babe8a301c64cc1f843f83476cb8b2b21d71a6ffe6cd778119b1dbf",
+    "tests/conftest.py": "15ff808ac35d3b7da8a806bb904cb1260b1f968ab33b9fbbb638b131882b57c7",
+    "tests/oracle/reference_evaluator.py": "de4b69729c503b405226c6496792900a0e1c6506985efca6c9d033cc5423bbb1",
+    "tests/test_coverage.py": "4890955c5d5cad71704e36f0dfb17b67aea9544e0211e7c94323ef09ef633846",
+    "tests/test_end_to_end.py": "abf2a803d082e59725b89c3c33a64c62be47fd7b97a0fceab39decb29a0d666c",
+    "tests/test_identity_and_conflicts.py": "b34c8404a35fc4471e7109c0c8d9ed9d51ec0b956617520cff33321cad1b5ef6",
+    "tests/test_impact.py": "ef7806c6c12402fbc2f0c079aabbf19ba4a4e35de58d0db1bf01954ebb2d1402",
+    "tests/test_imports.py": "9b536c7068267e37fd10eb2e2aa7b6cf5f3f41244e2a26cce99933c98e12b266",
+    "tests/test_reports.py": "d0d3343a6ea98c7d417db07a387a12952395339eec7d625190f1d1f72ecdd50e",
+    "tests/test_requirements.py": "ff353bc5f135d2235edcab47e9415658b6f27390e641ce144d7c2b1ae217ff4e",
+    "tests/test_review_regressions.py": "669a31a236d6ff81eec807b114f6aa9e84f6968f6af6c5eb883686d34bf60dc5",
+    "tests/test_sequencing.py": "8c9a7b2840a2c619b3e0163c340d8ee8d53b89a320e31c9ee68ddc9e8a70c983",
+    "tests/test_snapshots.py": "f2d573b32ce85988ead5085e5b2e4edd25778bbf51b7ce32e428c990fa2bc583"
+  },
+  "status": "passed"
+}

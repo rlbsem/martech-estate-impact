@@ -70,7 +70,7 @@ class Runtime:
                             "-l",
                             str(self.path / "server-private.log"),
                             "-o",
-                            f"-h 127.0.0.1 -p {port}",
+                            f"-h 127.0.0.1 -p {port} -c unix_socket_directories=",
                             "-w",
                             "start",
                         ],
@@ -136,7 +136,7 @@ class Runtime:
             os.environ.pop("ESTATE_DATABASE_URL", None)
         else:
             os.environ["ESTATE_DATABASE_URL"] = self.old
-        if self.owned:
+        if self.owned and (self.path / "data/postmaster.pid").exists():
             with (self.path / "stop-private.log").open("w") as log:
                 subprocess.run(
                     [self.ctl, "-D", str(self.path / "data"), "-m", "fast", "-w", "stop"],
@@ -145,4 +145,4 @@ class Runtime:
                     check=True,
                     timeout=60,
                 )
-            self.owned = False
+        self.owned = False

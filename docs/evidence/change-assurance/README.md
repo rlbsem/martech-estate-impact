@@ -2,6 +2,8 @@
 
 The records below come from actual local PostgreSQL and Chromium execution over synthetic company evidence. They are separate from the [original estate verification](../verification.json), whose bytes and claim boundaries remain unchanged.
 
+The [first local capture](run-01/verification.json) is preserved unchanged. Run 02 records the portable loopback-only native launcher; original historical observations are not relabeled.
+
 ## Native execution
 
 - **70 original tests and 38 additive tests**, zero failures, errors or skips.
@@ -16,24 +18,24 @@ The source fingerprints in the execution and browser records bind the actual imp
 
 | Artifact | Inspect |
 |---|---|
-| Native environment, exact cases and source hashes | [verification.json](run-01/verification.json) |
-| Baseline / counterfactual independent results | [oracle-comparison.json](run-01/oracle-comparison.json) |
-| Published source, assessments, gates and actual decisions | [estate-record.json](run-01/estate-record.json) |
-| Browser interactions, accessibility and screenshot provenance | [browser.json](run-01/browser/browser.json) |
-| Actual wheel member comparison | [wheel.json](run-01/wheel.json) |
-| Fresh original demonstration | [estate overview](run-01/original-demo/estate-overview.md) |
+| Native environment, exact cases and source hashes | [verification.json](run-02/verification.json) |
+| Baseline / counterfactual independent results | [oracle-comparison.json](run-02/oracle-comparison.json) |
+| Published source, assessments, gates and actual decisions | [estate-record.json](run-02/estate-record.json) |
+| Browser interactions, accessibility and screenshot provenance | [browser.json](run-02/browser/browser.json) |
+| Actual wheel member comparison | [wheel.json](run-02/wheel.json) |
+| Fresh original demonstration | [estate overview](run-02/original-demo/estate-overview.md) |
 | Original protection inventory | [preserved-original.json](preserved-original.json) |
 | Current public package inventory | [package-manifest.json](package-manifest.json) |
 
 ## Captured console
 
-![Retirement impact and dependency graph](run-01/browser/estate-desktop.png)
+![Retirement impact and dependency graph](run-02/browser/estate-desktop.png)
 
-![Replacement revision with explicit readiness blockers](run-01/browser/changes-desktop.png)
+![Replacement revision with explicit readiness blockers](run-02/browser/changes-desktop.png)
 
-![Collection provenance and source authority](run-01/browser/evidence-desktop.png)
+![Collection provenance and source authority](run-02/browser/evidence-desktop.png)
 
-Mobile captures: [retirement impact](run-01/browser/estate-mobile.png), [change review](run-01/browser/changes-mobile.png), [evidence](run-01/browser/evidence-mobile.png).
+Mobile captures: [retirement impact](run-02/browser/estate-mobile.png), [change review](run-02/browser/changes-mobile.png), [evidence](run-02/browser/evidence-mobile.png).
 
 ## Failures deliberately preserved in the model
 

@@ -14,7 +14,7 @@ The estate, source evidence and results are synthetic.
 
 The additive console extends this engine into a governed, multi-company change review: **four company scopes, six change classes, immutable proposal revisions and authenticated PostgreSQL review decisions**. Select a platform, trace its business requirements, compare replacement revisions and inspect the evidence that keeps a proposed change blocked.
 
-![Actual local change-assurance console](docs/evidence/change-assurance/run-01/browser/estate-desktop.png)
+![Actual local change-assurance console](docs/evidence/change-assurance/run-02/browser/estate-desktop.png)
 
 The new synthetic Northstar group is separate from the original 24-system Marketing fixture below. Its Atlas, Boreal and Cinder CRM identities remain distinct; the parent integration fabric is explicitly shared. Repairing a replacement interface can restore modeled support while unresolved ownership and seasonal coverage still prevent acceptance.
 
