@@ -57,7 +57,7 @@
     "fixtures/synthetic-estate/proposals/retire-work-manager.json": "44e4dc915df34570c2c5167dc468faaae03aa73cef737f0c331004fe9140df44",
     "fixtures/synthetic-estate/resolutions.json": "b0295e9731a70b6da9f49a6ebecb626b76c28507b83b7c5d47609c1729b8a236",
     "fixtures/synthetic-estate/stewardship.json": "80e997a0fbe478a20a402ae32c915d28501096acb3c1368218f1e0067b1c34c1",
-    "LICENSE": "bfa35d897efdd7b0c543024c4d8a4d39feb8d9132f5432c1644f7f74443b4c13",
+    "LICENSE": "1819462f2e141f8a0f1371c5191ad9ceffe1455611b2d2359674485cb7c3a8c5",
     "migrations/001_estate_model.sql": "1462120d6f663d5fa97f3055446ae485fe8f2ef6bc80a71e7d745bdc45d542cf",
     "pyproject.toml": "0a206cb8a41c1108d4d3bc253e9f1988194457ecc0606013408fe2b685731858",
     "README.md": "216557551a01f4bfb4d642906181bafffd9b2bf86187fc81d19f38c4317fe47d",
