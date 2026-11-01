@@ -114,8 +114,8 @@
       "sha256": "5ac3fae63576b61866fa357a0021b1a53eeeed64707ade58ce15938cee770474"
     },
     "docs/evidence/change-assurance/preserved-original.json": {
-      "bytes": 10634,
-      "sha256": "faff399a5b7d0632b35b15137bf263cecb5ed5e760b4ade6a61ec863d5b0efd8"
+      "bytes": 10566,
+      "sha256": "b93fc0b9e28e1ca51bf4dd07f0f489c229226272087b5272a6ad7d7cd786222c"
     },
     "docs/evidence/change-assurance/run-01/browser/browser.json": {
       "bytes": 82347,
