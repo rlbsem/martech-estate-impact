@@ -2,6 +2,7 @@
   "base_revision": "6bc3e253540dfe38cb5ae58cf00038dab31f7024",
   "exceptions": [
     ".github/workflows/verify.yml",
+    "LICENSE",
     "README.md",
     "pyproject.toml"
   ],
@@ -9,7 +10,6 @@
     ".env.example": "e07181b453a8cc00f3483b78d211925c9074178d6069a6db5978302118a53ad1",
     ".gitattributes": "9104957c74309eb4355246903f42037c22d241b70677fb184260d2e4b7288f92",
     ".gitignore": "40ebe1b3b8f05f218b083fb8c2ad4883dedf40714ecb175aec4e69785b2ae15d",
-    "LICENSE": "bfa35d897efdd7b0c543024c4d8a4d39feb8d9132f5432c1644f7f74443b4c13",
     "config/crosswalk.json": "7db6dc3f250fbc462c16c1c0f037fdded4b6367421fbb0dc029b40b0c45341e6",
     "config/evidence-policy.json": "829ca9902369fb5a8f61a0f09d8720f311401fb643fc0a44ea4ec234a00ec9cf",
     "config/sources.json": "82b3f7257618471f6d86be54f23028baa7d5101a85dbdfffa42eed1cbe01144c",

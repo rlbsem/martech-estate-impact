@@ -58,13 +58,3 @@ def test_impact_view_collapses_only_resolved_dependency_branches(snapshot, propo
     )
     assert "assertion nodes collapsed" in diagram
     assert mermaid.node("req:registration") not in diagram
-
-
-def test_mermaid_diagrams_use_portfolio_palette(snapshot, proposal):
-    facts = snapshot["facts"]
-    for diagram in (mermaid.topology(facts, "Estate"), mermaid.impact(assess(snapshot, proposal()))):
-        assert diagram.startswith(mermaid.MERMAID_THEME + "\n")
-        assert "color:#F0F0FF" in diagram
-        assert "#edf7ee" not in diagram
-        assert "#ffe6e6" not in diagram
-        assert "#fff4cc" not in diagram

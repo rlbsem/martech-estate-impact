@@ -3,7 +3,6 @@
 Generated from snapshot `323ba0c95a5369f202bce18fc210d0b3fe84c7977f8fa0c767a00a1ddbad750b`. Synthetic evidence.
 
 ```mermaid
-%%{init: {"theme":"base","themeVariables":{"background":"#10101D","primaryColor":"#2A2A3D","primaryTextColor":"#F0F0FF","primaryBorderColor":"#7C7CAF","lineColor":"#B8B8FF","textColor":"#F0F0FF","secondaryColor":"#181825","tertiaryColor":"#2E2E45","fontFamily":"IBM Plex Sans, Arial, sans-serif","fontSize":"15px","edgeLabelBackground":"#10101D"}}}%%
 %% Requirement witness view, filtered to changed or adverse outcomes. Unchanged supported requirements omitted; see assessment table. See JSON for evidence and truncation limits.
 %% Resolved dependency assertion nodes collapsed into edges; exact branches and references remain in JSON.
 flowchart TB
@@ -21,7 +20,7 @@ flowchart TB
   n7ba8aa043da7af62 --> n04dbc40eef233770
   n9f4810be3d2c627d --> n856d7201943a1c8b
   n04dbc40eef233770 --> nbfd3eb9c2ad381fc
-  classDef SUPPORTED fill:#24243A,stroke:#81C5B0,color:#F0F0FF,stroke-width:1.6px
-  classDef UNSUPPORTED fill:#2E2E45,stroke:#D98C91,color:#F0F0FF,stroke-width:2px
-  classDef UNKNOWN fill:#2E2E45,stroke:#E3BC7F,color:#F0F0FF,stroke-width:2px
+  classDef SUPPORTED fill:#edf7ee,stroke:#246634
+  classDef UNSUPPORTED fill:#ffe6e6,stroke:#a51d2d
+  classDef UNKNOWN fill:#fff4cc,stroke:#946800
 ```

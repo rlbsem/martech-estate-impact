@@ -30,8 +30,8 @@
       "sha256": "1819462f2e141f8a0f1371c5191ad9ceffe1455611b2d2359674485cb7c3a8c5"
     },
     "README.md": {
-      "bytes": 16067,
-      "sha256": "3f8cd74b87874ea2a18c5181acb54c4051230bc7acd3d569d9ec85b0e494a007"
+      "bytes": 16864,
+      "sha256": "062acc7068c98ac03c14ea6dcc0ea1dc5a5761169dab7b528f8c88392cf9902a"
     },
     "change_tests/conftest.py": {
       "bytes": 2296,
@@ -114,8 +114,8 @@
       "sha256": "5ac3fae63576b61866fa357a0021b1a53eeeed64707ade58ce15938cee770474"
     },
     "docs/evidence/change-assurance/preserved-original.json": {
-      "bytes": 10702,
-      "sha256": "f26ecf93c66d4fdad47a778a446a1310538b6d4abbb8895241b0b452ee84fd5a"
+      "bytes": 10634,
+      "sha256": "faff399a5b7d0632b35b15137bf263cecb5ed5e760b4ade6a61ec863d5b0efd8"
     },
     "docs/evidence/change-assurance/run-01/browser/browser.json": {
       "bytes": 82347,
