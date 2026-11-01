@@ -4,6 +4,7 @@
     ".github/workflows/verify.yml",
     "LICENSE",
     "README.md",
+    "docs/evidence/package-manifest.json",
     "pyproject.toml"
   ],
   "sha256": {
@@ -22,7 +23,6 @@
     "docs/evidence/diagram-rendering.json": "97be709e72f7265a72b54d7ed6201c275df36d8a3e128902570aeca55ae8df26",
     "docs/evidence/implementation-report.md": "3afb7c24eb625b64049fb92ff9f6ad3eca57f26a0f2bfcfd6fb8e4e17fd194d9",
     "docs/evidence/package-checks.json": "be211df07203c749a5c79f6cdd757b80e349eac72dbdb4d0f82cc1754112043d",
-    "docs/evidence/package-manifest.json": "24536df44298cfbd9818790d040122df237bd795e8c033e500220c417e816314",
     "docs/evidence/pytest.xml": "0503077c82bdde7c53cd817ee370e6aa130dc99b90f660bb1810d49ba9580f25",
     "docs/evidence/repository-tree.txt": "ef5cf9e3de4858aef9ae5c49edf7a3abfc8fc4b4f4ac2cc8c0adb4a64c9c9532",
     "docs/evidence/verification.json": "a29355e11b3f6a3cf50e795bc6c71ecee8eacff33f95bf07a65bd182f711e31c",
