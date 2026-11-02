@@ -527,7 +527,7 @@
     },
     "docs/evidence/package-manifest.json": {
       "bytes": 10759,
-      "sha256": "24536df44298cfbd9818790d040122df237bd795e8c033e500220c417e816314"
+      "sha256": "eca7bd35c04a3099ffb75fb47209a32641b89b2df27040fcdd0541fb7ac3ea17"
     },
     "docs/evidence/pytest.xml": {
       "bytes": 8316,
