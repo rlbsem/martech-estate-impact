@@ -14,8 +14,8 @@
       "sha256": "9104957c74309eb4355246903f42037c22d241b70677fb184260d2e4b7288f92"
     },
     ".github/workflows/verify.yml": {
-      "bytes": 3261,
-      "sha256": "1f69fa2ae8203ae03ce55a2ab6cc7ce93602247c7e7649a7e9a9dc0425f17d23"
+      "sha256": "7da4244a6ea6ef717f2710b21aa52bf5cd89e637dc890031f5bc3d47f28b91e7",
+      "bytes": 3259
     },
     ".gitignore": {
       "bytes": 90,
@@ -738,8 +738,8 @@
       "sha256": "bca66bc6bea2e674e1f7bf7046ee1cf7c79f9f48167d6a7a45d1ba458a643f0c"
     },
     "scripts/check_change.py": {
-      "bytes": 1427,
-      "sha256": "b8a1aaa74e4cbf51ccdc1b2e9368f9017c30fe6d96a785fa9e767f8ecafc459d"
+      "sha256": "8effe020bffc35fe1d9b9fb38c358c9c165368b1bc621f6e494da12a4244b44b",
+      "bytes": 2042
     },
     "scripts/check_change_compose.py": {
       "bytes": 2834,
